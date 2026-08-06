@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynasty Sports: Advertised Product Sales Update</title>
+<style>
+  :root{
+    color-scheme: light;
+    --surface-0:#f4f3f0; --surface-1:#fcfcfb; --line:#e2e0da;
+    --ink-1:#141414; --ink-2:#4f4e4a; --ink-3:#76746d;
+    --s1:#256abf; --s2:#b8860b;
+    --good:#1a7f4b; --warn:#a86400; --bad:#b3261e;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])){
+      color-scheme: dark;
+      --surface-0:#111110; --surface-1:#1a1a19; --line:#333330;
+      --ink-1:#ffffff; --ink-2:#c3c2b7; --ink-3:#93918a;
+      --s1:#3987e5; --s2:#c98500;
+      --good:#3fa96e; --warn:#d99a1f; --bad:#e66767;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-0);color:var(--ink-1);
+    font:15px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 64px}
+  header{margin-bottom:24px}
+  .eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+  h1{font-size:26px;line-height:1.2;margin:6px 0 4px;letter-spacing:-.01em}
+  .sub{color:var(--ink-2);font-size:14px}
+  section{background:var(--surface-1);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:18px}
+  h2{font-size:15px;margin:0 0 4px;letter-spacing:-.005em}
+  .note{color:var(--ink-3);font-size:12.5px;margin:0 0 18px}
+  .note strong{color:var(--ink-1)}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+  .tile{background:var(--surface-1);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .tile .lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+  .tile .v{font-size:25px;font-weight:650;letter-spacing:-.02em;margin-top:5px;font-variant-numeric:tabular-nums}
+  .tile .foot{font-size:12px;color:var(--ink-2);margin-top:3px}
+  .bars{display:flex;flex-direction:column;gap:11px}
+  .row{display:grid;grid-template-columns:minmax(150px,236px) 1fr;gap:14px;align-items:center}
+  .row .name{font-size:13px;color:var(--ink-2);text-align:right;line-height:1.3}
+  .track{position:relative;height:22px;display:flex;align-items:center;gap:9px}
+  .bar{height:22px;border-radius:0 4px 4px 0;background:var(--s1);min-width:2px;transition:filter .12s ease}
+  .bar.alt{background:var(--s2)}
+  .bar:hover{filter:brightness(1.12)}
+  .val{font-size:13px;font-variant-numeric:tabular-nums;color:var(--ink-1);font-weight:600;white-space:nowrap}
+  .val em{font-style:normal;color:var(--ink-3);font-weight:400;font-size:12px}
+  .zero{font-size:12.5px;color:var(--ink-3)}
+  .legend{display:flex;gap:16px;margin:0 0 14px;font-size:12.5px;color:var(--ink-2)}
+  .key{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:10px;height:10px;border-radius:3px;display:inline-block}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);font-weight:600;border-bottom-width:1.5px}
+  th:first-child,td:first-child{text-align:left;font-variant-numeric:normal}
+  tbody tr:last-child td{border-bottom:none}
+  tfoot td{font-weight:650;border-top:1.5px solid var(--line);border-bottom:none;padding-top:11px}
+  .tag{display:inline-block;font-size:10.5px;font-weight:650;letter-spacing:.04em;padding:2px 7px;
+    border-radius:5px;text-transform:uppercase;vertical-align:middle;margin-left:7px}
+  .t-live{background:color-mix(in srgb,var(--good) 15%,transparent);color:var(--good)}
+  .t-paused{background:color-mix(in srgb,var(--ink-3) 18%,transparent);color:var(--ink-2)}
+  .t-issue{background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad)}
+  ul.flags{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+  ul.flags li{padding-left:14px;border-left:3px solid var(--line)}
+  ul.flags li.high{border-left-color:var(--bad)}
+  ul.flags li.med{border-left-color:var(--warn)}
+  ul.flags .ttl{font-weight:650;font-size:13.5px;margin-bottom:3px}
+  ul.flags .bd{font-size:13px;color:var(--ink-2)}
+  code{background:var(--surface-0);border:1px solid var(--line);border-radius:4px;padding:1px 5px;
+    font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .src{font-size:12px;color:var(--ink-3);margin-top:20px;line-height:1.6}
+  @media (max-width:620px){ .row{grid-template-columns:1fr} .row .name{text-align:left} }
+
+  .logo-wrap{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .logo-wrap img{width:36px;height:36px;flex-shrink:0}
+  .logo-wrap .eyebrow{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+
+<script>
+/* ============================================================================
+   REPLACE ONLY THIS BLOCK ON EACH RUN. NOTHING BELOW IT.
+   Every number here must come from Shopify or the Meta ad account. Never
+   estimate. Bar widths are computed automatically, so do not calculate
+   percentages by hand. Omit the `promo` key entirely when no code is live.
+   No em dashes anywhere in any string.
+   ============================================================================ */
+const DATA = {
+  periodLabel: "July 23 – August 6, 2026",
+  periodDays: 15,
+
+  kpis: {
+    spend:          590.36,
+    spendFoot:      "4 campaigns, 2 delivering",
+    verifiedSales:  4033.61,
+    roas:           6.8,
+    units:          101,
+    companionUnits: 5,
+    orders:         65,
+    avgOrder:       62.06,
+    promoUses:      2,
+    promoFoot:      "live Aug 4 through Aug 11"
+  },
+
+  // Line-level product revenue, before order-level discount codes.
+  // Set revenue to 0 and add a `zeroNote` for products that did not sell.
+  products: [
+    { name: "Flyers Autographed Mystery Puck",          units: 84, revenue: 2100.00, orders: 49 },
+    { name: "Brandon Marsh signed LE 16×20",            units: 2,  revenue: 499.98,  orders: 2  },
+    { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 4,  revenue: 419.97,  orders: 4  },
+    { name: "Saquon Reverse Hurdle 8×10",               units: 4,  revenue: 409.96,  orders: 4  },
+    { name: "Phanatic Big Logo Hoodie",                 units: 5,  revenue: 299.95,  orders: 4  },
+    { name: "Maxey & Edgecombe dual 8×10",              units: 2,  revenue: 159.98,  orders: 2  },
+    { name: "Brandon Marsh \"Ring the Bell\" jersey",  units: 0,  revenue: 0, orders: 0,
+      zeroNote: "No sales. Ad paused, framed version out of stock." },
+    { name: "Quinyon Mitchell autographed jersey",       units: 0,  revenue: 0, orders: 0,
+      zeroNote: "No sales. Ad paused." }
+  ],
+
+  // status: "live" | "paused" | "issue".  Use null for any metric with no data.
+  // groupWith: repeat the previous row's sales/roas cells (two ads, one product).
+  ads: [
+    { name: "Flyers mystery puck",                      status:"live",   spend:320.92, ctr:4.59,  cpp:4.06, sales:2100.00, roas:6.5  },
+    { name: "Brandon Marsh LE 16×20",                   status:"paused", spend:146.35, ctr:14.60, cpp:4.30, sales:499.98,  roas:3.0, spans:2 },
+    { name: "Brandon Marsh LE 16×20, 25% off",          status:"live",   spend:21.99,  ctr:6.66,  cpp:4.40, groupWith:true },
+    { name: "Phanatic Big Logo hoodie",                 status:"live",   spend:27.55,  ctr:6.41,  cpp:2.50, sales:299.95,  roas:10.9 },
+    { name: "Marsh \"Ring the Bell\" jersey",          status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
+    { name: "Jalen Hurts Cigar & Trophy 16×20",         status:"issue",  spend:22.37,  ctr:6.04,  cpp:3.20, sales:419.97,  roas:18.8, tagText:"Off, flagged" },
+    { name: "Quinyon Mitchell jersey",                  status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null },
+    { name: "Saquon Reverse Hurdle 8×10",               status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:409.96,  roas:70.6 },
+    { name: "Maxey & Edgecombe 8×10",                   status:"live",   spend:4.69,   ctr:6.34,  cpp:2.35, sales:159.98,  roas:34.1 }
+  ],
+  adTotals: { spend:590.36, ctr:7.47, cpp:3.95, sales:3889.84, roas:6.6 },
+
+  reconcile: { discountCodes: -184.20, companionRevenue: 327.97, net: 4033.61 },
+  metaReported: { value: 16403.38, purchases: 148 },
+
+  // Delete this whole key when no promo code is running.
+  promo: {
+    code: "MARSH25",
+    terms: "25% off, one use per customer, no total cap. Live Aug 4 9:10am ET through Aug 11 9:10am ET. Applies to three products: the Brandon Marsh Autographed Limited Edition 8×10, 11×14 and 16×20 framed photos.",
+    kpis: [
+      { lbl:"Redemptions",         v:"2",       foot:"in the first 3 days" },
+      { lbl:"Revenue collected",   v:"$413.70", foot:"including shipping and tax" },
+      { lbl:"Discount given",      v:"$122.48", foot:"25% off list on both orders" },
+      { lbl:"Supporting ad spend", v:"$21.99",  foot:"Marsh 25% Off campaign" }
+    ],
+    orders: [
+      { id:"#180427", placed:"Aug 4, 2:00pm", product:"Marsh LE 11×14 framed", list:239.99, discount:59.99, collected:214.95, source:"Google, organic" },
+      { id:"#180436", placed:"Aug 5, 8:25am", product:"Marsh LE 16×20 framed", list:249.99, discount:62.49, collected:198.75, source:"Facebook, paid" }
+    ],
+    note: "Only one of the two traces back to the ad. The other came in through Google and would very likely have converted at full price. The 8×10 has not sold on the code at all. One more Marsh 16×20 sold on July 27 at full list using a different code, so the product was already moving before MARSH25 went live."
+  },
+
+  // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
+  flags: [
+    { level:"high", title:"The UTM tags on every ad are placeholder text",
+      body:"Orders are arriving with <code>utm_source=utm_source=facebook on every ad</code> and <code>utm_campaign=utm_campaign=the item slug</code>. The setup instructions were pasted into the URL builder instead of the actual values, so every ad carries identical tags. Per-ad attribution is impossible until this is rebuilt. The only usable signal right now is <code>utm_term</code>, which carries the ad set ID." },
+    { level:"high", title:"Two campaigns launched Aug 4 have never delivered",
+      body:"Barkley Presale and Phillies Triple Event are both set to active at the campaign level, but every ad inside them is paused. Zero impressions, zero spend across the full 15-day window. The Saquon Reverse Hurdle sold 4 units for <strong>$409.96</strong> against only $5.81 of ad spend through the Philly Group campaign, which suggests real demand that a live Barkley campaign could capture." },
+    { level:"med", title:"Jalen Hurts 16×20 ad is flagged by Meta",
+      body:"The ad shows <code>effective_status: WITH_ISSUES</code> in the ad account and is not delivering. Before it was flagged, it generated <strong>$419.97</strong> in verified Shopify sales on $22.37 of spend (18.8x ROAS). Resolving the issue and reactivating this ad should be a near-term priority." },
+    { level:"med", title:"The best creative in the account is switched off",
+      body:"The original Brandon Marsh LE 16×20 ad ran a <strong>14.60% CTR</strong>, roughly double everything else in the account, then got paused. Its replacement, the 25% off version, is running at 6.66% on $21.99 of spend." },
+    { level:"med", title:"Saquon Reverse Hurdle is paused after $5.81",
+      body:"It sold 4 units for $409.96 on almost no spend. The ad never got enough budget to prove itself either way, and the Barkley Presale campaign meant to support this product has not delivered a single impression." },
+    { level:"med", title:"Two ads are pointing at products with no stock",
+      body:"The Marsh \"Ring the Bell\" framed jersey and the Quinyon Mitchell items show zero inventory, and neither sold a unit against $40.68 of combined spend. The unframed Ring the Bell jersey has stock and could be swapped in." }
+  ],
+
+  storeWide: { orders: 673, value: 64570.28, socialOrders: 118, socialValue: 11285.18 },
+  totalOrdersScanned: 773
+};
+/* ==================== END OF EDITABLE BLOCK ================================ */
+
+
+/* ---------- renderer. do not edit below this line. ---------- */
+const $ = (s) => String(s);
+const money = (n, d = 2) => n == null ? "&mdash;"
+  : "$" + Number(n).toLocaleString("en-US", {minimumFractionDigits:d, maximumFractionDigits:d});
+const pct = (n) => n == null ? "&mdash;" : Number(n).toFixed(2) + "%";
+const roas = (n) => n == null ? "&mdash;" : Number(n).toFixed(1) + "×";
+
+const tile = (lbl, v, foot) =>
+  `<div class="tile"><div class="lbl">${$(lbl)}</div><div class="v">${$(v)}</div>
+   <div class="foot">${$(foot)}</div></div>`;
+
+function barRows(items, altClass) {
+  const max = Math.max(...items.map(i => i.value || 0), 1);
+  return items.map(i => {
+    const inner = (i.value > 0 || i.forceBar)
+      ? `<div class="bar${altClass ? " alt" : ""}" style="width:${(i.value / max * 100).toFixed(1)}%"
+           title="${$(i.title || "")}"></div><span class="val">${$(i.label)}</span>`
+      : `<span class="zero">${$(i.zeroNote)}</span>`;
+    return `<div class="row"><div class="name">${$(i.name)}</div><div class="track">${inner}</div></div>`;
+  }).join("");
+}
+
+function adRow(a) {
+  const tags = { live:["t-live","Live"], paused:["t-paused","Paused"], issue:["t-issue","With issues"] };
+  const [cls, txt] = tags[a.status] || ["t-paused","Paused"];
+  const tag = `<span class="tag ${cls}">${$(a.tagText || txt)}</span>`;
+  const mid = `<td>${money(a.spend)}</td><td>${pct(a.ctr)}</td><td>${money(a.cpp)}</td>`;
+  const tail = a.groupWith ? ""
+    : `<td${a.spans ? ` rowspan="${a.spans}" style="vertical-align:middle"` : ""}>${money(a.sales)}</td>` +
+      `<td${a.spans ? ` rowspan="${a.spans}" style="vertical-align:middle"` : ""}>${roas(a.roas)}</td>`;
+  return `<tr><td>${$(a.name)} ${tag}</td>${mid}${tail}</tr>`;
+}
+
+const D = DATA;
+document.getElementById("app").innerHTML = `
+<header>
+  <div class="logo-wrap"><img src="data:image/png;base64,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" alt="Audience Drivers"><div class="eyebrow">Dynasty Sports &amp; Framing &middot; Meta Advertising</div></div>
+  <h1>Advertised Product Sales Update</h1>
+  <div class="sub">Reporting period ${$(D.periodLabel)} (${$(D.periodDays)} days). Figures pulled live from Shopify orders and the Meta ad account.</div>
+</header>
+
+<div class="tiles">
+  ${tile("Meta ad spend", money(D.kpis.spend), D.kpis.spendFoot)}
+  ${tile("Verified sales", money(D.kpis.verifiedSales), "net of all discount codes")}
+  ${tile("Verified ROAS", roas(D.kpis.roas), "Shopify-confirmed only")}
+  ${tile("Units sold", D.kpis.units, `+${D.kpis.companionUnits} items in the same carts`)}
+  ${tile("Orders", D.kpis.orders, `avg ${money(D.kpis.avgOrder)} per order`)}
+  ${D.promo ? tile(`${D.promo.code} uses`, D.kpis.promoUses, D.kpis.promoFoot) : ""}
+</div>
+
+<section>
+  <h2>Sales by advertised product</h2>
+  <p class="note">Product revenue at the line level, before order-level discount codes. Hover a bar for detail.</p>
+  <div class="bars">${barRows(D.products.map(p => ({
+      name: p.name, value: p.revenue, zeroNote: p.zeroNote,
+      label: `${money(p.revenue)} <em>${p.units} units</em>`,
+      title: `${p.units} units across ${p.orders} orders`
+    })))}</div>
+</section>
+
+<section>
+  <h2>Spend against verified return, by ad</h2>
+  <p class="note">Meta&rsquo;s own reported purchase value is shown for contrast. It counts every purchase by anyone who saw the ad, store-wide, so it runs far above what the orders actually confirm.</p>
+  <table>
+    <thead><tr><th>Ad</th><th>Spend</th><th>CTR</th><th>Cost / purchase</th><th>Verified sales</th><th>Verified ROAS</th></tr></thead>
+    <tbody>${D.ads.map(adRow).join("")}</tbody>
+    <tfoot><tr><td>Total</td><td>${money(D.adTotals.spend)}</td><td>${pct(D.adTotals.ctr)}</td>
+      <td>${money(D.adTotals.cpp)}</td><td>${money(D.adTotals.sales)}</td><td>${roas(D.adTotals.roas)}</td></tr></tfoot>
+  </table>
+  <p class="note" style="margin:16px 0 14px">Order-level discount codes across those ${D.kpis.orders} orders came to
+    <strong>${money(D.reconcile.discountCodes).replace("$-","&minus;$")}</strong>, bringing verified net revenue to
+    <strong>${money(D.reconcile.net)}</strong> once the ${D.kpis.companionUnits} companion items bought in the same carts
+    (${money(D.reconcile.companionRevenue)}) are included. That is the number in the ROAS tile above.</p>
+
+  <div class="legend">
+    <span class="key"><span class="dot" style="background:var(--s1)"></span> Confirmed in Shopify orders</span>
+    <span class="key"><span class="dot" style="background:var(--s2)"></span> Reported by Meta</span>
+  </div>
+  <div class="bars">
+    ${(() => {
+      const max = Math.max(D.reconcile.net, D.metaReported.value);
+      return `<div class="row"><div class="name">Confirmed in Shopify orders</div><div class="track">
+        <div class="bar" style="width:${(D.reconcile.net/max*100).toFixed(1)}%"></div>
+        <span class="val">${money(D.reconcile.net)}</span></div></div>
+      <div class="row"><div class="name">Reported by Meta</div><div class="track">
+        <div class="bar alt" style="width:${(D.metaReported.value/max*100).toFixed(1)}%"></div>
+        <span class="val">${money(D.metaReported.value)} <em>${D.metaReported.purchases} purchases</em></span></div></div>`;
+    })()}
+  </div>
+</section>
+
+${D.promo ? `
+<section>
+  <h2>${$(D.promo.code)} discount code</h2>
+  <p class="note">${$(D.promo.terms)}</p>
+  <div class="tiles">${D.promo.kpis.map(k => tile(k.lbl, k.v, k.foot)).join("")}</div>
+  <table>
+    <thead><tr><th>Order</th><th>Placed (ET)</th><th>Product</th><th>List</th><th>Discount</th><th>Collected</th><th>Last touch</th></tr></thead>
+    <tbody>${D.promo.orders.map(o => `<tr><td>${$(o.id)}</td><td>${$(o.placed)}</td>
+      <td style="text-align:left">${$(o.product)}</td><td>${money(o.list)}</td>
+      <td>&minus;${money(o.discount)}</td><td>${money(o.collected)}</td>
+      <td style="text-align:left">${$(o.source)}</td></tr>`).join("")}</tbody>
+    <tfoot><tr><td>${D.promo.orders.length} orders</td><td></td><td></td>
+      <td>${money(D.promo.orders.reduce((s,o)=>s+o.list,0))}</td>
+      <td>&minus;${money(D.promo.orders.reduce((s,o)=>s+o.discount,0))}</td>
+      <td>${money(D.promo.orders.reduce((s,o)=>s+o.collected,0))}</td><td></td></tr></tfoot>
+  </table>
+  <p class="note" style="margin-top:16px">${$(D.promo.note)}</p>
+</section>` : ""}
+
+<section>
+  <h2>What needs attention</h2>
+  <ul class="flags">${D.flags.map(f =>
+    `<li class="${$(f.level)}"><div class="ttl">${$(f.title)}</div><div class="bd">${f.body}</div></li>`).join("")}</ul>
+</section>
+
+<section>
+  <h2>How these numbers were built</h2>
+  <p class="note" style="margin-bottom:0">Every figure traces to a source. Sales come from all ${D.totalOrdersScanned}
+    Shopify orders placed in the reporting period, with refunded and voided orders removed. An order counts here only if
+    it contains one of the eight advertised products; items bought in the same cart are counted too, since the ad brought
+    in the sale. Ad-referred purchases of products that are not being advertised are deliberately left out. Ad figures come
+    from Meta ad account 53325345 over the same dates. Meta&rsquo;s reported purchase value is shown for contrast only and
+    is not used in any ROAS calculation on this page.</p>
+  <p class="src">Store-wide context: ${D.storeWide.orders} paid orders totalling ${money(D.storeWide.value)} in the same
+    period. ${D.storeWide.socialOrders} of them show Facebook or Instagram somewhere in the customer journey, worth
+    ${money(D.storeWide.socialValue)}.</p>
+</section>`;
+</script>
+</body>
+</html>
