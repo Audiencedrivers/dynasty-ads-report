@@ -96,14 +96,14 @@ const DATA = {
   periodDays: 21,
 
   kpis: {
-    spend:          1226.06,
+    spend:          1246.58,
     spendFoot:      "4 campaigns, all delivering",
-    verifiedSales:  5228.14,
-    roas:           4.3,
-    units:          134,
-    companionUnits: 8,
-    orders:         85,
-    avgOrder:       61.51,
+    verifiedSales:  5469.13,
+    roas:           4.4,
+    units:          136,
+    companionUnits: 10,
+    orders:         86,
+    avgOrder:       63.59,
     promoUses:      2,
     promoFoot:      "ran Aug 4 through Aug 11"
   },
@@ -111,7 +111,7 @@ const DATA = {
   // Line-level product revenue, before order-level discount codes.
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
-    { name: "Flyers Autographed Mystery Puck",          units: 116, revenue: 2900.00, orders: 68 },
+    { name: "Flyers Autographed Mystery Puck",          units: 118, revenue: 2950.00, orders: 69 },
     { name: "Brandon Marsh signed LE 16×20",            units: 3,  revenue: 749.97,  orders: 3  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 4,  revenue: 419.97,  orders: 4  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 4,  revenue: 409.96,  orders: 4  },
@@ -126,21 +126,21 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (two ads, one product).
   ads: [
-    { name: "Flyers mystery puck",                      status:"live",   spend:490.92, ctr:3.89,  cpp:4.91, sales:2900.00, roas:5.9  },
+    { name: "Flyers mystery puck",                      status:"live",   spend:496.21, ctr:3.87,  cpp:4.96, sales:2950.00, roas:5.9  },
     { name: "Brandon Marsh LE 16×20",                   status:"paused", spend:146.35, ctr:14.60, cpp:4.30, sales:749.97,  roas:3.1, spans:2 },
-    { name: "Brandon Marsh LE 16×20, 25% off",          status:"live",   spend:96.72,  ctr:5.99,  cpp:6.05, groupWith:true },
+    { name: "Brandon Marsh LE 16×20, 25% off",          status:"live",   spend:99.00,  ctr:6.03,  cpp:6.19, groupWith:true },
     { name: "Phanatic Big Logo hoodie",                 status:"live",   spend:28.87,  ctr:6.33,  cpp:2.62, sales:299.95,  roas:10.4 },
     { name: "Marsh \"Ring the Bell\" jersey",          status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         status:"issue",  spend:22.37,  ctr:6.04,  cpp:3.20, sales:419.97,  roas:18.8, tagText:"Off, flagged" },
     { name: "Quinyon Mitchell jersey",                  status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null },
-    { name: "Barkley Presale",                          status:"live",   spend:189.91, ctr:6.28,  cpp:null, sales:0,       roas:null },
-    { name: "Phillies Triple Event",                    status:"live",   spend:199.59, ctr:4.76,  cpp:null, sales:0,       roas:null },
+    { name: "Barkley Presale",                          status:"live",   spend:195.68, ctr:6.26,  cpp:null, sales:0,       roas:null },
+    { name: "Phillies Triple Event",                    status:"live",   spend:206.77, ctr:4.79,  cpp:null, sales:0,       roas:null },
     { name: "Saquon Reverse Hurdle 8×10",               status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:409.96,  roas:70.6 },
     { name: "Maxey & Edgecombe 8×10",                   status:"live",   spend:4.84,   ctr:6.27,  cpp:2.42, sales:159.98,  roas:33.1 }
   ],
-  adTotals: { spend:1226.06, ctr:6.0, cpp:4.51, sales:4939.83, roas:4.3 },
+  adTotals: { spend:1246.58, ctr:6.0, cpp:4.54, sales:4989.83, roas:4.4 },
 
-  reconcile: { discountCodes: -243.64, companionRevenue: 531.95, net: 5228.14 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 731.93, net: 5469.13 },
   metaReported: { value: 21220.44, purchases: 202 },
 
   // Delete this whole key when no promo code is running.
@@ -167,19 +167,19 @@ const DATA = {
     { level:"med", title:"MARSH25 closed with out-of-stock inventory on all three products",
       body:"The code expired Aug 11 9:10am ET. All three products it covered ended the run at or below zero inventory: the 8×10 at 0 units, the 11×14 at -1, and the 16×20 at -2. The code drew 2 redemptions and $82.10 in supporting ad spend. Both Marsh 16×20 framed orders that came in during the promo period fulfilled before stock ran out, but inventory needs to be restocked before another promo makes sense on these items." },
     { level:"med", title:"Barkley Presale and Phillies Triple Event spending with no verified sales yet",
-      body:"Both campaigns launched Aug 4 and are now delivering: Barkley Presale has spent <strong>$189.91</strong> across 3 ads and Phillies Triple Event has spent <strong>$199.59</strong> with no verified Shopify sales yet. The Saquon Reverse Hurdle sold 4 units for $409.96 on only $5.81 of spend through Philly Group, which is the clearest signal of demand this account has." },
+      body:"Both campaigns launched Aug 4 and are now delivering: Barkley Presale has spent <strong>$195.68</strong> across 3 ads and Phillies Triple Event has spent <strong>$206.77</strong> with no verified Shopify sales yet. The Saquon Reverse Hurdle sold 4 units for $409.96 on only $5.81 of spend through Philly Group, which is the clearest signal of demand this account has." },
     { level:"med", title:"Jalen Hurts 16×20 ad is flagged by Meta",
       body:"The ad shows <code>effective_status: WITH_ISSUES</code> in the ad account and is not delivering. Before it was flagged, it generated <strong>$419.97</strong> in verified Shopify sales on $22.37 of spend (18.8x ROAS). Resolving the issue and reactivating this ad should be a near-term priority." },
     { level:"med", title:"The best creative in the account is switched off",
-      body:"The original Brandon Marsh LE 16×20 ad ran a <strong>14.60% CTR</strong>, roughly double everything else in the account, then got paused. Its replacement, the 25% off version, ran at 5.99% on $96.72 of spend through the end of the MARSH25 promo period." },
+      body:"The original Brandon Marsh LE 16×20 ad ran a <strong>14.60% CTR</strong>, roughly double everything else in the account, then got paused. Its replacement, the 25% off version, ran at 6.03% on $99.00 of spend through the end of the MARSH25 promo period." },
     { level:"med", title:"Saquon Reverse Hurdle is paused after $5.81",
       body:"It sold 4 units for $409.96 on almost no spend. The ad never got enough budget to prove itself either way. Barkley Presale is now active and can pick up where it left off." },
     { level:"med", title:"Two ads are pointing at products with no stock",
       body:"The Marsh \"Ring the Bell\" framed jersey and the Quinyon Mitchell items show zero inventory, and neither sold a unit against $40.68 of combined spend. The unframed Ring the Bell jersey has stock and could be swapped in." }
   ],
 
-  storeWide: { orders: 913, value: 85765.20, socialOrders: 138, socialValue: 13543.74 },
-  totalOrdersScanned: 912
+  storeWide: { orders: 915, value: 86044.58, socialOrders: 138, socialValue: 13543.74 },
+  totalOrdersScanned: 915
 };
 /* ==================== END OF EDITABLE BLOCK ================================ */
 
