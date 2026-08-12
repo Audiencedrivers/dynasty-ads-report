@@ -293,25 +293,7 @@ ${D.promo ? `
   </table>
   <p class="note" style="margin-top:16px">${$(D.promo.note)}</p>
 </section>` : ""}
-
-<section>
-  <h2>What needs attention</h2>
-  <ul class="flags">${D.flags.map(f =>
-    `<li class="${$(f.level)}"><div class="ttl">${$(f.title)}</div><div class="bd">${f.body}</div></li>`).join("")}</ul>
-</section>
-
-<section>
-  <h2>How these numbers were built</h2>
-  <p class="note" style="margin-bottom:0">Every figure traces to a source. Sales come from all ${D.totalOrdersScanned}
-    Shopify orders placed in the reporting period, with refunded and voided orders removed. An order counts here only if
-    it contains one of the eight advertised products; items bought in the same cart are counted too, since the ad brought
-    in the sale. Ad-referred purchases of products that are not being advertised are deliberately left out. Ad figures come
-    from Meta ad account 53325345 over the same dates. Meta&rsquo;s reported purchase value is shown for contrast only and
-    is not used in any ROAS calculation on this page.</p>
-  <p class="src">Store-wide context: ${D.storeWide.orders} paid orders totalling ${money(D.storeWide.value)} in the same
-    period. ${D.storeWide.socialOrders} of them show Facebook or Instagram somewhere in the customer journey, worth
-    ${money(D.storeWide.socialValue)}.</p>
-</section>`;
+`;
 </script>
 </body>
 </html>
