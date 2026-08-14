@@ -281,12 +281,6 @@ ${D.promo ? `
 </section>` : ""}
 
 <section>
-  <h2>What needs attention</h2>
-  <ul class="flags">${D.flags.map(f =>
-    `<li class="${$(f.level)}"><div class="ttl">${$(f.title)}</div><div class="bd">${f.body}</div></li>`).join("")}</ul>
-</section>
-
-<section>
   <h2>How these numbers were built</h2>
   <p class="note" style="margin-bottom:0">Every figure traces to a source. Sales come from all ${D.totalOrdersScanned}
     Shopify orders placed in the reporting period, with refunded and voided orders removed. An order counts here only if
