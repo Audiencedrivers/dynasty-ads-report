@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         1751.35,
     spendFoot:     "4 campaigns, all delivering",
-    verifiedSales: 10195.07,
-    roas:          5.8,
-    units:         206,
+    verifiedSales: 12374.07,
+    roas:          7.1,
+    units:         215,
     companionUnits: 15,
-    orders:        126,
-    avgOrder:      80.91,
+    orders:        128,
+    avgOrder:      96.67,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -107,8 +107,8 @@ const DATA = {
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
     { name: "Flyers Autographed Mystery Puck",          units: 135, revenue: 3375.00, orders: 80 },
-    { name: "Phillies Triple Event Autograph Tickets",  units: 45,  revenue: 2028.00, orders: 22 },
-    { name: "Saquon Barkley Pre-Sale",                  units: 4,   revenue: 1389.00, orders: 4  },
+    { name: "Saquon Barkley Pre-Sale",                  units: 12,  revenue: 3509.00, orders: 5  },
+    { name: "Phillies Triple Event Autograph Tickets",  units: 46,  revenue: 2087.00, orders: 23 },
     { name: "Brandon Marsh signed LE 16×20",            units: 4,   revenue: 899.96,  orders: 4  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 6,   revenue: 599.96,  orders: 6  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 5,   revenue: 519.95,  orders: 5  },
@@ -124,8 +124,8 @@ const DATA = {
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
     { name: "Flyers mystery puck",              status:"live",   spend:647.94, ctr:3.60, cpp:5.73,  sales:3375.00, roas:5.2 },
-    { name: "Phillies Triple Event",            status:"live",   spend:345.06, ctr:4.44, cpp:17.25, sales:2028.00, roas:5.9 },
-    { name: "Barkley Presale 1",                status:"live",   spend:294.58, ctr:5.42, cpp:21.04, spans:3, sales:1389.00, roas:4.0 },
+    { name: "Phillies Triple Event",            status:"live",   spend:345.06, ctr:4.44, cpp:17.25, sales:2087.00, roas:6.0 },
+    { name: "Barkley Presale 1",                status:"live",   spend:294.58, ctr:5.42, cpp:21.04, spans:3, sales:3509.00, roas:10.1 },
     { name: "Barkley Presale 3",                status:"live",   spend:19.70,  ctr:6.60, cpp:19.70, groupWith:true },
     { name: "Barkley Presale 2",                status:"live",   spend:34.12,  ctr:5.56, cpp:34.12, groupWith:true },
     { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:899.96, roas:2.9 },
@@ -137,9 +137,9 @@ const DATA = {
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:1751.35, ctr:5.44, cpp:5.07, sales:9271.80, roas:5.8 },
+  adTotals: { spend:1751.35, ctr:5.44, cpp:5.07, sales:11450.80, roas:7.1 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 1175.90, net: 10195.07 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 1175.90, net: 12374.07 },
   metaReported: { value: 24647.73, purchases: 232 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
