@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         1923.05,
     spendFoot:     "4 campaigns, all delivering",
-    verifiedSales: 14013.66,
-    roas:          7.3,
-    units:         238,
-    companionUnits: 24,
-    orders:        143,
-    avgOrder:      98.00,
+    verifiedSales: 13009.06,
+    roas:          6.8,
+    units:         223,
+    companionUnits: 18,
+    orders:        134,
+    avgOrder:      97.08,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -107,8 +107,8 @@ const DATA = {
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
     { name: "Flyers Autographed Mystery Puck",          units: 136, revenue: 3400.00, orders: 81 },
-    { name: "Saquon Barkley Pre-Sale",                  units: 14,  revenue: 4109.00, orders: 7  },
-    { name: "Phillies Triple Event Autograph Tickets",  units: 65,  revenue: 2921.65, orders: 34 },
+    { name: "Saquon Barkley Pre-Sale",                  units: 13,  revenue: 3809.00, orders: 6  },
+    { name: "Phillies Triple Event Autograph Tickets",  units: 51,  revenue: 2302.00, orders: 26 },
     { name: "Brandon Marsh signed LE 16×20",            units: 4,   revenue: 899.96,  orders: 4  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 6,   revenue: 599.96,  orders: 6  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 6,   revenue: 599.94,  orders: 6  },
@@ -124,8 +124,8 @@ const DATA = {
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
     { name: "Flyers mystery puck",              status:"live",   spend:693.91, ctr:3.53, cpp:6.09,  sales:3400.00, roas:4.9 },
-    { name: "Phillies Triple Event",            status:"live",   spend:401.33, ctr:4.34, cpp:16.72, sales:2921.65, roas:7.3 },
-    { name: "Barkley Presale 1",                status:"live",   spend:333.31, ctr:5.33, cpp:20.83, spans:3, sales:4109.00, roas:10.3 },
+    { name: "Phillies Triple Event",            status:"live",   spend:401.33, ctr:4.34, cpp:16.72, sales:2302.00, roas:5.7 },
+    { name: "Barkley Presale 1",                status:"live",   spend:333.31, ctr:5.33, cpp:20.83, spans:3, sales:3809.00, roas:9.6 },
     { name: "Barkley Presale 3",                status:"live",   spend:22.57,  ctr:6.42, cpp:22.57, groupWith:true },
     { name: "Barkley Presale 2",                status:"live",   spend:42.81,  ctr:5.40, cpp:21.41, groupWith:true },
     { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:899.96, roas:2.8 },
@@ -137,9 +137,9 @@ const DATA = {
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:1923.05, ctr:5.30, cpp:5.30, sales:12990.44, roas:7.3 },
+  adTotals: { spend:1923.05, ctr:5.30, cpp:5.30, sales:12070.79, roas:6.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 1275.85, net: 14013.66 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 1190.90, net: 13009.06 },
   metaReported: { value: 25224.32, purchases: 240 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
@@ -148,6 +148,8 @@ const DATA = {
       body:"Orders are still arriving with <code>utm_source=utm_source=facebook on every ad</code> and <code>utm_campaign=utm_campaign=the item slug</code>. Per-ad attribution remains impossible until this is rebuilt. <code>utm_term</code>, carrying the ad set ID, is still the only usable signal." },
     { level:"high", title:"Two catch-up lines were undercounted for weeks",
       body:"A pre-sale exclusion rule and a title-matching gap kept most Phillies Triple Event ticket orders and one Saquon Reverse Hurdle sale out of every prior refresh. This run backfilled 11 verified previously-scanned orders for Phillies Triple Event (<strong>$1,148.00</strong>, 25 tickets) and one for Reverse Hurdle (<strong>$109.99</strong>). Barkley Presale is now a qualifying product line for the first time, adding 4 previously-scanned but excluded orders worth <strong>$1,659.00</strong>." },
+    { level:"med", title:"9 orders from the Aug 17/19 batch held out pending verification",
+      body:"Orders #180888, #180889, #180919, #180923, #180925, #180937, #180946, #180947, and #180953 (<strong>$919.65</strong> combined: $619.65 in Phillies Triple Event across 8 orders, $300.00 in Barkley Presale across 1 order) are pulled from this run's totals pending verification. Three of these orders also carried companion items ($84.95, 6 units) that come out too since the orders no longer qualify. Add back once confirmed." },
     { level:"med", title:"6 Phillies Triple Event orders still held out pending verification",
       body:"Orders #180473, #180486, #180528, #180531, #180532, and #180576 (<strong>$688.00</strong>, 12 tickets) remain flagged as unclear and are not counted in this run's totals. #180528 also carried a Big Show Paul Wight ticket and a Certificate of Authenticity in the same cart, so its $214.00 in companion revenue stays out too. Add these back once confirmed." },
     { level:"med", title:"2 Barkley Presale orders held out, not definitive",
