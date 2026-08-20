@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – August 19, 2026",
-  periodDays: 28,
+  periodLabel: "July 23 – August 20, 2026",
+  periodDays: 29,
 
   kpis: {
-    spend:         2000.95,
+    spend:         2053.66,
     spendFoot:     "4 campaigns, all delivering",
-    verifiedSales: 13339.06,
+    verifiedSales: 13728.04,
     roas:          6.7,
-    units:         224,
-    companionUnits: 18,
-    orders:        135,
-    avgOrder:      98.81,
+    units:         233,
+    companionUnits: 21,
+    orders:        140,
+    avgOrder:      98.06,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Flyers Autographed Mystery Puck",          units: 136, revenue: 3400.00, orders: 81 },
     { name: "Saquon Barkley Pre-Sale",                  units: 14,  revenue: 4139.00, orders: 7  },
-    { name: "Phillies Triple Event Autograph Tickets",  units: 51,  revenue: 2302.00, orders: 26 },
+    { name: "Phillies Triple Event Autograph Tickets",  units: 60,  revenue: 2666.00, orders: 31 },
     { name: "Brandon Marsh signed LE 16×20",            units: 4,   revenue: 899.96,  orders: 4  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 6,   revenue: 599.96,  orders: 6  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 6,   revenue: 599.94,  orders: 6  },
@@ -123,24 +123,24 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:715.11, ctr:3.50, cpp:6.22,  sales:3400.00, roas:4.8 },
-    { name: "Phillies Triple Event",            status:"live",   spend:425.00, ctr:4.31, cpp:16.35, sales:2302.00, roas:5.4 },
-    { name: "Barkley Presale 1",                status:"live",   spend:355.06, ctr:5.29, cpp:22.19, spans:3, sales:4139.00, roas:9.8 },
-    { name: "Barkley Presale 3",                status:"live",   spend:22.70,  ctr:6.45, cpp:22.70, groupWith:true },
-    { name: "Barkley Presale 2",                status:"live",   spend:45.44,  ctr:5.52, cpp:22.72, groupWith:true },
-    { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:899.96, roas:2.7 },
-    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:187.78, ctr:5.92,  cpp:9.88, groupWith:true },
-    { name: "Jalen Hurts Cigar & Trophy 16×20", status:"issue",  spend:22.37,  ctr:6.04,  cpp:3.20, sales:599.96,  roas:26.8, tagText:"With issues" },
+    { name: "Flyers mystery puck",              status:"live",   spend:728.04, ctr:3.49, cpp:6.33,  sales:3400.00, roas:4.7 },
+    { name: "Phillies Triple Event",            status:"live",   spend:441.25, ctr:4.30, cpp:15.22, sales:2666.00, roas:6.0 },
+    { name: "Barkley Presale 1",                status:"live",   spend:369.59, ctr:5.26, cpp:19.45, spans:3, sales:4139.00, roas:9.4 },
+    { name: "Barkley Presale 3",                status:"live",   spend:23.30,  ctr:6.44, cpp:23.30, groupWith:true },
+    { name: "Barkley Presale 2",                status:"live",   spend:45.94,  ctr:5.48, cpp:22.97, groupWith:true },
+    { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:899.96, roas:2.6 },
+    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:195.65, ctr:5.98,  cpp:10.30, groupWith:true },
+    { name: "Jalen Hurts Cigar & Trophy 16×20", status:"paused", spend:22.37,  ctr:6.04,  cpp:3.20, sales:599.96,  roas:26.8 },
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:599.94,  roas:103.3 },
-    { name: "Phanatic Big Logo hoodie",         status:"live",   spend:29.59,  ctr:6.27,  cpp:2.69, sales:299.95,  roas:10.2 },
-    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.06,   ctr:6.16,  cpp:2.53, sales:159.98,  roas:31.6 },
+    { name: "Phanatic Big Logo hoodie",         status:"live",   spend:29.61,  ctr:6.25,  cpp:2.69, sales:299.95,  roas:10.1 },
+    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.07,   ctr:6.15,  cpp:2.54, sales:159.98,  roas:31.6 },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:2000.95, ctr:5.25, cpp:5.39, sales:12400.79, roas:6.7 },
+  adTotals: { spend:2053.66, ctr:5.23, cpp:5.46, sales:12764.79, roas:6.7 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 1190.90, net: 13339.06 },
-  metaReported: { value: 25323.66, purchases: 243 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 1215.88, net: 13728.04 },
+  metaReported: { value: 25811.41, purchases: 249 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
@@ -156,8 +156,8 @@ const DATA = {
       body:"Orders #180502 (Inscription Add-On, $150.00) and #180627 (Signed Super Bowl LIX Framed Jersey, $849.00) are pulled from this run's totals pending verification. Add back $999.00 across 2 orders once confirmed." },
     { level:"med", title:"The best creative in the account is still switched off",
       body:"The original Brandon Marsh LE 16×20 ad ran a <strong>14.60% CTR</strong>, roughly double everything else, and remains paused. Its replacement, the 25% off version, is running at 6.00% on $179.33 of spend, and the code itself has now expired." },
-    { level:"med", title:"Jalen Hurts Cigar & Trophy 16×20 is flagged and not delivering",
-      body:"Meta shows it With Issues. It has generated <strong>$599.96</strong> at roughly 26.8x verified ROAS on $22.37 of spend and cannot currently spend more." },
+    { level:"med", title:"Jalen Hurts Cigar & Trophy 16×20 is paused, not just flagged",
+      body:"Meta now shows it Paused rather than With Issues, so whatever tripped the flag appears resolved, but it still isn't delivering. It has generated <strong>$599.96</strong> at roughly 26.8x verified ROAS on $22.37 of spend total and could be turned back on." },
     { level:"med", title:"Saquon Reverse Hurdle is paused despite strong performance",
       body:"It has sold 6 units for $599.94 on just $5.81 of spend, the highest verified ROAS in the account at roughly 103x. It has never gotten enough budget to prove itself." },
     { level:"med", title:"Two ads are advertising products with no stock",
@@ -166,8 +166,8 @@ const DATA = {
       body:"Order #180750 sold a “Saquon Barkley Autographed Snow Bowl Playoff Framed Photo | Pre-Sale Opportunity”, a variant not seen in prior refreshes. It has been counted under Saquon Barkley Pre-Sale using the same “| Pre-Sale Opportunity” title match as the other presale items." }
   ],
 
-  storeWide: { orders: 1169, value: 108220.08, socialOrders: 156, socialValue: 15110.94 },
-  totalOrdersScanned: 1169
+  storeWide: { orders: 1190, value: 109885.95, socialOrders: 160, socialValue: 15441.01 },
+  totalOrdersScanned: 1190
 };
 /* ==================== END OF EDITABLE BLOCK ================================ */
 
