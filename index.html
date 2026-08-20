@@ -91,14 +91,14 @@ const DATA = {
   periodDays: 29,
 
   kpis: {
-    spend:         2086.52,
+    spend:         2116.65,
     spendFoot:     "4 campaigns, all delivering",
-    verifiedSales: 14117.04,
-    roas:          6.8,
-    units:         234,
-    companionUnits: 21,
-    orders:        141,
-    avgOrder:      100.12,
+    verifiedSales: 14256.03,
+    roas:          6.7,
+    units:         239,
+    companionUnits: 22,
+    orders:        145,
+    avgOrder:      98.32,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -106,9 +106,9 @@ const DATA = {
   // Line-level product revenue, before order-level discount codes.
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
-    { name: "Flyers Autographed Mystery Puck",          units: 136, revenue: 3400.00, orders: 81 },
+    { name: "Flyers Autographed Mystery Puck",          units: 139, revenue: 3475.00, orders: 83 },
     { name: "Saquon Barkley Pre-Sale",                  units: 15,  revenue: 4528.00, orders: 8  },
-    { name: "Phillies Triple Event Autograph Tickets",  units: 60,  revenue: 2666.00, orders: 31 },
+    { name: "Phillies Triple Event Autograph Tickets",  units: 62,  revenue: 2717.00, orders: 33 },
     { name: "Brandon Marsh signed LE 16×20",            units: 4,   revenue: 899.96,  orders: 4  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 6,   revenue: 599.96,  orders: 6  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 6,   revenue: 599.94,  orders: 6  },
@@ -123,24 +123,24 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:737.40, ctr:3.47, cpp:6.36,  sales:3400.00, roas:4.6 },
-    { name: "Phillies Triple Event",            status:"live",   spend:450.79, ctr:4.29, cpp:14.54, sales:2666.00, roas:5.9 },
-    { name: "Barkley Presale 1",                status:"live",   spend:376.71, ctr:5.22, cpp:19.83, spans:3, sales:4528.00, roas:10.1 },
-    { name: "Barkley Presale 3",                status:"live",   spend:24.28,  ctr:6.37, cpp:24.28, groupWith:true },
-    { name: "Barkley Presale 2",                status:"live",   spend:46.80,  ctr:5.41, cpp:23.40, groupWith:true },
+    { name: "Flyers mystery puck",              status:"live",   spend:746.43, ctr:3.46, cpp:6.38,  sales:3475.00, roas:4.7 },
+    { name: "Phillies Triple Event",            status:"live",   spend:460.44, ctr:4.28, cpp:14.39, sales:2717.00, roas:5.9 },
+    { name: "Barkley Presale 1",                status:"live",   spend:384.77, ctr:5.18, cpp:20.25, spans:3, sales:4528.00, roas:10.1 },
+    { name: "Barkley Presale 3",                status:"live",   spend:24.37,  ctr:6.39, cpp:24.37, groupWith:true },
+    { name: "Barkley Presale 2",                status:"live",   spend:46.85,  ctr:5.40, cpp:23.43, groupWith:true },
     { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:899.96, roas:2.6 },
-    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:200.65, ctr:5.94,  cpp:9.55, groupWith:true },
+    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:203.81, ctr:5.96,  cpp:9.26, groupWith:true },
     { name: "Jalen Hurts Cigar & Trophy 16×20", status:"paused", spend:22.37,  ctr:6.04,  cpp:3.20, sales:599.96,  roas:26.8 },
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:599.94,  roas:103.3 },
     { name: "Phanatic Big Logo hoodie",         status:"live",   spend:29.61,  ctr:6.25,  cpp:2.69, sales:299.95,  roas:10.1 },
-    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.07,   ctr:6.15,  cpp:2.54, sales:159.98,  roas:31.6 },
+    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.16,   ctr:6.15,  cpp:2.58, sales:159.98,  roas:31.0 },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:2086.52, ctr:5.20, cpp:5.48, sales:13153.79, roas:6.8 },
+  adTotals: { spend:2116.65, ctr:5.17, cpp:5.51, sales:13279.79, roas:6.7 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 1215.88, net: 14117.04 },
-  metaReported: { value: 26716.90, purchases: 254 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 1228.87, net: 14256.03 },
+  metaReported: { value: 26881.25, purchases: 257 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
@@ -168,8 +168,8 @@ const DATA = {
       body:"Order #180750 sold a “Saquon Barkley Autographed Snow Bowl Playoff Framed Photo | Pre-Sale Opportunity”, a variant not seen in prior refreshes. It has been counted under Saquon Barkley Pre-Sale using the same “| Pre-Sale Opportunity” title match as the other presale items." }
   ],
 
-  storeWide: { orders: 1200, value: 110907.93, socialOrders: 161, socialValue: 15467.46 },
-  totalOrdersScanned: 1200
+  storeWide: { orders: 1219, value: 112565.48, socialOrders: 163, socialValue: 15596.11 },
+  totalOrdersScanned: 1219
 };
 /* ==================== END OF EDITABLE BLOCK ================================ */
 
