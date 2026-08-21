@@ -148,8 +148,8 @@ const DATA = {
       body:"Orders are still arriving with <code>utm_source=utm_source=facebook on every ad</code> and <code>utm_campaign=utm_campaign=the item slug</code>. Per-ad attribution remains impossible until this is rebuilt. <code>utm_term</code>, carrying the ad set ID, is still the only usable signal." },
     { level:"high", title:"Two catch-up lines were undercounted for weeks",
       body:"A pre-sale exclusion rule and a title-matching gap kept most Phillies Triple Event ticket orders and one Saquon Reverse Hurdle sale out of every prior refresh. This run backfilled 11 verified previously-scanned orders for Phillies Triple Event (<strong>$1,148.00</strong>, 25 tickets) and one for Reverse Hurdle (<strong>$109.99</strong>). Barkley Presale is now a qualifying product line for the first time, adding 4 previously-scanned but excluded orders worth <strong>$1,659.00</strong>." },
-    { level:"med", title:"3 orders excluded despite containing advertised products",
-      body:"Order #180996 (Jalen Hurts Cigar & Trophy 16×20, $99.99), order #181002 (Derek Hill ticket, $59.00), and order #181048 (Bryan De La Cruz + Derek Hill tickets, $78.00) were flagged by Zay as arriving through non-Meta channels (ChatGPT, and Klaviyo email for the other two) and are excluded even though all contain advertised products. Still a case by case exclusion, not a change to the general counting rule." },
+    { level:"med", title:"2 orders excluded, 1 reclassified as Assisted",
+      body:"Order #180996 (Jalen Hurts Cigar & Trophy 16×20, $99.99, ChatGPT first touch, direct-to-checkout close) and order #181048 (Bryan De La Cruz + Derek Hill tickets, $78.00, Klaviyo email first and last touch) have no Meta ad trace anywhere in their journey and stay fully excluded. Order #181002 (Derek Hill ticket, $59.00) had a genuine Meta ad touch as its first visit, with the broken-UTM pattern and a real ad set ID in utm_term, but Klaviyo email closed the sale. That one is now tracked as Assisted, shown on its own tile in the report, not folded into verified sales or ROAS. This is now the standing channel-attribution rule, not a case by case call." },
     { level:"med", title:"9 orders from the Aug 17/19 batch held out pending verification",
       body:"Orders #180888, #180889, #180919, #180923, #180925, #180937, #180946, #180947, and #180953 (<strong>$919.65</strong> combined: $619.65 in Phillies Triple Event across 8 orders, $300.00 in Barkley Presale across 1 order) are pulled from this run's totals pending verification. Three of these orders also carried companion items ($84.95, 6 units) that come out too since the orders no longer qualify. Add back once confirmed." },
     { level:"med", title:"6 Phillies Triple Event orders still held out pending verification",
@@ -169,7 +169,11 @@ const DATA = {
   ],
 
   storeWide: { orders: 1248, value: 116441.08, socialOrders: 166, socialValue: 15845.96 },
-  totalOrdersScanned: 1248
+  totalOrdersScanned: 1248,
+
+  // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
+  // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
+  assisted: { value: 59.00, orders: 1 }
 };
 /* ==================== END OF EDITABLE BLOCK ================================ */
 
@@ -222,7 +226,9 @@ document.getElementById("app").innerHTML = `
   ${tile("Units sold", D.kpis.units, `+${D.kpis.companionUnits} items in the same carts`)}
   ${tile("Orders", D.kpis.orders, `avg ${money(D.kpis.avgOrder)} per order`)}
   ${D.promo ? tile(`${D.promo.code} uses`, D.kpis.promoUses, D.kpis.promoFoot) : ""}
+  ${D.assisted ? tile("Assisted sales", money(D.assisted.value), `${D.assisted.orders} order${D.assisted.orders === 1 ? "" : "s"}, ad-touched but not included above`) : ""}
 </div>
+${D.assisted ? `<p class="note" style="margin:-6px 0 18px">Assisted sales are purchases where the Meta ad was part of the path but something else, like email or a direct search, closed the sale. Shown for context. Not part of verified sales or ROAS.</p>` : ""}
 
 <section>
   <h2>Sales by advertised product</h2>
