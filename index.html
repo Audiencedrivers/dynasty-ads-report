@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         2279.60,
     spendFoot:     "4 campaigns, all delivering",
-    verifiedSales: 18215.96,
+    verifiedSales: 18295.95,
     roas:          8.0,
-    units:         281,
+    units:         282,
     companionUnits: 31,
-    orders:        167,
-    avgOrder:      109.08,
+    orders:        168,
+    avgOrder:      108.90,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -113,7 +113,7 @@ const DATA = {
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 6,   revenue: 599.96,  orders: 6  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 6,   revenue: 599.94,  orders: 6  },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
-    { name: "Maxey & Edgecombe dual 8×10",              units: 2,   revenue: 159.98,  orders: 2  },
+    { name: "Maxey & Edgecombe dual 8×10",              units: 3,   revenue: 239.97,  orders: 3  },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 0,   revenue: 0, orders: 0,
       zeroNote: "No sales. Ad paused, framed version out of stock." },
     { name: "Quinyon Mitchell autographed jersey",      units: 0,   revenue: 0, orders: 0,
@@ -133,13 +133,13 @@ const DATA = {
     { name: "Jalen Hurts Cigar & Trophy 16×20", status:"paused", spend:22.37,  ctr:6.04,  cpp:3.20, sales:599.96,  roas:26.8 },
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:599.94,  roas:103.3 },
     { name: "Phanatic Big Logo hoodie",         status:"live",   spend:30.04,  ctr:6.31,  cpp:2.73, sales:299.95,  roas:10.0 },
-    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.16,   ctr:6.15,  cpp:2.58, sales:159.98,  roas:31.0 },
+    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.16,   ctr:6.15,  cpp:2.58, sales:239.97,  roas:46.5 },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:0,       roas:null },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:2279.60, ctr:5.05, cpp:5.61, sales:16828.79, roas:8.0 },
+  adTotals: { spend:2279.60, ctr:5.05, cpp:5.61, sales:16908.78, roas:8.0 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 1639.80, net: 18215.96 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 1639.80, net: 18295.95 },
   metaReported: { value: 28426.43, purchases: 274 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
@@ -148,8 +148,8 @@ const DATA = {
       body:"Orders are still arriving with <code>utm_source=utm_source=facebook on every ad</code> and <code>utm_campaign=utm_campaign=the item slug</code>. Per-ad attribution remains impossible until this is rebuilt. <code>utm_term</code>, carrying the ad set ID, is still the only usable signal." },
     { level:"high", title:"Two catch-up lines were undercounted for weeks",
       body:"A pre-sale exclusion rule and a title-matching gap kept most Phillies Triple Event ticket orders and one Saquon Reverse Hurdle sale out of every prior refresh. This run backfilled 11 verified previously-scanned orders for Phillies Triple Event (<strong>$1,148.00</strong>, 25 tickets) and one for Reverse Hurdle (<strong>$109.99</strong>). Barkley Presale is now a qualifying product line for the first time, adding 4 previously-scanned but excluded orders worth <strong>$1,659.00</strong>." },
-    { level:"med", title:"4 orders flagged Needs Review, held out of all totals",
-      body:"Orders #181078 (Saquon Reverse Hurdle 8×10, $109.99), #181080 (Maxey & Edgecombe 8×10, $79.99), #181086 (Derek Hill ticket, $39.00, plus $9.99 companion), and #181088 (Derek Hill + Bryan De La Cruz tickets, $78.00, plus $79.98 companion) came back with no session/journey data at all, not direct, not any channel, just null. This could mean an in-store sale at one of the mall locations (which would make them Verified under the standing rule), or it could just be missing tracking data. Not enough to call it either way, so these are held out and flagged for Zay's judgment rather than guessed at. Combined would-be revenue: $306.98 plus $89.97 companion." },
+    { level:"", title:"4 Needs Review orders resolved by Zay",
+      body:"#181078 (Saquon Reverse Hurdle, $109.99): Amazon sale, excluded permanently, not a channel Dynasty counts. #181080 (Maxey & Edgecombe, $79.99): confirmed and added to verified totals. #181086 (Derek Hill ticket, $39.00, +$9.99 companion) and #181088 (Derek Hill + Bryan De La Cruz tickets, $78.00, +$79.98 companion): Zay was unsure, default is no, both stay excluded. Combined still-excluded total: $226.99 plus $89.97 companion." },
     { level:"", title:"1 order excluded: Facebook last touch with no ad trace",
       body:"Order #181098 (Bryan De La Cruz + Derek Hill tickets, $118.00) shows Facebook.com as both first and last touch, but carries no UTM parameters or ad set ID of any kind, so there is no way to confirm it came from the paid ad rather than organic Facebook browsing. Per the standing rule, unverifiable Facebook.com traffic is excluded, not counted as Verified via Facebook." },
     { level:"med", title:"9 orders from the Aug 17/19 batch held out pending verification",
