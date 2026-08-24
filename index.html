@@ -91,14 +91,14 @@ const DATA = {
   periodDays: 34,
 
   kpis: {
-    spend:         2445.71,
+    spend:         2466.84,
     spendFoot:     "4 campaigns, 3 delivering",
-    verifiedSales: 22655.74,
-    roas:          9.3,
-    units:         325,
+    verifiedSales: 23715.74,
+    roas:          9.6,
+    units:         329,
     companionUnits: 52,
-    orders:        196,
-    avgOrder:      115.59,
+    orders:        197,
+    avgOrder:      120.38,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -106,7 +106,7 @@ const DATA = {
   // Line-level product revenue, before order-level discount codes.
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
-    { name: "Saquon Barkley Pre-Sale",                  units: 27,  revenue: 8416.00, orders: 19 },
+    { name: "Saquon Barkley Pre-Sale",                  units: 31,  revenue: 9476.00, orders: 20 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
     { name: "Flyers Autographed Mystery Puck",          units: 153, revenue: 3825.00, orders: 89 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
@@ -122,24 +122,24 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:858.84, ctr:3.36, cpp:6.82,  sales:3825.00, roas:4.5 },
+    { name: "Flyers mystery puck",              status:"live",   spend:865.83, ctr:3.36, cpp:6.76,  sales:3825.00, roas:4.4 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
-    { name: "Barkley Presale 1",                status:"live",   spend:479.23, ctr:4.93, cpp:14.98, spans:3, sales:8416.00, roas:14.8 },
-    { name: "Barkley Presale 3",                status:"live",   spend:31.26,  ctr:5.95, cpp:31.26, groupWith:true },
-    { name: "Barkley Presale 2",                status:"live",   spend:58.49,  ctr:5.10, cpp:19.50, groupWith:true },
+    { name: "Barkley Presale 1",                status:"live",   spend:489.09, ctr:4.92, cpp:15.28, spans:3, sales:9476.00, roas:16.4 },
+    { name: "Barkley Presale 3",                status:"live",   spend:31.43,  ctr:6.00, cpp:31.43, groupWith:true },
+    { name: "Barkley Presale 2",                status:"live",   spend:58.58,  ctr:5.10, cpp:19.53, groupWith:true },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:379.99, roas:15.0 },
     { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:1149.95, roas:2.9 },
-    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:249.89, ctr:5.76,  cpp:8.33, groupWith:true },
+    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:253.82, ctr:5.74,  cpp:8.46, groupWith:true },
     { name: "Jalen Hurts Cigar & Trophy 16×20", status:"paused", spend:22.37,  ctr:6.04,  cpp:3.20, sales:699.95,  roas:31.3 },
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:599.94,  roas:103.3 },
-    { name: "Phanatic Big Logo hoodie",         status:"live",   spend:31.64,  ctr:6.43,  cpp:2.88, sales:299.95,  roas:9.5 },
+    { name: "Phanatic Big Logo hoodie",         status:"live",   spend:31.73,  ctr:6.43,  cpp:2.88, sales:299.95,  roas:9.5 },
     { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.26,   ctr:6.10,  cpp:2.63, sales:239.97,  roas:45.6 },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:2445.71, ctr:4.98, cpp:5.85, sales:20769.75, roas:9.3 },
+  adTotals: { spend:2466.84, ctr:4.97, cpp:5.82, sales:21829.75, roas:9.6 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 22655.74 },
-  metaReported: { value: 31608.83, purchases: 299 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 23715.74 },
+  metaReported: { value: 31782.77, purchases: 301 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
@@ -179,8 +179,8 @@ const DATA = {
       body:"Order #180750 sold a “Saquon Barkley Autographed Snow Bowl Playoff Framed Photo | Pre-Sale Opportunity”, a variant not seen in prior refreshes. It has been counted under Saquon Barkley Pre-Sale using the same “| Pre-Sale Opportunity” title match as the other presale items." }
   ],
 
-  storeWide: { orders: 1489, value: 143472.13, socialOrders: 173, socialValue: 17061.26 },
-  totalOrdersScanned: 1489,
+  storeWide: { orders: 1508, value: 146228.50, socialOrders: 175, socialValue: 17329.26 },
+  totalOrdersScanned: 1508,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
