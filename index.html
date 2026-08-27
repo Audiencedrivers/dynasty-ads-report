@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – August 25, 2026",
-  periodDays: 34,
+  periodLabel: "July 23 – August 27, 2026",
+  periodDays: 36,
 
   kpis: {
-    spend:         2557.44,
+    spend:         2615.71,
     spendFoot:     "4 campaigns, 2 delivering",
-    verifiedSales: 23815.74,
-    roas:          9.3,
-    units:         333,
+    verifiedSales: 24115.73,
+    roas:          9.2,
+    units:         336,
     companionUnits: 52,
-    orders:        199,
-    avgOrder:      119.68,
+    orders:        202,
+    avgOrder:      119.38,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,9 +108,9 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 31,  revenue: 9476.00, orders: 20 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 155, revenue: 3925.00, orders: 91 },
+    { name: "Flyers Autographed Mystery Puck",          units: 157, revenue: 3975.00, orders: 93 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
-    { name: "Brandon Marsh signed LE 16×20",            units: 5,   revenue: 1149.95, orders: 5  },
+    { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 7,   revenue: 699.95,  orders: 7  },
     { name: "Saquon Reverse Hurdle 8×10",               units: 6,   revenue: 599.94,  orders: 6  },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
@@ -122,24 +122,24 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:911.05, ctr:3.31, cpp:6.85,  sales:3925.00, roas:4.3 },
+    { name: "Flyers mystery puck",              status:"live",   spend:948.45, ctr:3.29, cpp:6.92,  sales:3975.00, roas:4.2 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9476.00, roas:15.8 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
     { name: "Barkley Presale 2",                status:"paused", spend:59.09,  ctr:5.12, cpp:19.70, groupWith:true },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:379.99, roas:15.0 },
-    { name: "Brandon Marsh LE 16×20",           status:"paused", spend:146.35, ctr:14.60, cpp:4.30, spans:2, sales:1149.95, roas:2.7 },
-    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:274.33, ctr:5.72,  cpp:8.31, groupWith:true },
+    { name: "Brandon Marsh LE 16×20",           status:"live",   spend:146.36, ctr:14.60, cpp:4.30, spans:2, sales:1399.94, roas:3.2 },
+    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:292.36, ctr:5.61,  cpp:8.35, groupWith:true },
     { name: "Jalen Hurts Cigar & Trophy 16×20", status:"paused", spend:22.37,  ctr:6.04,  cpp:3.20, sales:699.95,  roas:31.3 },
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:599.94,  roas:103.3 },
-    { name: "Phanatic Big Logo hoodie",         status:"live",   spend:34.04,  ctr:6.48,  cpp:2.62, sales:299.95,  roas:8.8 },
-    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.35,   ctr:6.11,  cpp:2.68, sales:239.97,  roas:44.9 },
+    { name: "Phanatic Big Logo hoodie",         status:"live",   spend:36.81,  ctr:6.65,  cpp:2.83, sales:299.95,  roas:8.1 },
+    { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.41,   ctr:6.05,  cpp:2.71, sales:239.97,  roas:44.4 },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null }
   ],
-  adTotals: { spend:2557.44, ctr:4.93, cpp:5.86, sales:21929.75, roas:9.3 },
+  adTotals: { spend:2615.71, ctr:4.89, cpp:5.94, sales:22229.74, roas:9.2 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 23815.74 },
-  metaReported: { value: 34330.90, purchases: 319 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 24115.73 },
+  metaReported: { value: 35170.19, purchases: 325 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
@@ -153,8 +153,10 @@ const DATA = {
       body:"The campaign itself, not just an ad inside it, shows CAMPAIGN_PAUSED as of this refresh. It was delivering fine last run. It has generated <strong>$5,159.00</strong> at roughly 10.0x verified ROAS on $515.89 of spend and is now not delivering at all. Worth flagging to Zay immediately, not just noting for the log." },
     { level:"high", title:"Barkley Presale campaign is now paused too",
       body:"All three Barkley Presale ads now show CAMPAIGN_PAUSED, the top revenue product in the account. It has generated <strong>$9,476.00</strong> at roughly 15.8x verified ROAS on $601.57 of combined spend across the three ads and is now not delivering at all. Two of the account's four campaigns are paused simultaneously." },
-    { level:"", title:"A new, unadvertised presale product has started selling: DeVonta Smith",
-      body:"Three orders on Aug 25 (#181315, #181321, #181334) sold DeVonta Smith autographed items using the same “| Pre-Sale Opportunity” naming pattern as the Barkley line, totaling $758.00 across 4 units. No Meta ad exists for DeVonta Smith in the account, so per the counting rule these sales are not advertised-product revenue and are excluded from this report. Worth flagging in case Zay wants to launch ads for it, since the Barkley Presale line shows this same naming pattern can perform well." },
+    { level:"med", title:"DeVonta Smith (unadvertised) is now up to $2,262.00 across 9 orders",
+      body:"What started as 3 orders on Aug 25 has grown to 9 orders totaling $2,262.00 across 10 units, all using the same “| Pre-Sale Opportunity” naming pattern as the Barkley line. Still no Meta ad exists for DeVonta Smith, so none of this counts toward verified sales or ROAS. At this pace it is outselling several of the account’s actual advertised products. Worth a direct conversation with Zay about whether to launch ads for it." },
+    { level:"", title:"Brandon Marsh LE 16×20 ad is active again",
+      body:"The original ad (id 52518108236762) had been sitting Paused for weeks despite being the best creative in the account at 14.60% CTR. It now shows ACTIVE. Sales on this product jumped from $1,149.95 to $1,399.94 this run." },
     { level:"", title:"In-store point-of-sale confirmed as a real revenue source",
       body:"A large batch of orders this run had no web session data at all. Rather than flag all of them Needs Review, checking Shopify's order channel field directly resolved it: 16 were genuine Point of Sale (in-store, mall location) sales, all Verified per the standing rule, and confirmed the same field had correctly identified #181078 as Amazon last time. Going forward, checking channel/sourceName directly on null-journey orders is faster and more reliable than guessing from journey data alone." },
     { level:"", title:"2 more orders excluded, no ad trace",
@@ -183,8 +185,8 @@ const DATA = {
       body:"Order #180750 sold a “Saquon Barkley Autographed Snow Bowl Playoff Framed Photo | Pre-Sale Opportunity”, a variant not seen in prior refreshes. It has been counted under Saquon Barkley Pre-Sale using the same “| Pre-Sale Opportunity” title match as the other presale items." }
   ],
 
-  storeWide: { orders: 1562, value: 151977.33, socialOrders: 180, socialValue: 18134.47 },
-  totalOrdersScanned: 1562,
+  storeWide: { orders: 1609, value: 157119.71, socialOrders: 186, socialValue: 18852.92 },
+  totalOrdersScanned: 1609,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
