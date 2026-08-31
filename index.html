@@ -91,14 +91,14 @@ const DATA = {
   periodDays: 39,
 
   kpis: {
-    spend:         2927.70,
+    spend:         2980.17,
     spendFoot:     "6 campaigns, 4 delivering",
-    verifiedSales: 25265.69,
-    roas:          8.6,
-    units:         370,
+    verifiedSales: 25365.68,
+    roas:          8.5,
+    units:         371,
     companionUnits: 52,
-    orders:        220,
-    avgOrder:      114.84,
+    orders:        221,
+    avgOrder:      114.78,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -115,7 +115,7 @@ const DATA = {
     { name: "Saquon Reverse Hurdle 8×10",               units: 6,   revenue: 599.94,  orders: 6  },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
     { name: "Maxey & Edgecombe dual 8×10",              units: 3,   revenue: 239.97,  orders: 3  },
-    { name: "Merrill Reese Autographed & Framed Print", units: 2,   revenue: 199.98,  orders: 2  },
+    { name: "Merrill Reese Autographed & Framed Print", units: 3,   revenue: 299.97,  orders: 3  },
     { name: "Quinyon Mitchell autographed jersey",      units: 0,   revenue: 0, orders: 0,
       zeroNote: "No sales. Ad paused." }
   ],
@@ -130,31 +130,33 @@ const DATA = {
     { name: "Barkley Presale 2",                status:"paused", spend:59.09,  ctr:5.12, cpp:19.70, groupWith:true },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:379.99, roas:15.0 },
     { name: "Brandon Marsh LE 16×20",           status:"live",   spend:146.83, ctr:14.59, cpp:4.32, spans:2, sales:1399.94, roas:2.9 },
-    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:333.20, ctr:5.87,  cpp:7.75, groupWith:true },
+    { name: "Brandon Marsh LE 16×20, 25% off",  status:"live",   spend:337.27, ctr:5.87,  cpp:7.84, groupWith:true },
     { name: "Jalen Hurts Cigar & Trophy 16×20", status:"paused", spend:22.37,  ctr:6.04,  cpp:3.20, sales:899.93,  roas:40.2 },
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:599.94,  roas:103.3 },
     { name: "Phanatic Big Logo hoodie",         status:"live",   spend:38.80,  ctr:6.69,  cpp:2.59, sales:299.95,  roas:7.7 },
     { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.41,   ctr:6.04,  cpp:2.71, sales:239.97,  roas:44.4 },
-    { name: "Merrill Reese Autographed & Framed Print", status:"live", spend:40.31, ctr:9.53, cpp:40.31, sales:199.98, roas:5.0 },
+    { name: "Merrill Reese Autographed & Framed Print", status:"live", spend:70.66, ctr:8.87, cpp:23.55, sales:299.97, roas:4.2 },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null },
-    { name: "Flyers Puck video (Which Flyer 9x16)", status:"live", spend:57.74, ctr:2.62, cpp:7.22, sales:null, roas:null },
-    { name: "Flyers Puck video (Real Pulls 9x16)",  status:"live", spend:26.53, ctr:2.74, cpp:8.84, sales:null, roas:null },
-    { name: "Flyers Puck video (Mystery Puck 4x5)", status:"live", spend:23.96, ctr:2.03, cpp:5.99, sales:null, roas:null },
-    { name: "Flyers Puck video (Real Pulls 4x5)",   status:"live", spend:7.49,  ctr:2.45, cpp:null, sales:null, roas:null },
-    { name: "Build Your Own Sports Frame Kit (new ad)", status:"live", spend:32.38, ctr:7.40, cpp:32.38, sales:null, roas:null, tagText:"New ad, longstanding product" },
-    { name: "Bryson Stott Autographed & Framed Print (new)", status:"live", spend:26.85, ctr:7.39, cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
-    { name: "LCB Line Flyers jersey (new)",         status:"live", spend:7.69,  ctr:7.16,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
-    { name: "LeBron James 76ers 8×10 (new)",        status:"live", spend:5.67,  ctr:10.05, cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
-    { name: "Jaromir Jagr jersey (new)",            status:"live", spend:2.97,  ctr:2.38,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
-    { name: "Jaromir Jagr framed print (new)",      status:"live", spend:2.57,  ctr:3.81,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" }
+    { name: "Flyers Puck video (Which Flyer 9x16)", status:"live", spend:63.53, ctr:2.55, cpp:7.94, sales:null, roas:null },
+    { name: "Flyers Puck video (Real Pulls 9x16)",  status:"live", spend:26.67, ctr:2.72, cpp:8.89, sales:null, roas:null },
+    { name: "Flyers Puck video (Mystery Puck 4x5)", status:"live", spend:25.17, ctr:2.02, cpp:6.29, sales:null, roas:null },
+    { name: "Flyers Puck video (Real Pulls 4x5)",   status:"live", spend:7.79,  ctr:2.34, cpp:null, sales:null, roas:null },
+    { name: "Build Your Own Sports Frame Kit (new ad)", status:"live", spend:35.34, ctr:7.17, cpp:11.78, sales:null, roas:null, tagText:"3 Meta-reported purchases, unmatched" },
+    { name: "Bryson Stott Autographed & Framed Print (new)", status:"live", spend:27.43, ctr:7.40, cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
+    { name: "LCB Line Flyers jersey (new)",         status:"live", spend:10.32, ctr:6.71,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
+    { name: "LeBron James 76ers 8×10 (new)",        status:"live", spend:8.91,  ctr:8.30,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
+    { name: "Jaromir Jagr framed print (new)",      status:"live", spend:3.64,  ctr:4.41,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
+    { name: "Jaromir Jagr jersey (new)",            status:"live", spend:3.10,  ctr:2.25,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" }
   ],
-  adTotals: { spend:2927.70, ctr:4.86, cpp:5.92, sales:23379.70, roas:8.6 },
+  adTotals: { spend:2980.17, ctr:4.86, cpp:5.92, sales:23479.69, roas:8.5 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 25265.69 },
-  metaReported: { value: 39096.27, purchases: 359 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 25365.68 },
+  metaReported: { value: 39385.94, purchases: 363 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"Build Your Own Frame Kit ad now reports 3 purchases, still unmatched to specific orders",
+      body:"Meta reports $225.13 across 3 purchases on this ad, up from 1 purchase last run. This ad likely covers a whole collection of team-specific frame kit variants (Giants, Cubs, Rays, and others seen in recent orders), not just the generically-titled product, which makes matching a specific order to this ad harder than a single-SKU ad. No specific order has been confirmed with both a matching value and a real ad-touch journey. Not counted until one is found; worth a closer look at the collection this ad actually points to." },
     { level:"", title:"#181903 reclassified from Excluded to Verified per Zay",
       body:"Flyers mystery puck x5, $125.00. Facebook.com first and last touch with no UTM/ad trace, which the standing rule would normally exclude. Zay directed this to count. Added to verified totals; noted as an exception to the no-trace-Facebook rule rather than a change to the rule itself." },
     { level:"high", title:"Second campaign has grown to 7 ad variants, first sales confirmed",
@@ -207,8 +209,8 @@ const DATA = {
       body:"Order #180750 sold a “Saquon Barkley Autographed Snow Bowl Playoff Framed Photo | Pre-Sale Opportunity”, a variant not seen in prior refreshes. It has been counted under Saquon Barkley Pre-Sale using the same “| Pre-Sale Opportunity” title match as the other presale items." }
   ],
 
-  storeWide: { orders: 2109, value: 192203.82, socialOrders: 203, socialValue: 20619.19 },
-  totalOrdersScanned: 2109,
+  storeWide: { orders: 2122, value: 193083.17, socialOrders: 204, socialValue: 20746.33 },
+  totalOrdersScanned: 2122,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
