@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         2927.70,
     spendFoot:     "6 campaigns, 4 delivering",
-    verifiedSales: 25140.69,
+    verifiedSales: 25265.69,
     roas:          8.6,
-    units:         365,
+    units:         370,
     companionUnits: 52,
-    orders:        219,
-    avgOrder:      114.80,
+    orders:        220,
+    avgOrder:      114.84,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 31,  revenue: 9476.00, orders: 20 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 182, revenue: 4600.00, orders: 106 },
+    { name: "Flyers Autographed Mystery Puck",          units: 187, revenue: 4725.00, orders: 107 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 9,   revenue: 899.93,  orders: 9  },
@@ -123,7 +123,7 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:4600.00, roas:4.7 },
+    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:4725.00, roas:4.8 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9476.00, roas:15.8 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
@@ -148,13 +148,15 @@ const DATA = {
     { name: "Jaromir Jagr jersey (new)",            status:"live", spend:2.97,  ctr:2.38,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
     { name: "Jaromir Jagr framed print (new)",      status:"live", spend:2.57,  ctr:3.81,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" }
   ],
-  adTotals: { spend:2927.70, ctr:4.86, cpp:5.92, sales:23254.70, roas:8.6 },
+  adTotals: { spend:2927.70, ctr:4.86, cpp:5.92, sales:23379.70, roas:8.6 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 25140.69 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2138.62, net: 25265.69 },
   metaReported: { value: 39096.27, purchases: 359 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"#181903 reclassified from Excluded to Verified per Zay",
+      body:"Flyers mystery puck x5, $125.00. Facebook.com first and last touch with no UTM/ad trace, which the standing rule would normally exclude. Zay directed this to count. Added to verified totals; noted as an exception to the no-trace-Facebook rule rather than a change to the rule itself." },
     { level:"high", title:"Second campaign has grown to 7 ad variants, first sales confirmed",
       body:"The campaign (52528832659162) launched with 3 ads and now runs 7: Merrill Reese ($40.31 spend, 2 confirmed sales, $199.98), Build Your Own Sports Frame Kit ($32.38, a longstanding product that just started getting ad support, not new itself), Bryson Stott framed print, LCB Line Flyers jersey, LeBron James 76ers photo, and 2 Jaromir Jagr items, none of these last 5 with sales yet. Merrill Reese now has real confirmed revenue and has been added to the tracked product list. Worth confirming this expansion with Zay, since it keeps growing without prior notice." },
     { level:"", title:"Facebook Shop channel confirmed as a direct Meta signal",
