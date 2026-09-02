@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         3188.61,
     spendFoot:     "6 campaigns, 3 delivering",
-    verifiedSales: 27276.59,
-    roas:          8.6,
-    units:         389,
+    verifiedSales: 26727.59,
+    roas:          8.4,
+    units:         388,
     companionUnits: 53,
-    orders:        233,
-    avgOrder:      117.07,
+    orders:        232,
+    avgOrder:      115.21,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -106,7 +106,7 @@ const DATA = {
   // Line-level product revenue, before order-level discount codes.
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
-    { name: "Saquon Barkley Pre-Sale",                  units: 33,  revenue: 10325.00, orders: 22 },
+    { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
     { name: "Flyers Autographed Mystery Puck",          units: 189, revenue: 4900.00, orders: 109 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
@@ -126,7 +126,7 @@ const DATA = {
   ads: [
     { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:4900.00, roas:5.0 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
-    { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:10325.00, roas:17.2 },
+    { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
     { name: "Barkley Presale 2",                status:"paused", spend:59.09,  ctr:5.12, cpp:19.70, groupWith:true },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:379.99, roas:15.0 },
@@ -149,13 +149,15 @@ const DATA = {
     { name: "Jaromir Jagr framed print (new)",      status:"paused", spend:5.69,  ctr:4.26,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" },
     { name: "Jaromir Jagr jersey (new)",            status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"New, no sales yet" }
   ],
-  adTotals: { spend:3188.61, ctr:4.83, cpp:6.34, sales:25351.60, roas:8.6 },
+  adTotals: { spend:3188.61, ctr:4.83, cpp:6.34, sales:24802.60, roas:8.4 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2177.62, net: 27276.59 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2177.62, net: 26727.59 },
   metaReported: { value: 42740.19, purchases: 391 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"#182003 excluded per Zay's direction",
+      body:"Saquon Barkley Autographed Super Bowl LIX Champions Full Size Helmet | Pre-Sale Opportunity, $549.00. Had verified cleanly under the standing rule (direct first and last touch), but Zay directed it excluded. No reason given yet; worth checking whether this points to a broader exception (e.g. a specific SKU, price point, or order pattern) or is a one-off." },
     { level:"high", title:"Marsh 25% Off campaign is now paused",
       body:"The campaign behind the second Brandon Marsh LE 16×20 ad (the higher-spend of the two) shows CAMPAIGN_PAUSED. The original best-CTR Marsh ad in Philly Group is still active. This is the fourth campaign to pause recently, alongside Barkley Presale, Phillies Triple Event, and the Flyers Puck video creatives, and the second new campaign now has most of its ads paused too." },
     { level:"", title:"First real Build Your Own Frame Kit sale confirmed, but not ad-driven",
