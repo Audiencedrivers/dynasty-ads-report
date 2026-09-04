@@ -91,14 +91,14 @@ const DATA = {
   periodDays: 44,
 
   kpis: {
-    spend:         3349.73,
-    spendFoot:     "9 campaigns, 7 delivering",
-    verifiedSales: 28331.52,
-    roas:          8.5,
-    units:         402,
+    spend:         3405.87,
+    spendFoot:     "9 campaigns, 8 delivering",
+    verifiedSales: 28531.50,
+    roas:          8.4,
+    units:         404,
     companionUnits: 58,
-    orders:        239,
-    avgOrder:      118.54,
+    orders:        241,
+    avgOrder:      118.39,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -118,7 +118,7 @@ const DATA = {
     { name: "Build Your Own Custom Frame Kit",           units: 3,   revenue: 284.97,  orders: 2  },
     { name: "LeBron James 76ers 8×10",                   units: 1,   revenue: 79.99,   orders: 1  },
     { name: "Bryson Stott Autographed & Framed Print",   units: 1,   revenue: 199.00,  orders: 1  },
-    { name: "Merrill Reese Autographed & Framed Print", units: 11,  revenue: 1079.89, orders: 11 },
+    { name: "Merrill Reese Autographed & Framed Print", units: 13,  revenue: 1279.87, orders: 13 },
     { name: "Quinyon Mitchell autographed jersey",      units: 0,   revenue: 0, orders: 0,
       zeroNote: "No sales. Ad paused." }
   ],
@@ -138,34 +138,36 @@ const DATA = {
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:751.93,  roas:129.4 },
     { name: "Phanatic Big Logo hoodie",         status:"live",   spend:38.80,  ctr:6.69,  cpp:2.43, sales:299.95,  roas:7.7 },
     { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.41,   ctr:6.04,  cpp:2.71, sales:239.97,  roas:44.4 },
-    { name: "Merrill Reese Autographed & Framed Print", status:"live", spend:269.86, ctr:6.85, cpp:10.38, sales:1079.89, roas:4.0 },
+    { name: "Merrill Reese Autographed & Framed Print", status:"live", spend:284.53, ctr:6.91, cpp:10.16, sales:1279.87, roas:4.5 },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null },
     { name: "LeBron James 76ers 8×10 (retired campaign)",  status:"paused", spend:12.04, ctr:8.00,  cpp:null, sales:79.99, roas:6.6, tagText:"Killed in restructure" },
-    { name: "LeBron James 76ers 8×10", status:"live", spend:15.29,  ctr:5.96,  cpp:15.29, sales:null, roas:null, tagText:"Own dedicated campaign, 1 unmatched purchase" },
+    { name: "LeBron James 76ers 8×10", status:"live", spend:20.27,  ctr:5.73,  cpp:10.14, sales:null, roas:null, tagText:"2 Meta-reported purchases, unmatched" },
     { name: "Flyers Puck video (Which Flyer 9x16)", status:"paused", spend:80.53, ctr:2.64, cpp:6.71, sales:null, roas:null },
     { name: "Flyers Puck video (Mystery Puck 4x5)", status:"paused", spend:40.77, ctr:2.29, cpp:6.80, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 9x16)",  status:"paused", spend:26.87, ctr:2.70, cpp:8.96, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 4x5)",   status:"paused", spend:10.83, ctr:1.89, cpp:10.83, sales:null, roas:null },
     { name: "Build Your Own Frame Kit (retired campaign)", status:"paused", spend:48.09, ctr:6.43, cpp:8.02, sales:284.97, roas:5.9, tagText:"Killed in restructure, sales were organic" },
-    { name: "Build Your Own Frame Kit", status:"live", spend:26.15, ctr:2.79, cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" },
+    { name: "Build Your Own Frame Kit", status:"live", spend:40.41, ctr:2.59, cpp:13.47, sales:null, roas:null, tagText:"3 Meta-reported purchases, unmatched" },
     { name: "Bryson Stott Autographed & Framed Print (retired campaign)", status:"paused", spend:29.06, ctr:7.17, cpp:29.06, sales:199.00, roas:6.8, tagText:"Killed in restructure, 1 sale" },
-    { name: "Bryson Stott Autographed & Framed Print", status:"live", spend:12.24, ctr:6.15, cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" },
+    { name: "Bryson Stott Autographed & Framed Print", status:"live", spend:16.86, ctr:5.61, cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" },
     { name: "LCB Line Flyers jersey (retired campaign)",    status:"paused", spend:15.82, ctr:7.68,  cpp:7.91, sales:null, roas:null, tagText:"Killed in restructure, 2 unmatched purchases" },
-    { name: "LCB Line Flyers jersey",  status:"live", spend:19.93, ctr:5.73,  cpp:19.93, sales:null, roas:null, tagText:"Own dedicated campaign, 1 unmatched purchase" },
+    { name: "LCB Line Flyers jersey",  status:"live", spend:28.12, ctr:5.37,  cpp:7.03, sales:null, roas:null, tagText:"4 Meta-reported purchases, unmatched" },
     { name: "Jaromir Jagr framed print (retired campaign)", status:"paused", spend:5.69,  ctr:4.26,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
-    { name: "Jaromir Jagr framed print", status:"live", spend:19.26, ctr:3.43,  cpp:19.26, sales:null, roas:null, tagText:"Own dedicated campaign, 1 unmatched purchase" },
+    { name: "Jaromir Jagr framed print", status:"live", spend:28.46, ctr:3.19,  cpp:14.23, sales:null, roas:null, tagText:"2 Meta-reported purchases, unmatched" },
     { name: "Jaromir Jagr jersey (retired campaign)",       status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
-    { name: "Jaromir Jagr jersey",     status:"live", spend:2.78,  ctr:1.31,  cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" }
+    { name: "Jaromir Jagr jersey",     status:"live", spend:3.00,  ctr:1.45,  cpp:3.00, sales:null, roas:null, tagText:"1 Meta-reported purchase, unmatched" }
   ],
-  adTotals: { spend:3349.73, ctr:4.83, cpp:6.61, sales:25650.56, roas:8.5 },
+  adTotals: { spend:3405.87, ctr:4.83, cpp:6.62, sales:25850.54, roas:8.4 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 28331.52 },
-  metaReported: { value: 44484.52, purchases: 402 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 28531.50 },
+  metaReported: { value: 46142.28, purchases: 413 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"med", title:"3 unmatched Meta-reported purchases remain (LeBron, LCB jersey, Jaromir Jagr print)",
-      body:"Each product's new dedicated campaign now reports at least 1 purchase, but none has been matched to a specific Shopify order: LeBron James new campaign ($91.94/1), LCB Line jersey ($178.08/1, plus 2 more unmatched on the retired campaign, $402.65), Jaromir Jagr print ($268.69/1). Checked directly for matching order titles, none found yet. This is now the standing pattern for the newly-separated product campaigns, worth a broader look at why these specific products keep showing unmatched purchases." },
+    { level:"high", title:"Possible product rename: “Brandon Marsh Field of Dreams” vs the advertised “Limited Edition” 16×20",
+      body:"Orders #182074 and #182077 (each $249.00, $498.00 combined) sell “Brandon Marsh Phillies Field of Dreams 16×20 Framed Photograph,” a different title than the advertised “Limited Edition” product. No literal “Limited Edition” Marsh sale has appeared in several recent refreshes, raising the possibility this product was renamed or relisted and past sales have been missed under the old title requirement. Both orders held out as Needs Review rather than guessed either way. Needs a direct answer from Zay: same product renamed, or genuinely different item?" },
+    { level:"med", title:"4 unmatched Meta-reported purchase threads continue to grow",
+      body:"LeBron's new campaign is now at 2 unmatched purchases ($355.88). LCB jersey's new campaign is at 4 ($527.58), plus 2 more on the retired campaign ($402.65). Jaromir Jagr print is at 2 ($431.69). Jaromir Jagr jersey's new campaign shows its first purchase ($80.00). Build Your Own Frame Kit's new campaign is now at 3 ($538.20). None of these have been matched to specific Shopify orders despite direct title searches each run." },
     { level:"", title:"Campaign restructure confirmed by Zay: each product now has its own dedicated campaign",
       body:"The account had a temporary suspension, and Zay used the downtime to kill the old bundled second campaign and split every product into its own standalone campaign, so Merrill Reese's spend no longer crowds out the others. This is now the permanent structure going forward. Old, killed ad rows are kept in the report labeled “retired campaign” for historical spend and sales, but they are done. Every product listed separately below is spending on its own budget from here on." },
     { level:"med", title:"New unmatched Meta-reported purchase: Jaromir Jagr framed print",
@@ -242,8 +244,8 @@ const DATA = {
       body:"Order #180750 sold a “Saquon Barkley Autographed Snow Bowl Playoff Framed Photo | Pre-Sale Opportunity”, a variant not seen in prior refreshes. It has been counted under Saquon Barkley Pre-Sale using the same “| Pre-Sale Opportunity” title match as the other presale items." }
   ],
 
-  storeWide: { orders: 2253, value: 208798.54, socialOrders: 224, socialValue: 23671.08 },
-  totalOrdersScanned: 2253,
+  storeWide: { orders: 2277, value: 211620.37, socialOrders: 232, socialValue: 25175.42 },
+  totalOrdersScanned: 2277,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
