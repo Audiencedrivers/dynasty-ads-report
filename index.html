@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         3311.37,
     spendFoot:     "8 campaigns, 6 delivering",
-    verifiedSales: 27933.53,
-    roas:          8.4,
-    units:         399,
+    verifiedSales: 28132.53,
+    roas:          8.5,
+    units:         400,
     companionUnits: 58,
-    orders:        236,
-    avgOrder:      118.36,
+    orders:        237,
+    avgOrder:      118.70,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -117,6 +117,7 @@ const DATA = {
     { name: "Maxey & Edgecombe dual 8×10",              units: 3,   revenue: 239.97,  orders: 3  },
     { name: "Build Your Own Custom Frame Kit",           units: 2,   revenue: 157.98,  orders: 1  },
     { name: "LeBron James 76ers 8×10",                   units: 1,   revenue: 79.99,   orders: 1  },
+    { name: "Bryson Stott Autographed & Framed Print",   units: 1,   revenue: 199.00,  orders: 1  },
     { name: "Merrill Reese Autographed & Framed Print", units: 11,  revenue: 1079.89, orders: 11 },
     { name: "Quinyon Mitchell autographed jersey",      units: 0,   revenue: 0, orders: 0,
       zeroNote: "No sales. Ad paused." }
@@ -147,7 +148,7 @@ const DATA = {
     { name: "Flyers Puck video (Real Pulls 4x5)",   status:"paused", spend:10.83, ctr:1.89, cpp:10.83, sales:null, roas:null },
     { name: "Build Your Own Frame Kit (retired campaign)", status:"paused", spend:48.09, ctr:6.43, cpp:8.02, sales:157.98, roas:3.3, tagText:"Killed in restructure, sale was organic not ad-driven" },
     { name: "Build Your Own Frame Kit", status:"live", spend:19.19, ctr:2.92, cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" },
-    { name: "Bryson Stott Autographed & Framed Print (retired campaign)", status:"paused", spend:29.06, ctr:7.17, cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
+    { name: "Bryson Stott Autographed & Framed Print (retired campaign)", status:"paused", spend:29.06, ctr:7.17, cpp:29.06, sales:199.00, roas:6.8, tagText:"Killed in restructure, 1 sale" },
     { name: "Bryson Stott Autographed & Framed Print", status:"live", spend:9.21, ctr:6.19, cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" },
     { name: "LCB Line Flyers jersey (retired campaign)",    status:"paused", spend:15.82, ctr:7.68,  cpp:7.91, sales:null, roas:null, tagText:"Killed in restructure, 2 unmatched purchases" },
     { name: "LCB Line Flyers jersey",  status:"live", spend:12.48, ctr:5.10,  cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" },
@@ -156,13 +157,15 @@ const DATA = {
     { name: "Jaromir Jagr jersey (retired campaign)",       status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
     { name: "Jaromir Jagr jersey",     status:"live", spend:2.61,  ctr:1.40,  cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" }
   ],
-  adTotals: { spend:3311.37, ctr:4.83, cpp:6.60, sales:25252.57, roas:8.4 },
+  adTotals: { spend:3311.37, ctr:4.83, cpp:6.60, sales:25451.57, roas:8.5 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 27933.53 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 28132.53 },
   metaReported: { value: 44083.34, purchases: 400 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"Second missed order found: Bryson Stott, caught by a full manual sweep",
+      body:"Order #182042 (Bryson Stott On-Base Celebration 16×20 Framed Baseball Photo, $199.00) was in the same batch as the earlier missed puck order and was also skipped on first pass. Found only after Zay flagged that another sale was missed and a full line-by-line sweep of the entire batch was run against every current advertised product name. Facebook ad trace (broken-tag pattern), Verified. This is the first confirmed sale on the Bryson Stott ad. Given two misses came from the same batch, this batch is being treated as fully re-verified now, not just patched." },
     { level:"med", title:"Correction: missed order caught by Zay",
       body:"Order #182049 (Flyers mystery puck x8, $200.00) was in the last scan batch but did not make it into the qualifying list. Facebook ad first touch with a real ad set ID, direct last touch, Verified via Facebook. Added to totals. Worth double-checking large-quantity orders specifically in future scans, since this one had 8 units in a single line item and was easy to skim past." },
     { level:"", title:"Campaign restructure confirmed by Zay: each product now has its own dedicated campaign",
