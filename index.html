@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         3405.87,
     spendFoot:     "9 campaigns, 8 delivering",
-    verifiedSales: 28531.50,
+    verifiedSales: 28581.50,
     roas:          8.4,
-    units:         404,
+    units:         406,
     companionUnits: 58,
-    orders:        241,
-    avgOrder:      118.39,
+    orders:        242,
+    avgOrder:      118.11,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 199, revenue: 5100.00, orders: 110 },
+    { name: "Flyers Autographed Mystery Puck",          units: 201, revenue: 5150.00, orders: 111 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 9,   revenue: 899.93,  orders: 9  },
@@ -126,7 +126,7 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5100.00, roas:5.2 },
+    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5150.00, roas:5.2 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
@@ -157,15 +157,17 @@ const DATA = {
     { name: "Jaromir Jagr jersey (retired campaign)",       status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
     { name: "Jaromir Jagr jersey",     status:"live", spend:3.00,  ctr:1.45,  cpp:3.00, sales:null, roas:null, tagText:"1 Meta-reported purchase, unmatched" }
   ],
-  adTotals: { spend:3405.87, ctr:4.83, cpp:6.62, sales:25850.54, roas:8.4 },
+  adTotals: { spend:3405.87, ctr:4.83, cpp:6.62, sales:25900.54, roas:8.4 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 28531.50 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 28581.50 },
   metaReported: { value: 46142.28, purchases: 413 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"high", title:"Possible product rename: “Brandon Marsh Field of Dreams” vs the advertised “Limited Edition” 16×20",
-      body:"Orders #182074 and #182077 (each $249.00, $498.00 combined) sell “Brandon Marsh Phillies Field of Dreams 16×20 Framed Photograph,” a different title than the advertised “Limited Edition” product. No literal “Limited Edition” Marsh sale has appeared in several recent refreshes, raising the possibility this product was renamed or relisted and past sales have been missed under the old title requirement. Both orders held out as Needs Review rather than guessed either way. Needs a direct answer from Zay: same product renamed, or genuinely different item?" },
+    { level:"", title:"Brandon Marsh “Field of Dreams” confirmed as a different, non-advertised product",
+      body:"Zay confirmed directly: “Field of Dreams” does not count. #182074 and #182077 ($498.00 combined) are permanently excluded, not held for review. This is a different item from the advertised “Limited Edition” 16×20." },
+    { level:"", title:"Ground-truth verification method added: ShopifyQL product totals cross-check",
+      body:"After two consecutive refreshes each missed a real sale on manual line-by-line review, a ShopifyQL query (SHOW product_title, quantity_ordered, gross_sales grouped by product) was run for the recent period and checked against every advertised product's counted total. This caught a real gap immediately: 11 total Flyers puck units sold since Sep 2 per Shopify's own aggregate, against only 8 counted at the time. The gap resolved cleanly, 1 unit correctly held for review on the Shop app channel and 2 units in a genuinely new order placed after the last scan boundary, so nothing was actually missed this time, but the method itself is now the standing verification step for every refresh, not just a one-off check." },
     { level:"med", title:"4 unmatched Meta-reported purchase threads continue to grow",
       body:"LeBron's new campaign is now at 2 unmatched purchases ($355.88). LCB jersey's new campaign is at 4 ($527.58), plus 2 more on the retired campaign ($402.65). Jaromir Jagr print is at 2 ($431.69). Jaromir Jagr jersey's new campaign shows its first purchase ($80.00). Build Your Own Frame Kit's new campaign is now at 3 ($538.20). None of these have been matched to specific Shopify orders despite direct title searches each run." },
     { level:"", title:"Campaign restructure confirmed by Zay: each product now has its own dedicated campaign",
