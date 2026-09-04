@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         3311.37,
     spendFoot:     "8 campaigns, 6 delivering",
-    verifiedSales: 27733.53,
+    verifiedSales: 27933.53,
     roas:          8.4,
-    units:         391,
+    units:         399,
     companionUnits: 58,
-    orders:        235,
-    avgOrder:      118.02,
+    orders:        236,
+    avgOrder:      118.36,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 189, revenue: 4900.00, orders: 109 },
+    { name: "Flyers Autographed Mystery Puck",          units: 199, revenue: 5100.00, orders: 110 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 9,   revenue: 899.93,  orders: 9  },
@@ -125,7 +125,7 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:4900.00, roas:5.0 },
+    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5100.00, roas:5.2 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
@@ -156,13 +156,15 @@ const DATA = {
     { name: "Jaromir Jagr jersey (retired campaign)",       status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
     { name: "Jaromir Jagr jersey",     status:"live", spend:2.61,  ctr:1.40,  cpp:null, sales:null, roas:null, tagText:"Own dedicated campaign" }
   ],
-  adTotals: { spend:3311.37, ctr:4.83, cpp:6.60, sales:25052.57, roas:8.4 },
+  adTotals: { spend:3311.37, ctr:4.83, cpp:6.60, sales:25252.57, roas:8.4 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 27733.53 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 27933.53 },
   metaReported: { value: 44083.34, purchases: 400 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"Correction: missed order caught by Zay",
+      body:"Order #182049 (Flyers mystery puck x8, $200.00) was in the last scan batch but did not make it into the qualifying list. Facebook ad first touch with a real ad set ID, direct last touch, Verified via Facebook. Added to totals. Worth double-checking large-quantity orders specifically in future scans, since this one had 8 units in a single line item and was easy to skim past." },
     { level:"", title:"Campaign restructure confirmed by Zay: each product now has its own dedicated campaign",
       body:"The account had a temporary suspension, and Zay used the downtime to kill the old bundled second campaign and split every product into its own standalone campaign, so Merrill Reese's spend no longer crowds out the others. This is now the permanent structure going forward. Old, killed ad rows are kept in the report labeled “retired campaign” for historical spend and sales, but they are done. Every product listed separately below is spending on its own budget from here on." },
     { level:"med", title:"New unmatched Meta-reported purchase: Jaromir Jagr framed print",
