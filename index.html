@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         3484.17,
     spendFoot:     "9 campaigns, 8 delivering",
-    verifiedSales: 28581.50,
-    roas:          8.2,
-    units:         406,
-    companionUnits: 58,
-    orders:        242,
-    avgOrder:      118.11,
+    verifiedSales: 28770.49,
+    roas:          8.3,
+    units:         412,
+    companionUnits: 60,
+    orders:        248,
+    avgOrder:      116.01,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 201, revenue: 5150.00, orders: 111 },
+    { name: "Flyers Autographed Mystery Puck",          units: 207, revenue: 5300.00, orders: 117 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 9,   revenue: 899.93,  orders: 9  },
@@ -126,7 +126,7 @@ const DATA = {
   // status: "live" | "paused" | "issue".  Use null for any metric with no data.
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
-    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5150.00, roas:5.2 },
+    { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5300.00, roas:5.4 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
@@ -157,15 +157,15 @@ const DATA = {
     { name: "Jaromir Jagr jersey (retired campaign)",       status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
     { name: "Jaromir Jagr jersey",     status:"live", spend:4.36,  ctr:2.00,  cpp:4.36, sales:null, roas:null, tagText:"1 Meta-reported purchase, unmatched" }
   ],
-  adTotals: { spend:3484.17, ctr:4.79, cpp:6.72, sales:25900.54, roas:8.2 },
+  adTotals: { spend:3484.17, ctr:4.79, cpp:6.72, sales:26050.54, roas:8.3 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 2933.59, net: 28581.50 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 2972.58, net: 28770.49 },
   metaReported: { value: 48289.33, purchases: 422 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"high", title:"New product needs a direct answer: “Mystery Photograph Drop” vs the advertised “Mystery Puck Drop”",
-      body:"6 orders ($150.00 combined) sold “Philadelphia Flyers Autographed Mystery Photograph Drop” on Sep 5, all $25.00 each, matching the puck's usual unit price exactly. The original “Mystery Puck Drop” product name still sells independently in the same window (order #182080, already counted), which suggests this is a genuinely new, separate product rather than a rename. Held out rather than assumed either way, same as the Marsh situation. Needs a direct answer: new product, or another naming variant of the same thing?" },
+    { level:"", title:"“Mystery Photograph Drop” confirmed as the same Flyers puck product",
+      body:"Zay confirmed this is the puck product, showing up under a different name due to a tracking/naming lag from the ads that were running. All 6 orders ($150.00, plus $38.99 companion) are counted as Flyers puck sales, ad-attributed. Folded into the main Flyers puck line rather than tracked separately." },
     { level:"", title:"Brandon Marsh “Field of Dreams” confirmed as a different, non-advertised product",
       body:"Zay confirmed directly: “Field of Dreams” does not count. #182074 and #182077 ($498.00 combined) are permanently excluded, not held for review. This is a different item from the advertised “Limited Edition” 16×20." },
     { level:"", title:"Ground-truth verification method added: ShopifyQL product totals cross-check",
