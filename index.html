@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – September 13, 2026",
-  periodDays: 53,
+  periodLabel: "July 23 – September 15, 2026",
+  periodDays: 55,
 
   kpis: {
-    spend:         4641.21,
+    spend:         4845.67,
     spendFoot:     "13 campaigns, 10 delivering",
-    verifiedSales: 32301.33,
-    roas:          7.0,
-    units:         478,
+    verifiedSales: 32809.33,
+    roas:          6.8,
+    units:         496,
     companionUnits: 65,
-    orders:        297,
-    avgOrder:      108.76,
+    orders:        308,
+    avgOrder:      106.52,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -117,9 +117,9 @@ const DATA = {
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Build Your Own Custom Frame Kit",           units: 4,   revenue: 345.96,  orders: 3  },
     { name: "LeBron James 76ers 8×10",                   units: 3,   revenue: 239.97,  orders: 3  },
-    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 13,  revenue: 897.00,  orders: 8  },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 23,  revenue: 575.00,  orders: 20 },
-    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 25,  revenue: 625.00,  orders: 17 },
+    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 15,  revenue: 1005.00, orders: 10 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 31,  revenue: 775.00,  orders: 25 },
+    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 33,  revenue: 825.00,  orders: 21 },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
     { name: "Bryson Stott Autographed & Framed Print",   units: 1,   revenue: 199.00,  orders: 1  },
     { name: "Merrill Reese Autographed & Framed Print", units: 19,  revenue: 1889.81, orders: 18 },
@@ -131,6 +131,7 @@ const DATA = {
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
     { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5150.00, roas:5.2 },
+    { name: "Merrill Reese Autographed & Framed Print", status:"paused", spend:637.98, ctr:5.73, cpp:16.79, sales:1889.81, roas:3.0 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
@@ -142,38 +143,42 @@ const DATA = {
     { name: "Saquon Reverse Hurdle 8×10",       status:"paused", spend:5.81,   ctr:8.92,  cpp:null, sales:831.92,  roas:143.2 },
     { name: "Phanatic Big Logo hoodie",         status:"live",   spend:38.80,  ctr:6.69,  cpp:2.43, sales:299.95,  roas:7.7 },
     { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.41,   ctr:6.04,  cpp:2.71, sales:319.96,  roas:59.1 },
-    { name: "Merrill Reese Autographed & Framed Print", status:"live", spend:593.55, ctr:5.88, cpp:16.49, sales:1889.81, roas:3.2 },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null },
     { name: "LeBron James 76ers 8×10 (retired campaign)",  status:"paused", spend:12.04, ctr:8.00,  cpp:null, sales:79.99, roas:6.6, tagText:"Killed in restructure" },
-    { name: "LeBron James 76ers 8×10", status:"paused", spend:98.99,  ctr:4.69,  cpp:14.14, sales:159.98, roas:1.6, tagText:"Now paused, 7 Meta-reported purchases, 2 confirmed orders" },
+    { name: "LeBron James 76ers 8×10", status:"paused", spend:98.99,  ctr:4.69,  cpp:14.14, sales:79.99, roas:0.8, tagText:"Now paused, 7 Meta-reported purchases, 2 confirmed orders" },
     { name: "Flyers Puck video (Which Flyer 9x16)", status:"paused", spend:80.53, ctr:2.64, cpp:6.71, sales:null, roas:null },
     { name: "Flyers Puck video (Mystery Puck 4x5)", status:"paused", spend:40.77, ctr:2.29, cpp:5.82, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 9x16)",  status:"paused", spend:26.87, ctr:2.70, cpp:8.96, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 4x5)",   status:"paused", spend:10.83, ctr:1.89, cpp:10.83, sales:null, roas:null },
-    { name: "Build Your Own Frame Kit (retired campaign)", status:"paused", spend:48.09, ctr:6.43, cpp:6.87, sales:null, roas:null, tagText:"Killed in restructure, confirmed sales were organic, not ad-driven" },
-    { name: "Build Your Own Frame Kit", status:"live", spend:245.99, ctr:1.43, cpp:11.71, sales:60.99, roas:0.2, tagText:"Now paused, 21 Meta-reported purchases, 1 confirmed order" },
+    { name: "Build Your Own Frame Kit (retired campaign)", status:"paused", spend:48.09, ctr:6.43, cpp:6.87, sales:null, roas:null, tagText:"Killed in restructure, confirmed sales were organic" },
+    { name: "Build Your Own Frame Kit", status:"paused", spend:245.99, ctr:1.43, cpp:11.71, sales:60.99, roas:0.2, tagText:"Now paused, 21 Meta-reported purchases, 1 confirmed order" },
     { name: "Bryson Stott Autographed & Framed Print (retired campaign)", status:"paused", spend:29.06, ctr:7.17, cpp:29.06, sales:199.00, roas:6.8, tagText:"Killed in restructure, 1 sale" },
     { name: "Bryson Stott Autographed & Framed Print", status:"paused", spend:80.27, ctr:6.95, cpp:10.03, sales:null, roas:null, tagText:"Now paused, 8 Meta-reported purchases, unmatched" },
-    { name: "LCB Line Flyers jersey (retired campaign)",    status:"paused", spend:15.82, ctr:7.68,  cpp:5.27, sales:null, roas:null, tagText:"3 Meta-reported purchases, unmatched" },
+    { name: "LCB Line Flyers jersey (retired campaign)",    status:"paused", spend:15.82, ctr:7.68,  cpp:5.27, sales:null, roas:null, tagText:"Killed in restructure, 3 unmatched purchases" },
     { name: "LCB Line Flyers jersey",  status:"paused", spend:117.54, ctr:3.97,  cpp:8.40, sales:null, roas:null, tagText:"Now paused, 14 Meta-reported purchases, unmatched" },
     { name: "Jaromir Jagr framed print (retired campaign)", status:"paused", spend:5.69,  ctr:4.26,  cpp:5.69, sales:null, roas:null, tagText:"Killed in restructure, 1 unmatched purchase ($66.95)" },
     { name: "Jaromir Jagr framed print", status:"paused", spend:125.41, ctr:1.92,  cpp:6.97, sales:null, roas:null, tagText:"Now paused, 18 Meta-reported purchases, unmatched" },
     { name: "Jaromir Jagr jersey (retired campaign)",       status:"paused", spend:3.17,  ctr:2.46,  cpp:null, sales:null, roas:null, tagText:"Killed in restructure, no sales" },
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:75.66, ctr:5.33, cpp:4.45, sales:625.00, roas:8.3, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:78.26, ctr:5.89, cpp:3.73, sales:575.00, roas:7.3, tagText:"New campaign, launched 9/9" },
-    { name: "Merrill Reese Pro Style Jersey (new)", status:"live", spend:117.54, ctr:3.31, cpp:16.79, sales:169.99, roas:1.4, tagText:"New campaign, 1 confirmed order" },
-    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:80.61, ctr:4.26, cpp:6.72, sales:414.00, roas:5.1, tagText:"New campaign, launched 9/9" },
-    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:29.11, ctr:5.08, cpp:7.28, sales:207.00, roas:7.1, tagText:"New campaign, launched 9/9" },
-    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:5.07, ctr:9.35, cpp:2.54, sales:267.00, roas:52.7, tagText:"New campaign, 3 confirmed orders" }
+    { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.54, ctr:3.26, cpp:15.85, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
+    { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
+    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:107.59, ctr:5.04, cpp:4.68, sales:825.00, roas:7.7, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:114.40, ctr:5.57, cpp:4.58, sales:775.00, roas:6.8, tagText:"New campaign, launched 9/9" },
+    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:124.40, ctr:3.61, cpp:7.78, sales:414.00, roas:3.3, tagText:"New campaign, launched 9/9" },
+    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:34.30, ctr:4.81, cpp:6.86, sales:246.00, roas:7.2, tagText:"New campaign, launched 9/9" },
+    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:6.76, ctr:7.64, cpp:3.38, sales:267.00, roas:39.5, tagText:"New campaign, 3 confirmed orders" }
   ],
-  adTotals: { spend:4641.21, ctr:4.55, cpp:7.32, sales:29258.41, roas:7.0 },
+  adTotals: { spend:4845.67, ctr:4.55, cpp:7.32, sales:29766.41, roas:6.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3295.55, net: 32301.33 },
-  metaReported: { value: 60675.22, purchases: 548 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3295.55, net: 32809.33 },
+  metaReported: { value: 62184.03, purchases: 568 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"3 more orders held as Needs Review, growing Shop app and other channel patterns",
+      body:"#182492 (LeBron James 76ers 8x10, $79.99, Shop app), #182524 (Boston Bruins Puck x2, $50.00, Shop app), #182531 (Flyers Mystery Photograph Drop x3, $75.00, Shop app). Combined with prior held orders, the Shop app pattern total is now $840.98 across 9 orders. Worth a decision from Zay on whether this channel should count." },
+    { level:"", title:"New non-Meta referral channels: linktr.ee recurring, plus a rising unattributed Facebook pattern",
+      body:"#182497 ($108.00, Cam York + Konecny tickets) came through linktr.ee with no UTM data, consistent with the earlier-flagged pattern (likely an Instagram bio link). #182512 ($138.00, Konecny x2) and #182484/#182528 (Boston Bruins Puck, $75.00 and $50.00) all show Facebook.com or l.facebook.com referrers with zero UTM trace, held Excluded per the standing rule. Combined $371.00 excluded this run from this pattern alone." },
     { level:"", title:"6th Needs Review order, same Shop app pattern",
       body:"#182471 (Flyers Mystery Photograph Drop, $25.00) shows the same “3890849” Shop app sourceName as prior Needs Review orders. Held out, bringing the combined total to $635.99 across 6 orders."},
     { level:"", title:"Build Your Own Frame Kit campaign now paused too",
@@ -202,8 +207,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 2677, value: 245324.42, socialOrders: 297, socialValue: 31298.61 },
-  totalOrdersScanned: 2677,
+  storeWide: { orders: 2739, value: 250210.49, socialOrders: 307, socialValue: 32079.97 },
+  totalOrdersScanned: 2739,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
