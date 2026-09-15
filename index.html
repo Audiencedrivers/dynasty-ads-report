@@ -145,7 +145,7 @@ const DATA = {
     { name: "Maxey & Edgecombe 8×10",           status:"live",   spend:5.41,   ctr:6.04,  cpp:2.71, sales:319.96,  roas:59.1 },
     { name: "Quinyon Mitchell jersey",          status:"paused", spend:15.28,  ctr:10.41, cpp:3.82, sales:0,       roas:null },
     { name: "LeBron James 76ers 8×10 (retired campaign)",  status:"paused", spend:12.04, ctr:8.00,  cpp:null, sales:79.99, roas:6.6, tagText:"Killed in restructure" },
-    { name: "LeBron James 76ers 8×10", status:"paused", spend:98.99,  ctr:4.69,  cpp:14.14, sales:79.99, roas:0.8, tagText:"Now paused, 7 Meta-reported purchases, 2 confirmed orders" },
+    { name: "LeBron James 76ers 8×10", status:"paused", spend:98.99,  ctr:4.69,  cpp:14.14, sales:159.98, roas:1.6, tagText:"Now paused, 7 Meta-reported purchases, 3 confirmed orders" },
     { name: "Flyers Puck video (Which Flyer 9x16)", status:"paused", spend:80.53, ctr:2.64, cpp:6.71, sales:null, roas:null },
     { name: "Flyers Puck video (Mystery Puck 4x5)", status:"paused", spend:40.77, ctr:2.29, cpp:5.82, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 9x16)",  status:"paused", spend:26.87, ctr:2.70, cpp:8.96, sales:null, roas:null },
@@ -162,11 +162,11 @@ const DATA = {
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.54, ctr:3.26, cpp:15.85, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:107.59, ctr:5.04, cpp:4.68, sales:825.00, roas:7.7, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:114.40, ctr:5.57, cpp:4.58, sales:775.00, roas:6.8, tagText:"New campaign, launched 9/9" },
+    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:107.59, ctr:5.04, cpp:4.68, sales:1000.00, roas:9.3, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:114.40, ctr:5.57, cpp:4.58, sales:875.00, roas:7.6, tagText:"New campaign, launched 9/9" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:124.40, ctr:3.61, cpp:7.78, sales:414.00, roas:3.3, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:34.30, ctr:4.81, cpp:6.86, sales:246.00, roas:7.2, tagText:"New campaign, launched 9/9" },
-    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:6.76, ctr:7.64, cpp:3.38, sales:267.00, roas:39.5, tagText:"New campaign, 3 confirmed orders" }
+    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:6.76, ctr:7.64, cpp:3.38, sales:405.00, roas:59.9, tagText:"New campaign, 4 confirmed orders" }
   ],
   adTotals: { spend:4845.67, ctr:4.55, cpp:7.32, sales:30259.40, roas:6.9 },
 
@@ -176,7 +176,7 @@ const DATA = {
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
     { level:"", title:"Zay reviewed the Needs Review / no-trace pile: 7 count, 5 stay excluded",
-      body:"#182471, #182484, #182492, #182512, #182524, #182528, #182531 (combined $492.99) are now Verified per Zay's direct review. #181418 ($499.00), #181806 ($50.00), #182035 ($25.00), #181925 ($36.99), and #182497 ($108.00, linktr.ee) remain excluded, $718.99 combined across 5 orders. Not a blanket rule change for the Shop app channel or Facebook-no-trace pattern going forward, just a resolution of these specific orders; continue holding new instances of the same patterns for review rather than assuming they now count." },
+      body:"#182471, #182484, #182492, #182512, #182524, #182528, #182531 (combined $492.99) are now Verified per Zay's direct review, and attributed to their product's own ad row (Mystery Photograph Drop, Boston Bruins Puck, LeBron, Travis Konecny Meet & Greet) even though the specific closing channel was ambiguous. #181418 ($499.00), #181806 ($50.00), #182035 ($25.00), #181925 ($36.99), and #182497 ($108.00, linktr.ee) remain excluded, $718.99 combined across 5 orders. Not a blanket rule change for the Shop app channel or Facebook-no-trace pattern going forward, just a resolution of these specific orders; continue holding new instances of the same patterns for review rather than assuming they now count." },
     { level:"", title:"6th Needs Review order, same Shop app pattern",
       body:"#182471 (Flyers Mystery Photograph Drop, $25.00) shows the same “3890849” Shop app sourceName as prior Needs Review orders. Held out, bringing the combined total to $635.99 across 6 orders."},
     { level:"", title:"Build Your Own Frame Kit campaign now paused too",
