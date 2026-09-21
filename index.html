@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         5399.22,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 36460.30,
+    verifiedSales: 36814.30,
     roas:          6.8,
-    units:         599,
+    units:         606,
     companionUnits: 68,
-    orders:        363,
-    avgOrder:      100.44,
+    orders:        368,
+    avgOrder:      100.04,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -120,6 +120,7 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 44,  revenue: 2616.00, orders: 21 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 56,  revenue: 1400.00, orders: 45 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 77,  revenue: 1925.00, orders: 42 },
+    { name: "Dontayvion Wicks / Markel Bell Philly Football Kickoff Experience Tickets", units: 7,   revenue: 354.00,  orders: 5  },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
     { name: "Bryson Stott Autographed & Framed Print",   units: 1,   revenue: 199.00,  orders: 1  },
     { name: "Merrill Reese Autographed & Framed Print", units: 20,  revenue: 2019.80, orders: 19 },
@@ -167,19 +168,19 @@ const DATA = {
     { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:230.71, ctr:2.86, cpp:12.14, sales:1091.00, roas:4.7, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:42.89, ctr:4.50, cpp:5.36, sales:492.00, roas:11.5, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:77.28, ctr:6.24, cpp:15.46, sales:1033.00, roas:13.4, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new, pending confirmation)", status:"live", spend:115.37, ctr:7.78, cpp:14.42, sales:null, roas:null, tagText:"New ad discovered, 11 orders ($858) pending Zay's confirmation" },
-    { name: "Markell Bell (new, pending confirmation)", status:"live", spend:13.37, ctr:5.18, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders pending confirmation" },
-    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:9.03, ctr:7.22, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders pending confirmation" }
+    { name: "Dontavion Wicks (new)", status:"live", spend:115.37, ctr:7.78, cpp:14.42, sales:315.00, roas:2.7, tagText:"4 confirmed orders, more pending Zay's review" },
+    { name: "Markell Bell (new)", status:"live", spend:13.37, ctr:5.18, cpp:null, sales:39.00, roas:2.9, tagText:"1 confirmed order, more pending Zay's review" },
+    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:9.03, ctr:7.22, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders still pending confirmation" }
   ],
-  adTotals: { spend:5399.22, ctr:4.55, cpp:7.32, sales:33387.39, roas:6.8 },
+  adTotals: { spend:5399.22, ctr:4.55, cpp:7.32, sales:33741.39, roas:6.8 },
 
   reconcile: { discountCodes: -252.63, companionRevenue: 3325.54, net: 36460.30 },
   metaReported: { value: 65313.35, purchases: 609 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"high", title:"Ty Robinson, Markel Bell, Dontavion Wicks now have real, confirmed ad spend, $1,128.00 in orders pending your call",
-      body:"Since first flagged, these three ads have accumulated real spend and clicks (Wicks $115.37/1141 clicks/8 Meta-reported purchases, Markell Bell $13.37, Ty Robinson $9.03), and two orders (#182670, #182764) show an exact matching ad set ID (52532185741362), confirming genuine ad-driven traffic. 11 orders across this and the prior refresh, $1,128.00 combined, remain uncounted pending your explicit confirmation: #182566, #182602, #182611, #182620, #182626, #182629, #182645, #182650, #182670, #182740, #182749, #182764. Recommend counting these going forward once confirmed; still holding on historical/uncertain-timing orders." },
+    { level:"", title:"Zay confirmed 5 of the 12 pending Wicks/Markel Bell/Ty Robinson orders",
+      body:"#182611, #182645, #182670, #182749, #182764 (combined $354.00: $315.00 Wicks, $39.00 Markell Bell) confirmed Verified. Seven remain excluded, staying uncounted: #182566, #182602, #182620, #182626, #182629, #182650, #182740 ($912.00 combined). No standing rule change; each future order on these athletes still gets held individually pending review, same as the Shop app pattern." },
     { level:"med", title:"3 more orders held individually, 2 more excluded on no-trace Facebook this run",
       body:"#182689 (Boston Bruins Puck, $25.00) and #182725 (Mystery Photograph Drop, $25.00, plus $29.00 companion) and #182729 (Mystery Photograph Drop, $25.00), all Shop app channel. #182597 (Meet & Greet, $177.00, email first touch/direct close, no ad trace) and #182628 (Konecny, $99.00, unusual cravetheauto.com referrer) excluded." },
     { level:"", title:"Large Silent Auction event generated ~20 custom, non-advertised listings",
