@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – September 17, 2026",
-  periodDays: 57,
+  periodLabel: "July 23 – September 21, 2026",
+  periodDays: 61,
 
   kpis: {
-    spend:         4951.53,
-    spendFoot:     "14 campaigns, 11 delivering",
-    verifiedSales: 34224.32,
-    roas:          6.9,
-    units:         544,
-    companionUnits: 65,
-    orders:        329,
-    avgOrder:      104.03,
+    spend:         5399.22,
+    spendFoot:     "14 campaigns, 12 delivering",
+    verifiedSales: 36460.30,
+    roas:          6.8,
+    units:         599,
+    companionUnits: 68,
+    orders:        363,
+    avgOrder:      100.44,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -117,12 +117,12 @@ const DATA = {
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Build Your Own Custom Frame Kit",           units: 4,   revenue: 345.96,  orders: 3  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
-    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 20,  revenue: 1290.00, orders: 12 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 36,  revenue: 900.00,  orders: 28 },
-    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 67,  revenue: 1675.00, orders: 35 },
+    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 44,  revenue: 2616.00, orders: 21 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 56,  revenue: 1400.00, orders: 45 },
+    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 77,  revenue: 1925.00, orders: 42 },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
     { name: "Bryson Stott Autographed & Framed Print",   units: 1,   revenue: 199.00,  orders: 1  },
-    { name: "Merrill Reese Autographed & Framed Print", units: 19,  revenue: 1889.81, orders: 18 },
+    { name: "Merrill Reese Autographed & Framed Print", units: 20,  revenue: 2019.80, orders: 19 },
     { name: "Quinyon Mitchell autographed jersey",      units: 0,   revenue: 0, orders: 0,
       zeroNote: "No sales. Ad paused." }
   ],
@@ -131,7 +131,7 @@ const DATA = {
   // groupWith: repeat the previous row's sales/roas cells (grouped ads, one product).
   ads: [
     { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5225.00, roas:5.3 },
-    { name: "Merrill Reese Autographed & Framed Print", status:"paused", spend:637.98, ctr:5.73, cpp:16.79, sales:1889.81, roas:3.0 },
+    { name: "Merrill Reese Autographed & Framed Print", status:"paused", spend:638.02, ctr:5.73, cpp:16.79, sales:2019.80, roas:3.2 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
     { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
@@ -162,25 +162,28 @@ const DATA = {
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.54, ctr:3.26, cpp:15.85, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:146.70, ctr:5.00, cpp:4.58, sales:1675.00, roas:11.4, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:127.61, ctr:5.49, cpp:4.91, sales:900.00, roas:7.1, tagText:"New campaign, launched 9/9" },
-    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:162.45, ctr:3.20, cpp:9.56, sales:522.00, roas:3.2, tagText:"New campaign, launched 9/9" },
-    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:37.60, ctr:4.68, cpp:5.37, sales:246.00, roas:6.5, tagText:"New campaign, launched 9/9" },
-    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:18.95, ctr:6.82, cpp:9.48, sales:522.00, roas:27.6, tagText:"New campaign, 5 confirmed orders" }
+    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:224.62, ctr:4.68, cpp:5.35, sales:1925.00, roas:8.6, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:227.69, ctr:4.99, cpp:5.84, sales:1400.00, roas:6.1, tagText:"New campaign, launched 9/9" },
+    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:230.71, ctr:2.86, cpp:12.14, sales:1091.00, roas:4.7, tagText:"New campaign, launched 9/9" },
+    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:42.89, ctr:4.50, cpp:5.36, sales:492.00, roas:11.5, tagText:"New campaign, launched 9/9" },
+    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:77.28, ctr:6.24, cpp:15.46, sales:1033.00, roas:13.4, tagText:"New campaign, many confirmed orders" },
+    { name: "Dontavion Wicks (new, pending confirmation)", status:"live", spend:115.37, ctr:7.78, cpp:14.42, sales:null, roas:null, tagText:"New ad discovered, 11 orders ($858) pending Zay's confirmation" },
+    { name: "Markell Bell (new, pending confirmation)", status:"live", spend:13.37, ctr:5.18, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders pending confirmation" },
+    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:9.03, ctr:7.22, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders pending confirmation" }
   ],
-  adTotals: { spend:4951.53, ctr:4.55, cpp:7.32, sales:31181.40, roas:6.9 },
+  adTotals: { spend:5399.22, ctr:4.55, cpp:7.32, sales:33387.39, roas:6.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3295.55, net: 34224.32 },
-  metaReported: { value: 63576.05, purchases: 581 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3325.54, net: 36460.30 },
+  metaReported: { value: 65313.35, purchases: 609 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"high", title:"3 new ads just launched: Ty Robinson, Markel Bell, Dontavion Wicks",
-      body:"A new campaign now includes real ads for these three previously-unadvertised ticket athletes, all showing very low or zero spend, meaning they likely launched earlier today. #182566 ($69.00 Ty Robinson + $69.00 Markel Bell) and other same-day orders were NOT retroactively counted, since the exact launch time relative to those orders can't be confirmed. Same treatment as the Sep 9 launches: confirm before expanding, then count going forward once confirmed active." },
-    { level:"", title:"1 more order held individually, 2 more excluded on no-trace Facebook",
-      body:"#182584 (Saquon Reverse Hurdle, $79.99, Shop app) held for review. #182568 (Boston Bruins Puck x2, $50.00) and #182587 (Boston Bruins Puck x4, $100.00) both Facebook.com with zero UTM trace, excluded." },
-    { level:"", title:"Zay finalized the remaining held orders",
-      body:"#182552 (Boston Bruins Puck x4, $100.00) now Verified. #182563 (Saquon Reverse Hurdle, $79.99) confirmed excluded. Two older orders were also revisited and reversed to Verified: #181806 (Flyers Puck, $50.00) and #182035 (Flyers Puck, $25.00), both previously held excluded. #181925, #181418, and #182497 remain excluded, unchanged." },
+    { level:"high", title:"Ty Robinson, Markel Bell, Dontavion Wicks now have real, confirmed ad spend, $1,128.00 in orders pending your call",
+      body:"Since first flagged, these three ads have accumulated real spend and clicks (Wicks $115.37/1141 clicks/8 Meta-reported purchases, Markell Bell $13.37, Ty Robinson $9.03), and two orders (#182670, #182764) show an exact matching ad set ID (52532185741362), confirming genuine ad-driven traffic. 11 orders across this and the prior refresh, $1,128.00 combined, remain uncounted pending your explicit confirmation: #182566, #182602, #182611, #182620, #182626, #182629, #182645, #182650, #182670, #182740, #182749, #182764. Recommend counting these going forward once confirmed; still holding on historical/uncertain-timing orders." },
+    { level:"med", title:"3 more orders held individually, 2 more excluded on no-trace Facebook this run",
+      body:"#182689 (Boston Bruins Puck, $25.00) and #182725 (Mystery Photograph Drop, $25.00, plus $29.00 companion) and #182729 (Mystery Photograph Drop, $25.00), all Shop app channel. #182597 (Meet & Greet, $177.00, email first touch/direct close, no ad trace) and #182628 (Konecny, $99.00, unusual cravetheauto.com referrer) excluded." },
+    { level:"", title:"Large Silent Auction event generated ~20 custom, non-advertised listings",
+      body:"A charity/silent auction on Sep 19-20 sold custom one-off listings (e.g. \u201cSilent Auction | Brandon Marsh Jersey,\u201d \u201cSilent auction Hurts Cigar LIX SB Celebration\u201d) at auction pricing, distinct titles from the standard advertised products. None counted, correctly excluded as different listings." },
     { level:"", title:"Zay reviewed the Needs Review / no-trace pile: 7 count, 5 stay excluded",
       body:"#182471, #182484, #182492, #182512, #182524, #182528, #182531 (combined $492.99) are now Verified per Zay's direct review, and attributed to their product's own ad row (Mystery Photograph Drop, Boston Bruins Puck, LeBron, Travis Konecny Meet & Greet) even though the specific closing channel was ambiguous. #181418 ($499.00), #181806 ($50.00), #182035 ($25.00), #181925 ($36.99), and #182497 ($108.00, linktr.ee) remain excluded, $718.99 combined across 5 orders. Not a blanket rule change for the Shop app channel or Facebook-no-trace pattern going forward, just a resolution of these specific orders; continue holding new instances of the same patterns for review rather than assuming they now count." },
     { level:"", title:"6th Needs Review order, same Shop app pattern",
@@ -211,8 +214,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 2791, value: 255356.13, socialOrders: 314, socialValue: 32491.59 },
-  totalOrdersScanned: 2791,
+  storeWide: { orders: 2974, value: 271562.22, socialOrders: 331, socialValue: 33709.96 },
+  totalOrdersScanned: 2974,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
