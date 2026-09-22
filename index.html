@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         5539.04,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 38704.28,
+    verifiedSales: 38577.29,
     roas:          7.0,
-    units:         641,
+    units:         640,
     companionUnits: 68,
-    orders:        388,
-    avgOrder:      99.75,
+    orders:        387,
+    avgOrder:      99.68,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -115,7 +115,7 @@ const DATA = {
     { name: "Saquon Reverse Hurdle 8×10",               units: 10,  revenue: 911.91,  orders: 10 },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
-    { name: "Build Your Own Custom Frame Kit",           units: 5,   revenue: 472.95,  orders: 4  },
+    { name: "Build Your Own Custom Frame Kit",           units: 4,   revenue: 345.96,  orders: 3  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 62,  revenue: 3798.00, orders: 27 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 61,  revenue: 1525.00, orders: 50 },
@@ -152,7 +152,7 @@ const DATA = {
     { name: "Flyers Puck video (Real Pulls 9x16)",  status:"paused", spend:26.87, ctr:2.70, cpp:8.96, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 4x5)",   status:"paused", spend:10.83, ctr:1.89, cpp:10.83, sales:null, roas:null },
     { name: "Build Your Own Frame Kit (retired campaign)", status:"paused", spend:48.09, ctr:6.43, cpp:6.87, sales:null, roas:null, tagText:"Killed in restructure, confirmed sales were organic" },
-    { name: "Build Your Own Frame Kit", status:"paused", spend:245.99, ctr:1.43, cpp:11.71, sales:187.98, roas:0.8, tagText:"Now paused, 21 Meta-reported purchases, 2 confirmed orders" },
+    { name: "Build Your Own Frame Kit", status:"paused", spend:245.99, ctr:1.43, cpp:11.71, sales:60.99, roas:0.2, tagText:"Now paused, 21 Meta-reported purchases, 1 confirmed order" },
     { name: "Bryson Stott Autographed & Framed Print (retired campaign)", status:"paused", spend:29.06, ctr:7.17, cpp:29.06, sales:199.00, roas:6.8, tagText:"Killed in restructure, 1 sale" },
     { name: "Bryson Stott Autographed & Framed Print", status:"paused", spend:80.27, ctr:6.95, cpp:10.03, sales:null, roas:null, tagText:"Now paused, 8 Meta-reported purchases, unmatched" },
     { name: "LCB Line Flyers jersey (retired campaign)",    status:"paused", spend:15.82, ctr:7.68,  cpp:5.27, sales:null, roas:null, tagText:"Killed in restructure, 3 unmatched purchases" },
@@ -172,13 +172,15 @@ const DATA = {
     { name: "Markell Bell (new)", status:"live", spend:13.37, ctr:5.18, cpp:null, sales:39.00, roas:2.9, tagText:"1 confirmed order, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:9.03, ctr:7.22, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders still pending confirmation" }
   ],
-  adTotals: { spend:5539.04, ctr:4.55, cpp:7.32, sales:35631.37, roas:7.0 },
+  adTotals: { spend:5539.04, ctr:4.55, cpp:7.32, sales:35504.38, roas:7.0 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3325.54, net: 38704.28 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3325.54, net: 38577.29 },
   metaReported: { value: 79574.92, purchases: 692 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"#182900 (Build Your Own Frame Kit) removed per Zay's direction",
+      body:"$126.99, DuckDuckGo organic, no Meta ad click. Was counted as Verified per the standing organic-sale convention, but Zay asked for it to be excluded specifically. Removed from totals; the Frame Kit ad remains at 1 confirmed order." },
     { level:"med", title:"Proper Barkley Presale sale excluded (no trace), plus 1 more held",
       body:"#182919 (Saquon Barkley Nike Jersey | Pre-Sale Opportunity, $499.00, the standard listing not the \u201cYOUR ITEM\u201d one) had Facebook.com touches with zero UTM trace, excluded per the standing rule. #182914 (Markell Bell $78.00 + Ty Robinson $39.00 + Wicks $59.00, $176.00) held individually, same pattern as before." },
     { level:"", title:"#182902 excluded on linktr.ee",
