@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – September 25, 2026",
-  periodDays: 65,
+  periodLabel: "July 23 – September 26, 2026",
+  periodDays: 66,
 
   kpis: {
-    spend:         5783.62,
+    spend:         5826.78,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 41370.26,
-    roas:          7.2,
-    units:         708,
+    verifiedSales: 41434.26,
+    roas:          7.1,
+    units:         710,
     companionUnits: 69,
-    orders:        423,
-    avgOrder:      97.80,
+    orders:        425,
+    avgOrder:      97.49,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -117,8 +117,8 @@ const DATA = {
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Build Your Own Custom Frame Kit",           units: 7,   revenue: 566.93,  orders: 5  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
-    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 76,  revenue: 4674.00, orders: 34 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 84,  revenue: 2100.00, orders: 62 },
+    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 77,  revenue: 4713.00, orders: 35 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 85,  revenue: 2125.00, orders: 63 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 105, revenue: 2575.00, orders: 59 },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 16,  revenue: 883.00,  orders: 9  },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
@@ -165,22 +165,26 @@ const DATA = {
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.54, ctr:3.26, cpp:15.85, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:305.31, ctr:4.42, cpp:5.26, sales:2575.00, roas:8.4, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:306.19, ctr:4.72, cpp:4.25, sales:2100.00, roas:6.9, tagText:"New campaign, launched 9/9" },
+    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:317.76, ctr:4.38, cpp:5.39, sales:2575.00, roas:8.1, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:318.19, ctr:4.64, cpp:4.19, sales:2125.00, roas:6.7, tagText:"New campaign, launched 9/9" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:232.31, ctr:2.88, cpp:9.68, sales:1493.00, roas:6.4, tagText:"New campaign, launched 9/9" },
-    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:45.72, ctr:4.43, cpp:4.57, sales:834.00, roas:18.2, tagText:"New campaign, launched 9/9" },
+    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:45.96, ctr:4.42, cpp:4.60, sales:873.00, roas:19.0, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:188.58, ctr:5.05, cpp:4.39, sales:1736.00, roas:9.2, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new)", status:"live", spend:224.85, ctr:6.18, cpp:4.68, sales:315.00, roas:1.4, tagText:"4 confirmed orders, more pending Zay's review" },
+    { name: "Dontavion Wicks (new)", status:"live", spend:243.32, ctr:6.04, cpp:4.97, sales:315.00, roas:1.3, tagText:"4 confirmed orders, more pending Zay's review" },
     { name: "Markell Bell (new)", status:"live", spend:13.37, ctr:5.18, cpp:null, sales:39.00, roas:2.9, tagText:"1 confirmed order, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:9.03, ctr:7.22, cpp:null, sales:null, roas:null, tagText:"New ad discovered, orders still pending confirmation" }
   ],
-  adTotals: { spend:5783.62, ctr:4.55, cpp:7.32, sales:38268.35, roas:7.2 },
+  adTotals: { spend:5826.78, ctr:4.55, cpp:7.32, sales:38332.35, roas:7.1 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3354.54, net: 41370.26 },
-  metaReported: { value: 82758.13, purchases: 735 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3354.54, net: 41434.26 },
+  metaReported: { value: 84223.00, purchases: 752 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"high", title:"Sharp jump in null-journey orders, $514.00 held this run alone",
+      body:"6 orders came back with no customer journey data at all (sourceName \"web\" but firstVisit/lastVisit both null): #183088 (Boston Bruins Puck, $25.00), #183094 (Travis Konecny x2, $168.00), #183095 (Mystery Photograph Drop, $25.00), #183099 (Cam York + Dvorak + Konecny, $147.00), #183105 (Mystery Photograph Drop x2, $50.00), #183123 (Travis Konecny, $99.00). This is a much bigger jump than the single null-journey order flagged last refresh (#183077, still unresolved). Held individually per the standing approach, but worth checking whether something changed on the tracking side (a checkout app, a consent banner, a Shopify update) rather than treating this as routine going forward." },
+    { level:"med", title:"3 more Wicks/Ty Robinson orders held individually",
+      body:"#183079 (Ty Robinson, $69.00), #183107 (Wicks, $49.00), #183118 (Wicks, $49.00). Same pattern as before, held pending Zay's review." },
     { level:"", title:"1 order held on a null customer journey",
       body:"#183077 (Travis Konecny, $69.00) has no journey data recorded at all, sourceName \"web.\" Held individually pending Zay's review, same pattern as the Shop app cases." },
     { level:"high", title:"Owen Tippett: brand new athlete, 14 units / $1,016.00 in one day, no ad exists",
@@ -243,8 +247,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 3274, value: 311846.08, socialOrders: 399, socialValue: 43749.11 },
-  totalOrdersScanned: 3274,
+  storeWide: { orders: 3321, value: 315397.76, socialOrders: 400, socialValue: 43818.11 },
+  totalOrdersScanned: 3321,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
