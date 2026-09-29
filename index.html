@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         6190.97,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 44376.23,
+    verifiedSales: 44641.23,
     roas:          7.2,
-    units:         779,
+    units:         784,
     companionUnits: 73,
-    orders:        463,
-    avgOrder:      95.84,
+    orders:        466,
+    avgOrder:      95.80,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -120,7 +120,7 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 97,  revenue: 6093.00, orders: 42 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 105, revenue: 2625.00, orders: 75 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 126, revenue: 3075.00, orders: 74 },
-    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 26,  revenue: 1381.00, orders: 13 },
+    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 31,  revenue: 1646.00, orders: 16 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
@@ -170,17 +170,19 @@ const DATA = {
     { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:238.04, ctr:2.93, cpp:9.52, sales:1817.00, roas:7.6, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:47.30, ctr:4.49, cpp:4.73, sales:1059.00, roas:22.4, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:295.28, ctr:4.43, cpp:4.54, sales:2438.00, roas:8.3, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new)", status:"live", spend:317.84, ctr:5.74, cpp:5.13, sales:522.00, roas:1.6, tagText:"4 confirmed orders, more pending Zay's review" },
-    { name: "Markell Bell (new)", status:"live", spend:36.17, ctr:4.46, cpp:4.52, sales:231.00, roas:6.4, tagText:"1 confirmed order, more pending Zay's review" },
-    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:22.77, ctr:5.16, cpp:11.39, sales:69.00, roas:3.0, tagText:"1 confirmed order, more pending Zay's review" }
+    { name: "Dontavion Wicks (new)", status:"live", spend:317.84, ctr:5.74, cpp:5.13, sales:670.00, roas:2.1, tagText:"4 confirmed orders, more pending Zay's review" },
+    { name: "Markell Bell (new)", status:"live", spend:36.17, ctr:4.46, cpp:4.52, sales:309.00, roas:8.5, tagText:"1 confirmed order, more pending Zay's review" },
+    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:22.77, ctr:5.16, cpp:11.39, sales:108.00, roas:4.7, tagText:"1 confirmed order, more pending Zay's review" }
   ],
-  adTotals: { spend:6190.97, ctr:4.55, cpp:7.32, sales:41210.35, roas:7.2 },
+  adTotals: { spend:6190.97, ctr:4.55, cpp:7.32, sales:41475.35, roas:7.2 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3418.51, net: 44376.23 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3418.51, net: 44641.23 },
   metaReported: { value: 96410.93, purchases: 838 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"Zay confirmed the 3 held Wicks/Markel/Ty Robinson orders",
+      body:"#183354 (Wicks, $89.00), #183370 (Ty Robinson $39.00 + Markel Bell $39.00 + Wicks $59.00), and #183388 (Markel Bell, $39.00) confirmed Verified, $265.00 combined. Resolves these specific orders; new ones on the same pattern still get held individually." },
     { level:"", title:"1 more order excluded, 1 more held",
       body:"#183381 (Mystery Photograph Drop, $25.00) excluded: bare Instagram source, no UTM trace, same treatment as bare Facebook.com with no ad code. #183388 (Markel Bell, $39.00) held individually, same pattern as before." },
     { level:"high", title:"Tyrese Maxey: massive single-day volume, $9,650.00, no ad exists",
