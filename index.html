@@ -91,14 +91,14 @@ const DATA = {
   periodDays: 70,
 
   kpis: {
-    spend:         6260.13,
+    spend:         6291.86,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 44892.22,
+    verifiedSales: 45212.22,
     roas:          7.2,
-    units:         788,
-    companionUnits: 73,
-    orders:        470,
-    avgOrder:      95.52,
+    units:         797,
+    companionUnits: 74,
+    orders:        476,
+    avgOrder:      94.98,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -117,9 +117,9 @@ const DATA = {
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Build Your Own Custom Frame Kit",           units: 8,   revenue: 624.92,  orders: 6  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
-    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 99,  revenue: 6261.00, orders: 44 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 105, revenue: 2625.00, orders: 75 },
-    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 127, revenue: 3100.00, orders: 75 },
+    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 103, revenue: 6417.00, orders: 46 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 108, revenue: 2700.00, orders: 77 },
+    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 129, revenue: 3150.00, orders: 77 },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 31,  revenue: 1646.00, orders: 16 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
@@ -165,24 +165,26 @@ const DATA = {
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.54, ctr:3.26, cpp:15.85, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:400.08, ctr:4.10, cpp:5.06, sales:3100.00, roas:7.8, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:399.90, ctr:4.49, cpp:4.25, sales:2625.00, roas:6.6, tagText:"New campaign, launched 9/9" },
-    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:240.07, ctr:2.94, cpp:9.60, sales:1817.00, roas:7.6, tagText:"New campaign, launched 9/9" },
-    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:47.30, ctr:4.49, cpp:4.73, sales:1059.00, roas:22.4, tagText:"New campaign, launched 9/9" },
-    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:313.96, ctr:4.32, cpp:4.42, sales:2606.00, roas:8.3, tagText:"New campaign, many confirmed orders" },
+    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:409.96, ctr:4.08, cpp:4.94, sales:3150.00, roas:7.7, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:408.86, ctr:4.49, cpp:4.22, sales:2700.00, roas:6.6, tagText:"New campaign, launched 9/9" },
+    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:240.10, ctr:2.94, cpp:9.60, sales:1895.00, roas:7.9, tagText:"New campaign, launched 9/9" },
+    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:48.28, ctr:4.50, cpp:4.83, sales:1137.00, roas:23.6, tagText:"New campaign, launched 9/9" },
+    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:325.84, ctr:4.30, cpp:4.40, sales:2774.00, roas:8.5, tagText:"New campaign, many confirmed orders" },
     { name: "Dontavion Wicks (new)", status:"live", spend:339.61, ctr:5.71, cpp:4.65, sales:670.00, roas:2.0, tagText:"4 confirmed orders, more pending Zay's review" },
     { name: "Markell Bell (new)", status:"live", spend:36.89, ctr:4.38, cpp:4.61, sales:309.00, roas:8.4, tagText:"1 confirmed order, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:24.06, ctr:5.06, cpp:8.02, sales:108.00, roas:4.5, tagText:"1 confirmed order, more pending Zay's review" }
   ],
-  adTotals: { spend:6260.13, ctr:4.55, cpp:7.32, sales:41726.34, roas:7.2 },
+  adTotals: { spend:6291.86, ctr:4.55, cpp:7.32, sales:42007.34, roas:7.2 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3418.51, net: 44892.22 },
-  metaReported: { value: 100311.03, purchases: 860 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3457.51, net: 45212.22 },
+  metaReported: { value: 102858.92, purchases: 875 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"1 order excluded, no clear channel",
+      body:"#183472 (Cam York + Christian Dvorak, $78.00) excluded: simon.com referrer first touch (a mall operator site, unrelated to advertising), direct last touch landing on the store's own domain. No ad trace on either end." },
     { level:"high", title:"Allen Iverson and Derek Hill join the no-ad list, Maxey still climbing",
-      body:"Allen Iverson Philly Legend Experience Tickets: 19 units, $3,290.00. Derek Hill Wall Catch: 19 units, $285.00. Tyrese Maxey: another 28 units, $6,250.00, plus $225.00 in add-ons. No ad exists for any of the three. A new \"Owen Tippett Image\" ad appeared with no spend data yet, brand new; not retroactively applying it to any sale." },
+      body:"Now 26 units / $4,570.00 (Iverson), 21 units / $315.00 (Derek Hill), and 63 units / $14,000.00 plus $450.00 add-ons (Maxey), all cumulative and all still with no ad. Re-checked the account again: the \"Owen Tippett Image\" ad still shows zero spend or impressions, still too new to apply to any sale." },
     { level:"", title:"Zay confirmed the 3 held Wicks/Markel/Ty Robinson orders",
       body:"#183354 (Wicks, $89.00), #183370 (Ty Robinson $39.00 + Markel Bell $39.00 + Wicks $59.00), and #183388 (Markel Bell, $39.00) confirmed Verified, $265.00 combined. Resolves these specific orders; new ones on the same pattern still get held individually." },
     { level:"", title:"1 more order excluded, 1 more held",
@@ -261,8 +263,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 3656, value: 352163.64, socialOrders: 472, socialValue: 53642.76 },
-  totalOrdersScanned: 3656,
+  storeWide: { orders: 3683, value: 356069.52, socialOrders: 481, socialValue: 55154.60 },
+  totalOrdersScanned: 3683,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
