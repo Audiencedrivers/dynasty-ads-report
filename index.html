@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – September 30, 2026",
-  periodDays: 70,
+  periodLabel: "July 23 – October 1, 2026",
+  periodDays: 71,
 
   kpis: {
-    spend:         6291.86,
+    spend:         6432.41,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 45212.22,
+    verifiedSales: 46418.20,
     roas:          7.2,
-    units:         797,
-    companionUnits: 74,
-    orders:        476,
-    avgOrder:      94.98,
+    units:         821,
+    companionUnits: 75,
+    orders:        494,
+    avgOrder:      93.96,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -115,11 +115,11 @@ const DATA = {
     { name: "Saquon Reverse Hurdle 8×10",               units: 10,  revenue: 911.91,  orders: 10 },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
-    { name: "Build Your Own Custom Frame Kit",           units: 8,   revenue: 624.92,  orders: 6  },
+    { name: "Build Your Own Custom Frame Kit",           units: 9,   revenue: 685.91,  orders: 7  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
-    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 103, revenue: 6417.00, orders: 46 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 108, revenue: 2700.00, orders: 77 },
-    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 129, revenue: 3150.00, orders: 77 },
+    { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 115, revenue: 7155.00, orders: 54 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 114, revenue: 2850.00, orders: 82 },
+    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 134, revenue: 3275.00, orders: 81 },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 31,  revenue: 1646.00, orders: 16 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
@@ -154,7 +154,7 @@ const DATA = {
     { name: "Flyers Puck video (Real Pulls 9x16)",  status:"paused", spend:26.87, ctr:2.70, cpp:8.96, sales:null, roas:null },
     { name: "Flyers Puck video (Real Pulls 4x5)",   status:"paused", spend:10.83, ctr:1.89, cpp:10.83, sales:null, roas:null },
     { name: "Build Your Own Frame Kit (retired campaign)", status:"paused", spend:48.09, ctr:6.43, cpp:6.87, sales:null, roas:null, tagText:"Killed in restructure, confirmed sales were organic" },
-    { name: "Build Your Own Frame Kit", status:"paused", spend:245.99, ctr:1.43, cpp:11.71, sales:339.95, roas:1.4, tagText:"Now paused, 21 Meta-reported purchases, 4 confirmed orders" },
+    { name: "Build Your Own Frame Kit", status:"paused", spend:245.99, ctr:1.43, cpp:11.71, sales:400.94, roas:1.6, tagText:"Now paused, 21 Meta-reported purchases, 5 confirmed orders" },
     { name: "Bryson Stott Autographed & Framed Print (retired campaign)", status:"paused", spend:29.06, ctr:7.17, cpp:29.06, sales:199.00, roas:6.8, tagText:"Killed in restructure, 1 sale" },
     { name: "Bryson Stott Autographed & Framed Print", status:"paused", spend:80.27, ctr:6.95, cpp:10.03, sales:null, roas:null, tagText:"Now paused, 8 Meta-reported purchases, unmatched" },
     { name: "LCB Line Flyers jersey (retired campaign)",    status:"paused", spend:15.82, ctr:7.68,  cpp:5.27, sales:null, roas:null, tagText:"Killed in restructure, 3 unmatched purchases" },
@@ -165,22 +165,27 @@ const DATA = {
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.54, ctr:3.26, cpp:15.85, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:409.96, ctr:4.08, cpp:4.94, sales:3150.00, roas:7.7, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:408.86, ctr:4.49, cpp:4.22, sales:2700.00, roas:6.6, tagText:"New campaign, launched 9/9" },
-    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:240.10, ctr:2.94, cpp:9.60, sales:1895.00, roas:7.9, tagText:"New campaign, launched 9/9" },
-    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:48.28, ctr:4.50, cpp:4.83, sales:1137.00, roas:23.6, tagText:"New campaign, launched 9/9" },
-    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:325.84, ctr:4.30, cpp:4.40, sales:2774.00, roas:8.5, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new)", status:"live", spend:339.61, ctr:5.71, cpp:4.65, sales:670.00, roas:2.0, tagText:"4 confirmed orders, more pending Zay's review" },
-    { name: "Markell Bell (new)", status:"live", spend:36.89, ctr:4.38, cpp:4.61, sales:309.00, roas:8.4, tagText:"1 confirmed order, more pending Zay's review" },
-    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:24.06, ctr:5.06, cpp:8.02, sales:108.00, roas:4.5, tagText:"1 confirmed order, more pending Zay's review" }
+    { name: "Boston Bruins Mystery Puck (new)", status:"live", spend:437.91, ctr:4.07, cpp:5.09, sales:3275.00, roas:7.5, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:438.48, ctr:4.43, cpp:4.18, sales:2850.00, roas:6.5, tagText:"New campaign, launched 9/9" },
+    { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:241.45, ctr:2.94, cpp:9.66, sales:2051.00, roas:8.5, tagText:"New campaign, launched 9/9" },
+    { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:49.50, ctr:4.55, cpp:4.50, sales:1137.00, roas:23.0, tagText:"New campaign, launched 9/9" },
+    { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:363.89, ctr:4.20, cpp:4.33, sales:3449.00, roas:9.5, tagText:"New campaign, many confirmed orders" },
+    { name: "Dontavion Wicks (new)", status:"live", spend:380.28, ctr:5.56, cpp:4.37, sales:670.00, roas:1.8, tagText:"4 confirmed orders, more pending Zay's review" },
+    { name: "Markell Bell (new)", status:"live", spend:37.61, ctr:4.43, cpp:4.70, sales:309.00, roas:8.2, tagText:"1 confirmed order, more pending Zay's review" },
+    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:25.03, ctr:5.05, cpp:6.26, sales:108.00, roas:4.3, tagText:"1 confirmed order, more pending Zay's review" }
   ],
-  adTotals: { spend:6291.86, ctr:4.55, cpp:7.32, sales:42007.34, roas:7.2 },
+  adTotals: { spend:6432.41, ctr:4.55, cpp:7.32, sales:43081.33, roas:7.2 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3457.51, net: 45212.22 },
-  metaReported: { value: 102858.92, purchases: 875 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 46418.20 },
+  metaReported: { value: 106448.68, purchases: 907 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"6 more Wicks/Markel Bell/Ty Robinson orders held, $813.00 combined",
+      body:"#183492 ($127.00), #183494 ($49.00), #183505 ($98.00), #183515 (all three athletes in one order, $392.00), #183549 ($98.00), #183575 ($49.00). All held individually, same standing pattern." },
+    { level:"", title:"1 order excluded, no clear channel",
+      body:"#183530 (Cam York, $69.00). Facebook.com first touch with no UTM trace, direct last touch with no referrer. No signal either end." },
+
     { level:"", title:"1 order excluded, no clear channel",
       body:"#183472 (Cam York + Christian Dvorak, $78.00) excluded: simon.com referrer first touch (a mall operator site, unrelated to advertising), direct last touch landing on the store's own domain. No ad trace on either end." },
     { level:"high", title:"Allen Iverson and Derek Hill join the no-ad list, Maxey still climbing",
@@ -263,8 +268,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 3683, value: 356069.52, socialOrders: 481, socialValue: 55154.60 },
-  totalOrdersScanned: 3683,
+  storeWide: { orders: 3777, value: 369616.05, socialOrders: 498, socialValue: 56921.33 },
+  totalOrdersScanned: 3777,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
