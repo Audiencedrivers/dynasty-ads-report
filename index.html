@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         6432.41,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 46418.20,
-    roas:          7.2,
-    units:         821,
+    verifiedSales: 46957.20,
+    roas:          7.3,
+    units:         832,
     companionUnits: 75,
-    orders:        494,
-    avgOrder:      93.96,
+    orders:        497,
+    avgOrder:      94.48,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -120,7 +120,7 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 115, revenue: 7155.00, orders: 54 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 114, revenue: 2850.00, orders: 82 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 134, revenue: 3275.00, orders: 81 },
-    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 31,  revenue: 1646.00, orders: 16 },
+    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 42,  revenue: 2185.00, orders: 19 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
@@ -170,19 +170,21 @@ const DATA = {
     { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:241.45, ctr:2.94, cpp:9.66, sales:2051.00, roas:8.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:49.50, ctr:4.55, cpp:4.50, sales:1137.00, roas:23.0, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:363.89, ctr:4.20, cpp:4.33, sales:3449.00, roas:9.5, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new)", status:"live", spend:380.28, ctr:5.56, cpp:4.37, sales:670.00, roas:1.8, tagText:"4 confirmed orders, more pending Zay's review" },
-    { name: "Markell Bell (new)", status:"live", spend:37.61, ctr:4.43, cpp:4.70, sales:309.00, roas:8.2, tagText:"1 confirmed order, more pending Zay's review" },
-    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:25.03, ctr:5.05, cpp:6.26, sales:108.00, roas:4.3, tagText:"1 confirmed order, more pending Zay's review" }
+    { name: "Dontavion Wicks (new)", status:"live", spend:380.28, ctr:5.56, cpp:4.37, sales:973.00, roas:2.6, tagText:"4 confirmed orders, more pending Zay's review" },
+    { name: "Markell Bell (new)", status:"live", spend:37.61, ctr:4.43, cpp:4.70, sales:387.00, roas:10.3, tagText:"1 confirmed order, more pending Zay's review" },
+    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:25.03, ctr:5.05, cpp:6.26, sales:186.00, roas:7.4, tagText:"1 confirmed order, more pending Zay's review" }
   ],
-  adTotals: { spend:6432.41, ctr:4.55, cpp:7.32, sales:43081.33, roas:7.2 },
+  adTotals: { spend:6432.41, ctr:4.55, cpp:7.32, sales:43620.33, roas:7.3 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 46418.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 46957.20 },
   metaReported: { value: 106448.68, purchases: 907 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
     { level:"", title:"Build Your Own Custom Frame Kit retired, no longer advertised",
       body:"Zay confirmed this product is no longer being advertised. Historical verified total ($685.91, 9 units, 7 orders) stays as is since those sales were legitimately ad-attributed at the time. Going forward, any new Build Your Own Frame Kit order is treated as unadvertised, same as Denver Barkey or Dan Vladar, and will not be counted or held for review." },
+    { level:"", title:"Zay reviewed the 6 held orders: 3 count, 3 stay out",
+      body:"#183494 (Wicks, $49.00), #183505 (Wicks $59.00 + Markel Bell $39.00), and #183515 (Ty Robinson + Markel Bell + Wicks, $392.00) confirmed Verified, $539.00 combined. #183492, #183549, and #183575 stay excluded, $274.00 combined. Resolves these specific orders only; new orders on the same pattern still get held individually." },
     { level:"med", title:"6 more Wicks/Markel Bell/Ty Robinson orders held, $813.00 combined",
       body:"#183492 ($127.00), #183494 ($49.00), #183505 ($98.00), #183515 (all three athletes in one order, $392.00), #183549 ($98.00), #183575 ($49.00). All held individually, same standing pattern." },
     { level:"", title:"1 order excluded, no clear channel",
