@@ -93,11 +93,11 @@ const DATA = {
   kpis: {
     spend:         6555.84,
     spendFoot:     "14 campaigns, 12 delivering",
-    verifiedSales: 48891.20,
+    verifiedSales: 49354.20,
     roas:          7.5,
-    units:         872,
+    units:         879,
     companionUnits: 75,
-    orders:        526,
+    orders:        531,
     avgOrder:      92.95,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
@@ -120,7 +120,7 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 114, revenue: 2850.00, orders: 82 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 148, revenue: 3625.00, orders: 89 },
-    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 42,  revenue: 2185.00, orders: 19 },
+    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 49,  revenue: 2648.00, orders: 24 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
@@ -170,21 +170,19 @@ const DATA = {
     { name: "Cam York Flyers Meet & Greet (new)", status:"live", spend:243.96, ctr:2.98, cpp:9.04, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"live", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"live", spend:390.96, ctr:4.17, cpp:4.25, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new)", status:"live", spend:411.93, ctr:5.46, cpp:4.48, sales:973.00, roas:2.4, tagText:"4 confirmed orders, more pending Zay's review" },
-    { name: "Markell Bell (new)", status:"live", spend:40.01, ctr:4.35, cpp:5.00, sales:387.00, roas:9.7, tagText:"1 confirmed order, more pending Zay's review" },
-    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:28.58, ctr:5.03, cpp:5.72, sales:186.00, roas:6.5, tagText:"1 confirmed order, more pending Zay's review" }
+    { name: "Dontavion Wicks (new)", status:"live", spend:411.93, ctr:5.46, cpp:4.48, sales:1209.00, roas:2.9, tagText:"7 confirmed orders, more pending Zay's review" },
+    { name: "Markell Bell (new)", status:"live", spend:40.01, ctr:4.35, cpp:5.00, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
+    { name: "Ty Robinson (new, pending confirmation)", status:"live", spend:28.58, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" }
   ],
-  adTotals: { spend:6555.84, ctr:4.55, cpp:7.32, sales:45554.33, roas:7.5 },
+  adTotals: { spend:6555.84, ctr:4.55, cpp:7.32, sales:46017.33, roas:7.5 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 48891.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 49354.20 },
   metaReported: { value: 110366.40, purchases: 937 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"high", title:"Live in-store signing event drove a massive batch (138 orders), 29 verified, $1,934.00",
-      body:"Oct 1-2 saw heavy volume including a real in-store signing event (many POS orders for Konecny, Dvorak, and Cam York tickets, all Verified). 10 more Wicks/Markel Bell/Ty Robinson orders held, $1,258.00 combined. Build Your Own Frame Kit orders this batch (#183598 and others) correctly excluded per the Oct 1 retirement. A small ground-truth gap ($69.00, 1 Konecny unit) was checked against possible truncation and against specific order status; most likely a non-qualifying order status (pending/refunded) counted in ShopifyQL gross but correctly excluded here, consistent with prior similar small gaps." },
-    { level:"med", title:"10 orders held this run (Wicks/Markel Bell/Ty Robinson pattern), $1,258.00 combined",
-      body:"#183603 ($69.00), #183611 ($89.00), #183617 ($127.00), #183623 ($49.00), #183632 ($127.00), #183634 ($59.00), #183645 ($158.00), #183649 ($403.00), #183698 ($89.00), #183711 ($88.00)." },
+    { level:"", title:"Zay reviewed the 10 held orders: 5 count, 5 stay out",
+      body:"#183603 ($69.00), #183611 ($89.00), #183634 ($59.00), #183645 ($158.00), and #183711 ($88.00) confirmed Verified, $463.00 combined. #183617, #183623, #183632, #183649, and #183698 stay excluded, $795.00 combined. Resolves these specific orders only; new orders on the same pattern still get held individually." },
     { level:"", title:"1 order held, Shop app channel",
       body:"#183585 (Boston Bruins Puck, $25.00)." },
 
