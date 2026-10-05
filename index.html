@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         6668.51,
     spendFoot:     "17 campaigns, 4 delivering",
-    verifiedSales: 49818.20,
+    verifiedSales: 50018.20,
     roas:          7.5,
-    units:         893,
+    units:         894,
     companionUnits: 75,
-    orders:        542,
-    avgOrder:      91.92,
+    orders:        543,
+    avgOrder:      92.11,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -120,6 +120,7 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 115, revenue: 2875.00, orders: 83 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 162, revenue: 3975.00, orders: 98 },
+    { name: "Allen Iverson Philly Legend Experience Tickets", units: 1,   revenue: 200.00,  orders: 1  },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 50,  revenue: 2737.00, orders: 25 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
@@ -173,17 +174,17 @@ const DATA = {
     { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1298.00, roas:3.2, tagText:"8 confirmed orders, more pending Zay's review" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
-    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new, pending confirmation)", status:"live", spend:37.62, ctr:14.02, cpp:null, sales:null, roas:null, tagText:"3 ads launched Oct 3 to 4. Meta reports 1 purchase ($205.30) on the Iverson video ad. No sales applied; #183833 held for Zay's call" }
+    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:37.62, ctr:14.02, cpp:null, sales:200.00, roas:5.3, tagText:"Launched Oct 3 to 4. 1 confirmed order (#183833, Iverson ticket, closed by the Iverson video ad). Maxey ad has no purchases yet" }
   ],
-  adTotals: { spend:6668.51, ctr:4.55, cpp:7.32, sales:46481.33, roas:7.5 },
+  adTotals: { spend:6668.51, ctr:4.55, cpp:7.32, sales:46681.33, roas:7.5 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 49818.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3589.50, net: 50018.20 },
   metaReported: { value: 112223.98, purchases: 954 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"high", title:"Iverson video ad closed its first sale: #183833, held for your call",
-      body:"#183833 (Allen Iverson ticket $200.00 plus $5.00 certificate) had an old LeBron ad as first touch, but the touch that closed the sale was the new Iverson video ad (Facebook paid-social, content iverson-video). Meta also reports 1 purchase ($205.30) on that ad. Not counted; the Maxey and Iverson ads launched Oct 3 to 4 and nothing has been applied to them yet. The Maxey ad has $22.10 spend and no purchases so far." },
+    { level:"", title:"Iverson video ad's first sale confirmed: #183833, $200.00",
+      body:"Zay confirmed #183833 (Allen Iverson ticket, $200.00) as Verified. The old LeBron ad was the first touch, but the Iverson video ad closed the sale. The $5.00 certificate in the order is not counted, same as every other order. This puts verified net sales over $50,000." },
     { level:"high", title:"Meet & Greet and Wicks/Markel/Ty Robinson campaigns are now paused in Meta",
       body:"Travis Konecny, Cam York, Christian Dvorak, and the Wicks/Markel Bell/Ty Robinson ads show a paused campaign status and their spend stopped moving as of Oct 4. Their rows are marked paused. Sales of these tickets are still being counted per your standing calls. Active in Meta right now: the Bruins puck, Mystery Photograph Drop, the original Flyers campaign (puck, Marsh, Phanatic, Maxey and Edgecombe), and the new Maxey/Iverson campaign." },
     { level:"med", title:"2 Jalen Hurts 16x20 orders from Shopify Collective, $159.98, not counted",
