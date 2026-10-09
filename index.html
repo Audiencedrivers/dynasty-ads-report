@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         6860.97,
     spendFoot:     "17 campaigns, 3 delivering",
-    verifiedSales: 52448.20,
-    roas:          7.6,
-    units:         918,
-    companionUnits: 82,
-    orders:        553,
-    avgOrder:      94.84,
+    verifiedSales: 53528.20,
+    roas:          7.8,
+    units:         925,
+    companionUnits: 84,
+    orders:        558,
+    avgOrder:      95.93,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -120,8 +120,8 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 117, revenue: 2925.00, orders: 85 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 168, revenue: 4125.00, orders: 102 },
-    { name: "Allen Iverson Philly Legend Experience Tickets", units: 4,   revenue: 740.00,  orders: 3  },
-    { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 6,   revenue: 1450.00, orders: 4  },
+    { name: "Allen Iverson Philly Legend Experience Tickets", units: 5,   revenue: 910.00,  orders: 4  },
+    { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 10,  revenue: 2350.00, orders: 8  },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 50,  revenue: 2737.00, orders: 25 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
@@ -175,21 +175,19 @@ const DATA = {
     { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1298.00, roas:3.2, tagText:"8 confirmed orders, more pending Zay's review" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
-    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:146.88, ctr:11.77, cpp:18.36, sales:2190.00, roas:14.9, tagText:"Launched Oct 3 to 4. 5 confirmed orders (#183833, #183856, #183872, #183888, #183902). Meta reports 8 purchases" }
+    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:146.88, ctr:11.77, cpp:18.36, sales:3260.00, roas:22.2, tagText:"Launched Oct 3 to 4. 10 confirmed orders. Meta reports 8 purchases" }
   ],
-  adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:48871.33, roas:7.6 },
+  adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:49941.33, roas:7.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3829.50, net: 52448.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3839.50, net: 53528.20 },
   metaReported: { value: 115603.48, purchases: 970 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"", title:"7 orders counted this run, $2,005.00",
+    { level:"", title:"7 orders counted this run before your review, $2,005.00",
       body:"#183888 (Maxey, $300.00) and #183902 (Maxey $200.00 plus a $5.00 certificate in the same cart) came from the new Maxey and Iverson ads. #183872 ($1,350.00, 3 Maxey and 2 Iverson tickets plus inscription add-ons and certificates) was held at first because Shopify had not finished loading its session data; it shows Facebook, paid-social, the Maxey and Iverson campaign, and the exact ad set, so it is now counted. #183898 (Bruins puck, 3 units, $75.00) matched the Bruins ad set exactly. #183911 and #183916 (Mystery Photograph Drop, $25.00 each) matched the Photograph Drop ad set. #183891 (Bruins puck, $25.00) closed on a direct visit after a first visit from Facebook, counted under the direct last touch rule." },
-    { level:"med", title:"2 Maxey and Iverson orders with a Meta ad visit earlier in the journey, $820.00, waiting on you",
-      body:"#183853 ($450.00): paid-social visit on Oct 5 with the exact ad set, then a Bing visit two minutes later closed it. #183899 ($370.00): paid-social visit on Oct 6 with the Iverson image ad, then ChatGPT visits closed it. Both had a real ad touch but a non-Meta last touch. Say the word and I will count them." },
-    { level:"med", title:"9 Maxey and Iverson orders with no ad touch, $2,850.00, still waiting on your call",
-      body:"Whether organic and direct Maxey and Iverson sales count now that ads are live: #183864 ($670.00, Bing), #183874 ($170.00, direct), #183881 ($360.00, Google), #183897 ($205.00 with certificate, Google), #183912 ($200.00, Google then Facebook.com with no ad trace), #183921 ($370.00, Bing), #183928 ($200.00, Facebook.com with no ad trace), #183929 ($305.00 with certificate, direct), #183930 ($370.00, Google and direct). Excluded outright: #183851 ($870.00, ChatGPT only, no Meta touch) and #183920 ($200.00, outside website referral)." },
+    { level:"", title:"Zay reviewed the 11 held Maxey and Iverson orders: 5 count, 6 stay out",
+      body:"#183874 ($170.00), #183897 ($200.00 plus a $5.00 certificate), #183912 ($200.00), #183928 ($200.00), and #183929 ($300.00 plus a $5.00 certificate) confirmed Verified, $1,080.00 combined. #183853, #183864, #183881, #183899, #183921, and #183930 stay excluded, $2,330.00 combined. Also excluded: #183851 (ChatGPT only) and #183920 (outside website referral). Resolves these specific orders only; new Maxey and Iverson orders on the same pattern still get held individually." },
     { level:"med", title:"1 order held, Shop app channel: #183873 (Bruins puck, 2 units, $50.00)",
       body:"No journey data and the order came through the Shop app, so it is held for your decision." },
     { level:"high", title:"Bruins puck ad is now paused in Meta",
