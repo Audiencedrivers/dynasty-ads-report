@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         6860.97,
     spendFoot:     "17 campaigns, 3 delivering",
-    verifiedSales: 53528.20,
+    verifiedSales: 53617.20,
     roas:          7.8,
-    units:         925,
+    units:         926,
     companionUnits: 84,
-    orders:        558,
-    avgOrder:      95.93,
+    orders:        559,
+    avgOrder:      95.92,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -122,7 +122,7 @@ const DATA = {
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 168, revenue: 4125.00, orders: 102 },
     { name: "Allen Iverson Philly Legend Experience Tickets", units: 5,   revenue: 910.00,  orders: 4  },
     { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 10,  revenue: 2350.00, orders: 8  },
-    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 50,  revenue: 2737.00, orders: 25 },
+    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 51,  revenue: 2826.00, orders: 26 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
@@ -172,14 +172,14 @@ const DATA = {
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
-    { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1298.00, roas:3.2, tagText:"8 confirmed orders, more pending Zay's review" },
+    { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1387.00, roas:3.4, tagText:"9 confirmed orders" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:146.88, ctr:11.77, cpp:18.36, sales:3260.00, roas:22.2, tagText:"Launched Oct 3 to 4. 10 confirmed orders. Meta reports 8 purchases" }
   ],
-  adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:49941.33, roas:7.8 },
+  adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:50030.33, roas:7.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3839.50, net: 53528.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3839.50, net: 53617.20 },
   metaReported: { value: 115603.48, purchases: 970 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
@@ -198,8 +198,8 @@ const DATA = {
       body:"Travis Konecny, Cam York, Christian Dvorak, and the Wicks/Markel Bell/Ty Robinson ads show a paused campaign status and their spend stopped moving as of Oct 4. Their rows are marked paused. Sales of these tickets are still being counted per your standing calls. Active in Meta right now: the Mystery Photograph Drop, the original Flyers campaign (puck, Marsh, Phanatic, Maxey and Edgecombe), and the new Maxey/Iverson campaign." },
     { level:"med", title:"2 Jalen Hurts 16x20 orders from Shopify Collective, $159.98, not counted",
       body:"#183812 and #183816 ($79.99 each) came in as automatic Shopify Collective payments with no store visit or journey data, so they cannot be tied to an ad. Held for your decision." },
-    { level:"", title:"Zay confirmed #183735, rest of the held batch left unresolved",
-      body:"#183735 (Wicks, $89.00) confirmed Verified. The other 14 from this run (#183720, #183721, #183724, #183726, #183730, #183733, #183734, #183738, #183742, #183743, #183744, #183762, #183773, #183786), $1,338.00 combined, remain held, not yet reviewed." },
+    { level:"", title:"Zay reviewed the 14 held Wicks, Markel Bell, and Ty Robinson orders: 1 counts, 13 stay out",
+      body:"#183720 (Wicks, $89.00, Google) confirmed Verified. The in-store orders #183738, #183742, #183744, #183762, #183773, and #183786 do not count. The remaining #183721, #183724, #183726, #183730, #183733, #183734, and #183743 stay excluded. Resolves these specific orders only; new orders on the same pattern still get held individually." },
 
     { level:"", title:"Zay reviewed the 10 held orders: 5 count, 5 stay out",
       body:"#183603 ($69.00), #183611 ($89.00), #183634 ($59.00), #183645 ($158.00), and #183711 ($88.00) confirmed Verified, $463.00 combined. #183617, #183623, #183632, #183649, and #183698 stay excluded, $795.00 combined. Resolves these specific orders only; new orders on the same pattern still get held individually." },
