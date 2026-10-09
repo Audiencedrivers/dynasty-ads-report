@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – October 7, 2026",
-  periodDays: 77,
+  periodLabel: "July 23 – October 8, 2026",
+  periodDays: 78,
 
   kpis: {
     spend:         6860.97,
     spendFoot:     "17 campaigns, 3 delivering",
-    verifiedSales: 53617.20,
+    verifiedSales: 53732.20,
     roas:          7.8,
-    units:         926,
-    companionUnits: 84,
+    units:         949,
+    companionUnits: 107,
     orders:        559,
-    avgOrder:      95.92,
+    avgOrder:      96.12,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -179,11 +179,13 @@ const DATA = {
   ],
   adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:50030.33, roas:7.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 3839.50, net: 53617.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 3954.50, net: 53732.20 },
   metaReported: { value: 115603.48, purchases: 970 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"Same-cart rule applied back through July 23: 14 orders, $115.00 added",
+      body:"Certificates of Authenticity ($5.00 each, 23 in total) sitting in the same cart as an already confirmed sale were left out of earlier refreshes and are now counted as companion revenue. Orders: #180990, #182000, #182265, #182645, #182749, #182888, #183015, #183016, #183251, #183298, #183354, #183370, #183388, and #183634. Verified sales rise from $53,617.20 to $53,732.20. Certificates in #183833, #183872, #183897, #183902, and #183929 were already counted. 34 more certificate carts sit on orders whose own status was never ruled on (direct or Google closing touch, in-store, or Shop app), $365.00 in certificates, and stay out until you confirm each." },
     { level:"", title:"7 orders counted this run before your review, $2,005.00",
       body:"#183888 (Maxey, $300.00) and #183902 (Maxey $200.00 plus a $5.00 certificate in the same cart) came from the new Maxey and Iverson ads. #183872 ($1,350.00, 3 Maxey and 2 Iverson tickets plus inscription add-ons and certificates) was held at first because Shopify had not finished loading its session data; it shows Facebook, paid-social, the Maxey and Iverson campaign, and the exact ad set, so it is now counted. #183898 (Bruins puck, 3 units, $75.00) matched the Bruins ad set exactly. #183911 and #183916 (Mystery Photograph Drop, $25.00 each) matched the Photograph Drop ad set. #183891 (Bruins puck, $25.00) closed on a direct visit after a first visit from Facebook, counted under the direct last touch rule." },
     { level:"", title:"Zay reviewed the 11 held Maxey and Iverson orders: 5 count, 6 stay out",
