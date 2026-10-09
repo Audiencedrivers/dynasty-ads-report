@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         6860.97,
     spendFoot:     "17 campaigns, 3 delivering",
-    verifiedSales: 53942.20,
-    roas:          7.9,
-    units:         991,
-    companionUnits: 149,
-    orders:        559,
-    avgOrder:      96.50,
+    verifiedSales: 53745.21,
+    roas:          7.8,
+    units:         985,
+    companionUnits: 146,
+    orders:        558,
+    avgOrder:      96.32,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -122,7 +122,7 @@ const DATA = {
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 168, revenue: 4125.00, orders: 102 },
     { name: "Allen Iverson Philly Legend Experience Tickets", units: 5,   revenue: 910.00,  orders: 4  },
     { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 10,  revenue: 2350.00, orders: 8  },
-    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 51,  revenue: 2826.00, orders: 26 },
+    { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 48,  revenue: 2689.00, orders: 25 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
     { name: "Merrill Reese Pro Style Jersey",               units: 1,   revenue: 169.99,  orders: 1  },
@@ -177,15 +177,15 @@ const DATA = {
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:146.88, ctr:11.77, cpp:18.36, sales:3260.00, roas:22.2, tagText:"Launched Oct 3 to 4. 10 confirmed orders. Meta reports 8 purchases" }
   ],
-  adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:50030.33, roas:7.9 },
+  adTotals: { spend:6860.97, ctr:4.60, cpp:5.84, sales:49893.33, roas:7.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4164.50, net: 53942.20 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4104.51, net: 53745.21 },
   metaReported: { value: 115603.48, purchases: 970 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"", title:"Same-cart rule applied back through July 23: 31 orders, $325.00 added",
-      body:"Certificates of Authenticity ($5.00 each, 65 in total) in the same cart as a confirmed sale were left out of earlier refreshes and are now counted as companion revenue. Confirmed sales: #180990, #182265, #182645, #182749, #182888, #183015, #183016, #183251, #183298, #183354, #183370, #183388, #183634. Added per your direction on the orders closed by direct or Google visits: #181902, #182091, #182543, #183042, #182322, #182338, #182918, #182982, #183094, #183099, #183479, #183618, #179859, #180444, #180528, #180647, #180920, #180923. In-store orders do not count (#183107, #182554, #180242, #181122, #181132, #181135, #180062). Still held for your decision: #182012 (Shop app), #179915 (no session data), and the staff-created orders #180508, #181090, #181093, $40.00 in certificates. Meet & Greet orders before Sep 9, when its ads started, do not count (#181978, #181980, #182028, #182063, #182000). Verified sales rise from $53,617.20 to $53,942.20." },
+    { level:"", title:"Same-cart rule applied back through July 23: 30 orders, $315.00 added",
+      body:"Certificates of Authenticity ($5.00 each, 63 in total) in the same cart as a confirmed sale were left out of earlier refreshes and are now counted as companion revenue. Confirmed sales: #180990, #182265, #182645, #182749, #182888, #183015, #183016, #183251, #183298, #183354, #183388, #183634. Added per your direction on the orders closed by direct or Google visits: #181902, #182091, #182543, #183042, #182322, #182338, #182918, #182982, #183094, #183099, #183479, #183618, #179859, #180444, #180528, #180647, #180920, #180923. In-store orders do not count (#183107, #182554, #180242, #181122, #181132, #181135, #180062). Still held for your decision: #182012 (Shop app), #179915 (no session data), and the staff-created orders #180508, #181090, #181093, $40.00 in certificates. Meet & Greet orders before Sep 9, when its ads started, do not count (#181978, #181980, #182028, #182063, #182000). Order #183370 (Wicks, Ty Robinson, Markel Bell, a mini helmet and certificates) was removed entirely at your direction, $196.99 out of verified sales; it had earlier been confirmed. Verified sales are now $53,745.21, up $128.01 net from $53,617.20." },
     { level:"", title:"7 orders counted this run before your review, $2,005.00",
       body:"#183888 (Maxey, $300.00) and #183902 (Maxey $200.00 plus a $5.00 certificate in the same cart) came from the new Maxey and Iverson ads. #183872 ($1,350.00, 3 Maxey and 2 Iverson tickets plus inscription add-ons and certificates) was held at first because Shopify had not finished loading its session data; it shows Facebook, paid-social, the Maxey and Iverson campaign, and the exact ad set, so it is now counted. #183898 (Bruins puck, 3 units, $75.00) matched the Bruins ad set exactly. #183911 and #183916 (Mystery Photograph Drop, $25.00 each) matched the Photograph Drop ad set. #183891 (Bruins puck, $25.00) closed on a direct visit after a first visit from Facebook, counted under the direct last touch rule." },
     { level:"", title:"Zay reviewed the 11 held Maxey and Iverson orders: 5 count, 6 stay out",
