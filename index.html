@@ -87,11 +87,11 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – October 9, 2026",
-  periodDays: 79,
+  periodLabel: "July 23 – October 10, 2026",
+  periodDays: 80,
 
   kpis: {
-    spend:         6952.41,
+    spend:         6993.60,
     spendFoot:     "17 campaigns, 3 delivering",
     verifiedSales: 55890.20,
     roas:          8.0,
@@ -168,22 +168,24 @@ const DATA = {
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.57, ctr:3.26, cpp:15.86, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
     { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.90, sales:4250.00, roas:8.0, tagText:"New campaign, launched 9/9, now paused" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:589.48, ctr:4.12, cpp:4.87, sales:3000.00, roas:5.1, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:600.36, ctr:4.12, cpp:4.96, sales:3000.00, roas:5.0, tagText:"New campaign, launched 9/9" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
     { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1387.00, roas:3.4, tagText:"9 confirmed orders" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
-    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:204.45, ctr:11.32, cpp:15.73, sales:5100.00, roas:24.9, tagText:"Launched Oct 3 to 4. 16 confirmed orders. Meta reports 13 purchases" }
+    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:234.76, ctr:10.95, cpp:16.77, sales:5100.00, roas:21.7, tagText:"Launched Oct 3 to 4. 16 confirmed orders. Meta reports 14 purchases" }
   ],
-  adTotals: { spend:6952.41, ctr:4.64, cpp:7.09, sales:52033.32, roas:8.0 },
+  adTotals: { spend:6993.60, ctr:4.64, cpp:7.13, sales:52033.32, roas:8.0 },
 
   reconcile: { discountCodes: -252.63, companionRevenue: 4109.51, net: 55890.20 },
-  metaReported: { value: 117832.14, purchases: 980 },
+  metaReported: { value: 118082.14, purchases: 981 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"2 Maxey orders held for your decision, nothing new counted",
+      body:"#183988 (Maxey, $250.00, direct then Google, no ad touch) and #183989 (Maxey, $250.00, Google then direct, no ad touch). 13 new orders this run (#183987 to #183999); the rest are products without an ad, in-store sales, and Frame Kit orders (#183999), none counted. Still open from before: #183962 (Maxey, $200.00)." },
     { level:"", title:"11 orders counted this run, $2,144.99",
       body:"#183932 (Mystery Photograph Drop x2, $50.00) and #183972 (Mystery Photograph Drop, $25.00) match the Photograph Drop ad set. #183939 (Iverson, $170.00), #183948 (Iverson x2, $370.00), #183968 (Maxey plus inscription, $325.00), and #183982 (Iverson, $200.00) match the Maxey and Iverson ad set exactly. #183970 (Bruins puck, $25.00, Google), #183973 (Bruins puck x4, $100.00, direct), and #183975 (Merrill Reese framed print, $99.99, direct) closed on direct or Google visits. #183969 (Maxey tickets and inscription $575.00 plus a $5.00 certificate, $580.00) counted at your direction, as was #183954 (Maxey, $200.00, Facebook with no ad trace). Verified sales are now $55,890.20." },
     { level:"med", title:"2 orders held for your decision",
@@ -307,8 +309,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 4183, value: 416580.07, socialOrders: 546, socialValue: 64622.94 },
-  totalOrdersScanned: 4183,
+  storeWide: { orders: 4196, value: 417729.47, socialOrders: 546, socialValue: 64622.94 },
+  totalOrdersScanned: 4196,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
