@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         7156.56,
     spendFoot:     "17 campaigns, 3 delivering",
-    verifiedSales: 58130.19,
+    verifiedSales: 57800.19,
     roas:          8.1,
-    units:         1023,
+    units:         1022,
     companionUnits: 150,
-    orders:        579,
-    avgOrder:      100.4,
+    orders:        578,
+    avgOrder:      100.0,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -106,7 +106,7 @@ const DATA = {
   // Line-level product revenue, before order-level discount codes.
   // Set revenue to 0 and add a `zeroNote` for products that did not sell.
   products: [
-    { name: "Saquon Barkley Pre-Sale",                  units: 33,  revenue: 10106.00, orders: 22 },
+    { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
     { name: "Flyers Autographed Mystery Puck",          units: 204, revenue: 5225.00, orders: 113 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
@@ -138,7 +138,7 @@ const DATA = {
     { name: "Flyers mystery puck",              status:"live",   spend:982.98, ctr:3.33, cpp:6.83,  sales:5225.00, roas:5.3 },
     { name: "Merrill Reese Autographed & Framed Print", status:"paused", spend:638.02, ctr:5.73, cpp:16.79, sales:2119.79, roas:3.3 },
     { name: "Phillies Triple Event",            status:"paused", spend:515.89, ctr:4.27, cpp:12.00, sales:5159.00, roas:10.0 },
-    { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:10106.00, roas:16.8 },
+    { name: "Barkley Presale 1",                status:"paused", spend:509.51, ctr:4.93, cpp:12.74, spans:3, sales:9776.00, roas:16.3 },
     { name: "Barkley Presale 3",                status:"paused", spend:32.97,  ctr:5.92, cpp:32.97, groupWith:true },
     { name: "Barkley Presale 2",                status:"paused", spend:59.09,  ctr:5.12, cpp:19.70, groupWith:true },
     { name: "Marsh “Ring the Bell” jersey",     status:"paused", spend:25.40,  ctr:9.31,  cpp:4.23, sales:379.99, roas:15.0 },
@@ -177,15 +177,15 @@ const DATA = {
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:350.08, ctr:10.40, cpp:19.45, sales:6770.00, roas:19.3, tagText:"Launched Oct 3 to 4. 21 confirmed orders. Meta reports 18 purchases" }
   ],
-  adTotals: { spend:7156.56, ctr:4.70, cpp:7.25, sales:54258.31, roas:8.1 },
+  adTotals: { spend:7156.56, ctr:4.70, cpp:7.25, sales:53928.31, roas:8.1 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4124.51, net: 58130.19 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4124.51, net: 57800.19 },
   metaReported: { value: 120113.44, purchases: 987 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
-    { level:"med", title:"1 order counted, 6 held for your decision",
-      body:"Counted: #184079 (Saquon Barkley Pre-Sale, $330.00), closed on a direct visit after Google, counted under the direct and Google rule. Held, Maxey and Iverson with no ad touch: #184080 (Iverson, $170.00, Google then direct), #184083 (Maxey, $200.00, Google then direct), #184085 (Maxey $200.00 and $300.00, direct), #184086 (Maxey, $200.00, direct). #184092 (Maxey, $200.00) has no session data from Shopify yet and will be re-checked next refresh, along with #184051 (Iverson, $170.00). 15 new orders this run (#184078 to #184092). Verified sales are now $58,130.19." },
+    { level:"med", title:"Nothing counted, 6 held for your decision",
+      body:"#184079 (Saquon Barkley Pre-Sale, $330.00, Google then direct, no ad touch) is not counted because the Saquon ads are off. Held, Maxey and Iverson with no ad touch: #184080 (Iverson, $170.00, Google then direct), #184083 (Maxey, $200.00, Google then direct), #184085 (Maxey $200.00 and $300.00, direct), #184086 (Maxey, $200.00, direct). #184092 (Maxey, $200.00) has no session data from Shopify yet and will be re-checked next refresh, along with #184051 (Iverson, $170.00). 15 new orders this run (#184078 to #184092). Verified sales stay at $57,800.19." },
     { level:"", title:"Not counted this run",
       body:"Excluded: #184078 (Maxey, $200.00) and #184087 (Iverson plus certificate, $165.00), both from an outside news website with no ad touch. Also not counted: in-store orders #184084, #184089, #184091, Amazon #184090, Shop app #184082, a baby gift order from a registry site (#184081), Porter Martone #184088, and every product without an ad." },
     { level:"", title:"5 orders counted this run, $594.99",
