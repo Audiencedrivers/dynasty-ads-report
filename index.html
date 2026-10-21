@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – October 20, 2026",
-  periodDays: 90,
+  periodLabel: "July 23 – October 21, 2026",
+  periodDays: 91,
 
   kpis: {
-    spend:         7669.91,
+    spend:         7786.63,
     spendFoot:     "17 campaigns, 3 delivering",
-    verifiedSales: 71511.17,
-    roas:          9.3,
-    units:         1109,
-    companionUnits: 162,
-    orders:        631,
-    avgOrder:      113.33,
+    verifiedSales: 73526.17,
+    roas:          9.4,
+    units:         1129,
+    companionUnits: 167,
+    orders:        638,
+    avgOrder:      115.24,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -118,10 +118,10 @@ const DATA = {
     { name: "Build Your Own Custom Frame Kit",           units: 9,   revenue: 685.91,  orders: 7  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 140, revenue: 3500.00, orders: 99 },
-    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 178, revenue: 4375.00, orders: 107 },
-    { name: "Allen Iverson Philly Legend Experience Tickets", units: 48,  revenue: 8490.00,  orders: 34 },
-    { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 49,  revenue: 11150.00, orders: 40 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 145, revenue: 3625.00, orders: 101 },
+    { name: "Boston Bruins Autographed Mystery Puck Drop", units: 179, revenue: 4400.00, orders: 108 },
+    { name: "Allen Iverson Philly Legend Experience Tickets", units: 53,  revenue: 9370.00,  orders: 36 },
+    { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 53,  revenue: 12100.00, orders: 43 },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 48,  revenue: 2689.00, orders: 25 },
     { name: "Dan Vladar Philadelphia Flyers Goalie Experience Tickets", units: 3,   revenue: 220.00,  orders: 1  },
     { name: "Denver Barkey Philadelphia Flyers Experience Tickets", units: 1,   revenue: 69.00,   orders: 1  },
@@ -167,23 +167,25 @@ const DATA = {
     { name: "Jaromir Jagr jersey",     status:"paused", spend:8.99,  ctr:1.56,  cpp:4.50, sales:null, roas:null, tagText:"Now paused, 2 Meta-reported purchases, unmatched" },
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.57, ctr:3.26, cpp:15.86, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
-    { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.85, sales:4375.00, roas:8.2, tagText:"New campaign, launched 9/9, now paused" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:809.93, ctr:3.76, cpp:5.74, sales:3500.00, roas:4.3, tagText:"New campaign, launched 9/9" },
+    { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.85, sales:4400.00, roas:8.2, tagText:"New campaign, launched 9/9, now paused" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:829.85, ctr:3.75, cpp:5.65, sales:3625.00, roas:4.4, tagText:"New campaign, launched 9/9" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
     { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1387.00, roas:3.4, tagText:"9 confirmed orders" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
-    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:701.50, ctr:8.91, cpp:18.46, sales:19640.00, roas:28.0, tagText:"Launched Oct 3 to 4. 61 confirmed orders. Meta reports 38 purchases" }
+    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:798.30, ctr:8.74, cpp:17.74, sales:21470.00, roas:26.9, tagText:"Launched Oct 3 to 4. 65 confirmed orders. Meta reports 45 purchases" }
   ],
-  adTotals: { spend:7669.91, ctr:4.76, cpp:7.48, sales:67398.30, roas:9.3 },
+  adTotals: { spend:7786.63, ctr:4.77, cpp:7.49, sales:69378.30, roas:9.4 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4365.50, net: 71511.17 },
-  metaReported: { value: 127758.26, purchases: 1026 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4400.50, net: 73526.17 },
+  metaReported: { value: 131169.05, purchases: 1039 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"7 orders counted, $2,015.00",
+      body:"Matched to their ad set: #184472 (Iverson tickets $370.00 plus inscription $140.00 and a $5.00 certificate, ad on every visit), #184497 (Maxey $300.00 plus a $5.00 certificate, last visit from the Maxey and Iverson ad set), #184501 (Maxey, $200.00, last visit from the ad set). Started on the ad, closed on a direct visit: #184495 (Iverson $370.00, Maxey $450.00, plus 2 certificates, $10.00). Closed on a direct or Google visit: #184440 (Mystery Photograph Drop x3, $75.00), #184494 (Mystery Photograph Drop x2, $50.00, plus a $15.00 Bobby Brink photo in the same cart), #184474 (Bruins puck, $25.00). 72 new orders this run (#184431 to #184502)." },
     { level:"med", title:"3 more orders counted at your direction, $842.99",
       body:"Confirmed by you: #184394 (Maxey $300.00 plus a $5.00 certificate), #184421 (Maxey $250.00, plus Porter Martone inscription $30.00 and tickets x2 $158.00 in the same cart), and #184210 (Merrill Reese framed print, $99.99)." },
     { level:"med", title:"5 orders counted this run, $780.00",
@@ -195,7 +197,7 @@ const DATA = {
     { level:"med", title:"4 orders counted this run, $457.99",
       body:"Matched to their ad set: #184345 (Mystery Photograph Drop, $25.00, last visit from the Photograph Drop ad set), #184371 (Mystery Photograph Drop, $25.00, Photograph Drop ad set), #184347 (Maxey $200.00 and Iverson $170.00, last visit from the Maxey and Iverson ad set). Direct visit: #184356 (Mystery Photograph Drop $25.00, plus a $12.99 puck in the same cart)." },
     { level:"med", title:"Still held for your decision",
-      body:"Maxey and Iverson, no ad touch: #184188, #184202, #184207, #184216, #184250, #184308, #184327, #184348, #184352, #184360, #184382, #184085, #184118, #184134, #184143, #184165, #184171, #184395, #184402, #184403, #184409, #184412, #184416, #184419. Maxey and Iverson ad clicks, closed on Google: #184399. #184423 (Jalen Hurts 16x20, $99.99, direct): the ad for this product is paused. #184424 (Michkov photo, $49.00) began with a Maxey and Iverson ad click but bought a product with no ad. #184284 (Bruins puck, $25.00) and #184051 have no visit data, and #184429 has none yet. Other older holds are still open." },
+      body:"Maxey and Iverson, no ad touch: #184188, #184202, #184207, #184216, #184250, #184308, #184327, #184348, #184352, #184360, #184382, #184085, #184118, #184134, #184143, #184165, #184171, #184431, #184458, #184460, #184466, #184475, #184479, #184486, #184487, #184488, #184499, #184500, #184395, #184402, #184403, #184409, #184412, #184416, #184419. Maxey and Iverson ad clicks, closed on Google: #184399. #184423 (Jalen Hurts 16x20, $99.99, direct) and #184446 (Jalen Hurts 11x14, $79.99, direct): the ad for this product is paused. Maxey and Iverson, Facebook with no ad trace: #184481 (Maxey, $200.00). Maxey and Iverson, ad click mid-journey, closed direct: #184491 (Maxey $200.00, Iverson $160.00, plus a $12.99 photo). #184441 (Mystery Photo Package $49.00 plus a Michkov photo $49.00, Photograph Drop ad click mid-journey, Facebook last) and #184433 (Michkov photo, $49.00, Maxey and Iverson ad first, Facebook last) are ad-assisted candidates. Shop app: #184502 (Hurts and Foles framed prints, $209.98, no visit data yet). #184424 (Michkov photo, $49.00) began with a Maxey and Iverson ad click but bought a product with no ad. #184284 (Bruins puck, $25.00) and #184051 have no visit data, and #184429 has none yet. Other older holds are still open." },
     { level:"", title:"Not counted this run",
       body:"Excluded: #184362 (Maxey inscription add-on, $75.00, a Maxey and Iverson ad click mid-journey but an outside link page closed it), #184288 (outside news site), #184337 (ChatGPT), #184344 (outside link page), #184379 (Porter Martone tickets, no ad product), #184343 (Michkov puck, no ad), Flyers and other products without an ad, in-store orders, Amazon, Shopify Collective and Shop app frame kit and glove orders." },
     { level:"med", title:"8 orders counted this run, $2,020.00",
@@ -347,8 +349,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 4625, value: 481519.20, socialOrders: 597, socialValue: 74977.88 },
-  totalOrdersScanned: 4625,
+  storeWide: { orders: 4697, value: 492988.09, socialOrders: 597, socialValue: 74977.88 },
+  totalOrdersScanned: 4697,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
