@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         8513.74,
     spendFoot:     "19 campaigns, 5 delivering",
-    verifiedSales: 83142.01,
+    verifiedSales: 83302.01,
     roas:          9.8,
-    units:         1192,
+    units:         1193,
     companionUnits: 178,
-    orders:        677,
-    avgOrder:      122.81,
+    orders:        678,
+    avgOrder:      122.87,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -120,7 +120,7 @@ const DATA = {
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
     { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 151, revenue: 3775.00, orders: 105 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 179, revenue: 4400.00, orders: 108 },
-    { name: "Allen Iverson Philly Legend Experience Tickets", units: 60,  revenue: 10690.00, orders: 42 },
+    { name: "Allen Iverson Philly Legend Experience Tickets", units: 61,  revenue: 10850.00, orders: 43 },
     { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 88,  revenue: 19850.00, orders: 66 },
     { name: "2025 Haunted Moments Dynasty Exclusive Trading Cards", units: 13, revenue: 194.87, orders: 6 },
     { name: "Dontayvion Wicks / Markel Bell / Ty Robinson Philly Football Kickoff Experience Tickets", units: 48,  revenue: 2689.00, orders: 25 },
@@ -178,15 +178,17 @@ const DATA = {
     { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1387.00, roas:3.4, tagText:"9 confirmed orders" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
-    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.67, sales:30540.00, roas:26.0, tagText:"Launched Oct 3 to 4. 93 confirmed orders. Meta reports 75 purchases" }
+    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.67, sales:30700.00, roas:26.1, tagText:"Launched Oct 3 to 4. 94 confirmed orders. Meta reports 75 purchases" }
   ],
-  adTotals: { spend:8513.74, ctr:5.04, cpp:7.60, sales:78923.16, roas:9.8 },
+  adTotals: { spend:8513.74, ctr:5.04, cpp:7.60, sales:79083.16, roas:9.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4471.48, net: 83142.01 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4471.48, net: 83302.01 },
   metaReported: { value: 144561.35, purchases: 1120 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"#184969 counted at your direction, $160.00",
+      body:"Iverson ticket, bought after a click on the Haunted Moments ad (no Maxey and Iverson ad click). Added to the Iverson product and to the Maxey and Iverson campaign row. Verified sales are now $83,302.01." },
     { level:"med", title:"#184933 counted at your direction, $129.99",
       body:"Jalen Hurts Cigar & Trophy 16x20, bought after a click on the Hurts Clot ad. Added to the Hurts Cigar & Trophy product and to the Hurts Clot campaign. Verified sales are now $83,142.01." },
     { level:"", title:"No new orders counted this run",
