@@ -87,11 +87,11 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – October 26, 2026",
-  periodDays: 96,
+  periodLabel: "July 23 – October 27, 2026",
+  periodDays: 97,
 
   kpis: {
-    spend:         8490.12,
+    spend:         8513.74,
     spendFoot:     "19 campaigns, 5 delivering",
     verifiedSales: 83012.02,
     roas:          9.8,
@@ -169,9 +169,9 @@ const DATA = {
     { name: "Merrill Reese Pro Style Jersey (new)", status:"paused", spend:158.57, ctr:3.26, cpp:15.86, sales:169.99, roas:1.1, tagText:"Now paused, 10 Meta-reported purchases, 1 confirmed order" },
     { name: "Merrill Reese Pro Style Framed Jersey (new)", status:"paused", spend:0.29, ctr:4.55, cpp:null, groupWith:true, tagText:"Second ad in same campaign, no purchases yet" },
     { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.85, sales:4400.00, roas:8.2, tagText:"New campaign, launched 9/9, now paused" },
-    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:943.10, ctr:3.71, cpp:5.48, sales:3775.00, roas:4.0, tagText:"New campaign, launched 9/9" },
-    { name: "Flyers Haunted Moments Trading Cards (new)", status:"live", spend:103.47, ctr:4.91, cpp:8.62, sales:194.87, roas:1.9, tagText:"New campaign, launched Oct 22. 3 ads. 6 confirmed orders" },
-    { name: "Jalen Hurts Clot (new)", status:"live", spend:109.79, ctr:15.57, cpp:8.45, sales:null, roas:null, tagText:"New campaign, launched Oct 22. 13 Meta purchases, unmatched" },
+    { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:948.98, ctr:3.70, cpp:5.52, sales:3775.00, roas:4.0, tagText:"New campaign, launched 9/9" },
+    { name: "Flyers Haunted Moments Trading Cards (new)", status:"live", spend:111.78, ctr:4.86, cpp:8.60, sales:194.87, roas:1.7, tagText:"New campaign, launched Oct 22. 3 ads. 6 confirmed orders" },
+    { name: "Jalen Hurts Clot (new)", status:"live", spend:119.22, ctr:15.92, cpp:9.17, sales:null, roas:null, tagText:"New campaign, launched Oct 22. 13 Meta purchases, unmatched" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
@@ -180,13 +180,15 @@ const DATA = {
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.67, sales:30540.00, roas:26.0, tagText:"Launched Oct 3 to 4. 93 confirmed orders. Meta reports 75 purchases" }
   ],
-  adTotals: { spend:8490.12, ctr:5.02, cpp:7.59, sales:78793.17, roas:9.8 },
+  adTotals: { spend:8513.74, ctr:5.04, cpp:7.60, sales:78793.17, roas:9.8 },
 
   reconcile: { discountCodes: -252.63, companionRevenue: 4471.48, net: 83012.02 },
-  metaReported: { value: 144540.41, purchases: 1119 },
+  metaReported: { value: 144561.35, purchases: 1120 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"", title:"No new orders counted this run",
+      body:"4 new orders came in (#185073 to #185076): a Shopify Collective order, an in-store sale, a Maxey photograph ($12.99, Google visit, no ad touch), and a Phillies print ($99.99, no visit data, no ad on that product). Verified sales stay at $83,012.02. Meta spend is now $8,513.74. #184741 and #184898 still have no visit data." },
     { level:"med", title:"3 orders counted this run, $274.95",
       body:"Iverson: #184996 ($200.00, ad clicks Oct 25 and 26). Haunted Moments: #185069 (4 cards, $59.96) and #185071 (1 card, $14.99), both with the ad name on the link. Verified sales are now $83,012.02. Decisions for you, not counted: #184933 (Jalen Hurts Cigar & Trophy 16x20, $129.99, arrived from the Hurts Clot ad, whose Meta purchases still do not match any order) and #184969 (Iverson, $160.00, the only ad click was on the Haunted Moments ad). Ad-assisted candidates, different product: #184928 (Kruk 16x20, $179.99) and #184930 (Maxey photograph, $12.99), both with Maxey and Iverson ad clicks. Held with no ad click, 15 Iverson web orders: #184944 (ChatGPT), #184945, #184948, #184949, #184952, #184955, #184957, #184964, #184965, #184967, #184974, #184988, #185012, #185020, #185036. #184741 and #184898 still have no visit data. Everything else (in-store, Shop app, eBay, draft, raffle, certificate-only, and non-advertised products) is not counted." },
     { level:"med", title:"12 orders counted this run, $3,234.98",
@@ -376,8 +378,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 5266, value: 567823.91, socialOrders: 597, socialValue: 74977.88 },
-  totalOrdersScanned: 5266,
+  storeWide: { orders: 5270, value: 568072.87, socialOrders: 597, socialValue: 74977.88 },
+  totalOrdersScanned: 5270,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
