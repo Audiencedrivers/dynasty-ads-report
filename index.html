@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         8513.74,
     spendFoot:     "19 campaigns, 5 delivering",
-    verifiedSales: 83012.02,
+    verifiedSales: 83142.01,
     roas:          9.8,
-    units:         1191,
+    units:         1192,
     companionUnits: 178,
-    orders:        676,
-    avgOrder:      122.80,
+    orders:        677,
+    avgOrder:      122.81,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -111,7 +111,7 @@ const DATA = {
     { name: "Flyers Autographed Mystery Puck",          units: 204, revenue: 5225.00, orders: 113 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
-    { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 11,  revenue: 1099.91,  orders: 11 },
+    { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 12,  revenue: 1229.90,  orders: 12 },
     { name: "Saquon Reverse Hurdle 8×10",               units: 10,  revenue: 911.91,  orders: 10 },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
@@ -171,7 +171,7 @@ const DATA = {
     { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.85, sales:4400.00, roas:8.2, tagText:"New campaign, launched 9/9, now paused" },
     { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:948.98, ctr:3.70, cpp:5.52, sales:3775.00, roas:4.0, tagText:"New campaign, launched 9/9" },
     { name: "Flyers Haunted Moments Trading Cards (new)", status:"live", spend:111.78, ctr:4.86, cpp:8.60, sales:194.87, roas:1.7, tagText:"New campaign, launched Oct 22. 3 ads. 6 confirmed orders" },
-    { name: "Jalen Hurts Clot (new)", status:"live", spend:119.22, ctr:15.92, cpp:9.17, sales:null, roas:null, tagText:"New campaign, launched Oct 22. 13 Meta purchases, unmatched" },
+    { name: "Jalen Hurts Clot (new)", status:"live", spend:119.22, ctr:15.92, cpp:9.17, sales:129.99, roas:1.1, tagText:"New campaign, launched Oct 22. 1 confirmed order, 13 Meta purchases" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
@@ -180,13 +180,15 @@ const DATA = {
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.67, sales:30540.00, roas:26.0, tagText:"Launched Oct 3 to 4. 93 confirmed orders. Meta reports 75 purchases" }
   ],
-  adTotals: { spend:8513.74, ctr:5.04, cpp:7.60, sales:78793.17, roas:9.8 },
+  adTotals: { spend:8513.74, ctr:5.04, cpp:7.60, sales:78923.16, roas:9.8 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4471.48, net: 83012.02 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4471.48, net: 83142.01 },
   metaReported: { value: 144561.35, purchases: 1120 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"#184933 counted at your direction, $129.99",
+      body:"Jalen Hurts Cigar & Trophy 16x20, bought after a click on the Hurts Clot ad. Added to the Hurts Cigar & Trophy product and to the Hurts Clot campaign. Verified sales are now $83,142.01." },
     { level:"", title:"No new orders counted this run",
       body:"4 new orders came in (#185073 to #185076): a Shopify Collective order, an in-store sale, a Maxey photograph ($12.99, Google visit, no ad touch), and a Phillies print ($99.99, no visit data, no ad on that product). Verified sales stay at $83,012.02. Meta spend is now $8,513.74. #184741 and #184898 still have no visit data." },
     { level:"med", title:"3 orders counted this run, $274.95",
