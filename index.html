@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         8907.30,
     spendFoot:     "19 campaigns, 5 delivering",
-    verifiedSales: 83646.99,
+    verifiedSales: 83946.96,
     roas:          9.4,
-    units:         1204,
+    units:         1207,
     companionUnits: 181,
-    orders:        688,
-    avgOrder:      121.58,
+    orders:        691,
+    avgOrder:      121.49,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -111,7 +111,7 @@ const DATA = {
     { name: "Flyers Autographed Mystery Puck",          units: 204, revenue: 5225.00, orders: 113 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
-    { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 12,  revenue: 1229.90,  orders: 12 },
+    { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 15,  revenue: 1529.87,  orders: 15 },
     { name: "Saquon Reverse Hurdle 8×10",               units: 10,  revenue: 911.91,  orders: 10 },
     { name: "Phanatic Big Logo Hoodie",                 units: 5,   revenue: 299.95,  orders: 4  },
     { name: "Maxey & Edgecombe dual 8×10",              units: 4,   revenue: 319.96,  orders: 4  },
@@ -171,7 +171,7 @@ const DATA = {
     { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.85, sales:4450.00, roas:8.3, tagText:"New campaign, launched 9/9, now paused" },
     { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:1017.99, ctr:3.70, cpp:5.66, sales:3950.00, roas:3.9, tagText:"New campaign, launched 9/9" },
     { name: "Flyers Haunted Moments Trading Cards (new)", status:"live", spend:204.53, ctr:4.34, cpp:10.23, sales:224.85, roas:1.1, tagText:"New campaign, launched Oct 22. 3 ads. 8 confirmed orders" },
-    { name: "Jalen Hurts Clot (new)", status:"live", spend:351.02, ctr:14.31, cpp:6.16, sales:129.99, roas:0.4, tagText:"New campaign, launched Oct 22. 1 confirmed order, 57 Meta purchases" },
+    { name: "Jalen Hurts Clot (new)", status:"live", spend:351.02, ctr:14.31, cpp:6.16, sales:429.96, roas:1.2, tagText:"New campaign, launched Oct 22. 4 confirmed orders, 57 Meta purchases" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
@@ -180,13 +180,15 @@ const DATA = {
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.07, sales:30700.00, roas:26.1, tagText:"Launched Oct 3 to 4. 94 confirmed orders. Meta reports 78 purchases" }
   ],
-  adTotals: { spend:8907.30, ctr:5.28, cpp:7.54, sales:79338.14, roas:9.4 },
+  adTotals: { spend:8907.30, ctr:5.28, cpp:7.54, sales:79638.11, roas:9.4 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4561.48, net: 83646.99 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4561.48, net: 83946.96 },
   metaReported: { value: 149593.36, purchases: 1182 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"3 orders counted at your direction, $299.97",
+      body:"Hurts Cigar & Trophy Champions 16x20, $99.99 each: #185207 (in-store, Oct 31), #185436 (website, Nov 4, Google visit, no ad click) and #185493 (in-store, Nov 5). None of them has a Hurts Clot ad click. Added to the Hurts Cigar & Trophy product and to the Hurts Clot campaign. Verified sales are now $83,946.96." },
     { level:"med", title:"1 order counted this run, $115.00",
       body:"#185457: Boston Bruins puck ($25.00, closed on a direct visit, counted under the advertised-product rule, judgment call) plus 3 Flyers Mystery Puck Drops in the same cart ($90.00, added as same-cart extras). Verified sales are now $83,646.99. Nothing is held this run: no new Maxey or Iverson web orders. #184741 and #184898 still have no visit data. Possible assisted sale only: #185454 (Holiday Kickoff ticket with an earlier Maxey and Iverson ad click, not an advertised product)." },
     { level:"high", title:"Decision needed: about 22 Travis Konecny jersey orders on Nov 5, $59.00 each",
