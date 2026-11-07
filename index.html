@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – November 5, 2026",
-  periodDays: 106,
+  periodLabel: "July 23 – November 6, 2026",
+  periodDays: 107,
 
   kpis: {
-    spend:         8907.30,
-    spendFoot:     "19 campaigns, 5 delivering",
-    verifiedSales: 83946.96,
-    roas:          9.4,
-    units:         1207,
+    spend:         9000.66,
+    spendFoot:     "29 campaigns, 15 delivering",
+    verifiedSales: 83996.96,
+    roas:          9.3,
+    units:         1209,
     companionUnits: 181,
-    orders:        691,
-    avgOrder:      121.49,
+    orders:        693,
+    avgOrder:      121.21,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 204, revenue: 5225.00, orders: 113 },
+    { name: "Flyers Autographed Mystery Puck",          units: 205, revenue: 5250.00, orders: 114 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 15,  revenue: 1529.87,  orders: 15 },
@@ -118,7 +118,7 @@ const DATA = {
     { name: "Build Your Own Custom Frame Kit",           units: 9,   revenue: 685.91,  orders: 7  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 158, revenue: 3950.00, orders: 111 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 159, revenue: 3975.00, orders: 112 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 181, revenue: 4450.00, orders: 110 },
     { name: "Allen Iverson Philly Legend Experience Tickets", units: 61,  revenue: 10850.00, orders: 43 },
     { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 88,  revenue: 19850.00, orders: 66 },
@@ -171,22 +171,42 @@ const DATA = {
     { name: "Boston Bruins Mystery Puck (new)", status:"paused", spend:533.76, ctr:3.97, cpp:4.85, sales:4450.00, roas:8.3, tagText:"New campaign, launched 9/9, now paused" },
     { name: "Flyers Mystery Photograph Drop (new)", status:"live", spend:1017.99, ctr:3.70, cpp:5.66, sales:3950.00, roas:3.9, tagText:"New campaign, launched 9/9" },
     { name: "Flyers Haunted Moments Trading Cards (new)", status:"live", spend:204.53, ctr:4.34, cpp:10.23, sales:224.85, roas:1.1, tagText:"New campaign, launched Oct 22. 3 ads. 8 confirmed orders" },
-    { name: "Jalen Hurts Clot (new)", status:"live", spend:351.02, ctr:14.31, cpp:6.16, sales:429.96, roas:1.2, tagText:"New campaign, launched Oct 22. 4 confirmed orders, 57 Meta purchases" },
+    { name: "Jalen Hurts Clot (new)", status:"live", spend:386.82, ctr:13.89, cpp:4.16, sales:429.96, roas:1.1, tagText:"New campaign, launched Oct 22. 4 confirmed orders, 93 Meta purchases" },
     { name: "Cam York Flyers Meet & Greet (new)", status:"paused", spend:243.96, ctr:2.98, cpp:8.71, sales:2315.00, roas:9.5, tagText:"New campaign, launched 9/9" },
     { name: "Christian Dvorak Flyers Meet & Greet (new)", status:"paused", spend:50.79, ctr:4.58, cpp:4.23, sales:1617.00, roas:31.8, tagText:"New campaign, launched 9/9" },
     { name: "Travis Konecny Flyers Meet & Greet (new)", status:"paused", spend:391.04, ctr:4.16, cpp:4.20, sales:4807.00, roas:12.3, tagText:"New campaign, many confirmed orders" },
     { name: "Dontavion Wicks (new)", status:"paused", spend:412.04, ctr:5.46, cpp:4.48, sales:1387.00, roas:3.4, tagText:"9 confirmed orders" },
     { name: "Markell Bell (new)", status:"paused", spend:40.01, ctr:4.35, cpp:4.45, sales:525.00, roas:13.1, tagText:"3 confirmed orders, more pending Zay's review" },
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
-    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.07, sales:30700.00, roas:26.1, tagText:"Launched Oct 3 to 4. 94 confirmed orders. Meta reports 78 purchases" }
+    { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.07, sales:30700.00, roas:26.1, tagText:"Launched Oct 3 to 4. 94 confirmed orders. Meta reports 78 purchases" },
+    { name: "BF26 Maxey Action 16×20 (new)", status:"live", spend:4.72, ctr:13.66, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Eagles Super Bowl LII Team Print (new)", status:"live", spend:2.21, ctr:9.92, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Tim Thomas Cup Puck (new)", status:"live", spend:3.17, ctr:5.49, cpp:3.17, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Barkley Reverse Hurdle Frame (new)", status:"live", spend:4.32, ctr:1.57, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Cena Engraved Frame (new)", status:"live", spend:3.94, ctr:4.85, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:11.62, ctr:5.94, cpp:5.81, sales:25.00, roas:2.2, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Flyers Mystery Photo (new)", status:"live", spend:10.94, ctr:3.57, cpp:5.47, sales:25.00, roas:2.3, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Bergeron Panorama (new)", status:"live", spend:3.60, ctr:6.78, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Maxey Celebration 11×14 (new)", status:"live", spend:6.53, ctr:7.37, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Merry Moments Cards (new)", status:"live", spend:6.51, ctr:5.93, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" }
   ],
-  adTotals: { spend:8907.30, ctr:5.28, cpp:7.54, sales:79638.11, roas:9.4 },
+  adTotals: { spend:9000.66, ctr:5.30, cpp:7.36, sales:79688.11, roas:9.3 },
 
-  reconcile: { discountCodes: -252.63, companionRevenue: 4561.48, net: 83946.96 },
-  metaReported: { value: 149593.36, purchases: 1182 },
+  reconcile: { discountCodes: -252.63, companionRevenue: 4561.48, net: 83996.96 },
+  metaReported: { value: 155684.41, purchases: 1223 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"2 orders counted this run, $50.00",
+      body:"#185618 (Flyers Mystery Photograph Drop, $25.00) and #185623 (Flyers Mystery Puck, $25.00), both from the new Black Friday ads launched Nov 5. Counted as a judgment call because both products are now advertised again. Verified sales are now $83,996.96. Nothing is held this run." },
+    { level:"high", title:"Decision needed: Eric Lindros Hall of Fame Experience Tickets surge, not counted",
+      body:"Since Nov 5 the store has taken about 79 Lindros ticket orders (103 tickets, $13,847.00) plus 13 inscriptions on 9 orders ($520.00). The traffic is untagged Facebook, Instagram, link-in-bio or direct, with no ad tag on the links. Lindros is not an advertised product in this report, so none of it is counted. Tell me if I should count it and which campaign row it belongs to." },
+    { level:"high", title:"Decision needed: Travis Konecny jersey orders continue",
+      body:"About 5 more Konecny jersey orders arrived Nov 5 to 6: #185499, #185513, #185518, #185523 and #185617. Together with the 22 from Nov 5 these stay uncounted until you decide." },
+    { level:"med", title:"Hurts Clot ad: 93 Meta purchases, 4 confirmed orders",
+      body:"Meta now shows 93 purchases ($12,151.47) on the Hurts Clot ad, up from 57, while the store links only 4 orders to it. The ad appears to be sending buyers to other products (Konecny jersey, Lindros) without an ad tag on the link. Spend on it is now $386.82." },
+    { level:"", title:"2 unpublished edits are waiting in Meta",
+      body:"Your Meta ad account has 2 staged edits that were never published. I did not publish anything. Tell me if you want either one published." },
     { level:"med", title:"3 orders counted at your direction, $299.97",
       body:"Hurts Cigar & Trophy Champions 16x20, $99.99 each: #185207 (in-store, Oct 31), #185436 (website, Nov 4, Google visit, no ad click) and #185493 (in-store, Nov 5). None of them has a Hurts Clot ad click. Added to the Hurts Cigar & Trophy product and to the Hurts Clot campaign. Verified sales are now $83,946.96." },
     { level:"med", title:"1 order counted this run, $115.00",
@@ -394,8 +414,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 5692, value: 607645.95, socialOrders: 597, socialValue: 74977.88 },
-  totalOrdersScanned: 5692,
+  storeWide: { orders: 5829, value: 626860.43, socialOrders: 597, socialValue: 74977.88 },
+  totalOrdersScanned: 5829,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
