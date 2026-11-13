@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dynasty Sports — Advertised Product Sales Update</title>
+<title>Dynasty Sports: Advertised Product Sales Update</title>
 <style>
   :root{
     color-scheme: light;
@@ -87,18 +87,18 @@
    No em dashes anywhere in any string.
    ============================================================================ */
 const DATA = {
-  periodLabel: "July 23 – November 12, 2026",
-  periodDays: 113,
+  periodLabel: "July 23 – November 13, 2026",
+  periodDays: 114,
 
   kpis: {
     spend:         10043.89,
     spendFoot:     "30 campaigns, 16 delivering",
-    verifiedSales: 87978.88,
+    verifiedSales: 88306.88,
     roas:          8.8,
-    units:         1259,
+    units:         1263,
     companionUnits: 194,
-    orders:        723,
-    avgOrder:      121.69,
+    orders:        725,
+    avgOrder:      121.80,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 218, revenue: 5605.00, orders: 122 },
+    { name: "Flyers Autographed Mystery Puck",          units: 220, revenue: 5655.00, orders: 123 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 16,  revenue: 1629.86,  orders: 16 },
@@ -123,7 +123,7 @@ const DATA = {
     { name: "Allen Iverson Philly Legend Experience Tickets", units: 61,  revenue: 10850.00, orders: 43 },
     { name: "John Cena Final Farewell 8×10 Framed Photo with Engraved Autograph", units: 2, revenue: 159.98, orders: 2 },
     { name: "Travis Konecny Autographed Pro Hockey Jersey (1 order counted)", units: 1, revenue: 59.00, orders: 1 },
-    { name: "Eric Lindros Hockey Hall of Fame Experience Tickets (4 orders counted)", units: 12, revenue: 1378.00, orders: 4 },
+    { name: "Eric Lindros Hockey Hall of Fame Experience Tickets (5 orders counted)", units: 14, revenue: 1656.00, orders: 5 },
     { name: "Celebrate The Holidays with The Sandlot Cast Experience Tickets (2 orders counted)", units: 2, revenue: 418.00, orders: 2 },
     { name: "Jakub Voracek Philadelphia Flyers Experience Tickets (1 order counted)", units: 2, revenue: 118.00, orders: 1 },
     { name: "The Penalty Box Party Philadelphia Flyers Triple Signed 8×10 Photograph (1 order counted)", units: 1, revenue: 99.00, orders: 1 },
@@ -198,19 +198,21 @@ const DATA = {
     { name: "BF26 Tim Thomas Cup Puck (new)", status:"live", spend:60.76, ctr:4.80, cpp:20.25, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Barkley Reverse Hurdle Frame (new)", status:"live", spend:89.43, ctr:3.03, cpp:17.89, sales:79.99, roas:0.9, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Cena Engraved Frame (new)", status:"live", spend:60.96, ctr:4.35, cpp:15.24, sales:159.98, roas:2.6, tagText:"Black Friday ad, launched Nov 5" },
-    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:179.31, ctr:2.88, cpp:9.44, sales:638.00, roas:3.6, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:179.31, ctr:2.88, cpp:9.44, sales:966.00, roas:5.4, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Flyers Mystery Photo (new)", status:"live", spend:177.25, ctr:2.29, cpp:12.66, sales:427.00, roas:2.4, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Bergeron Panorama (new)", status:"live", spend:58.93, ctr:3.82, cpp:19.64, sales:668.99, roas:11.4, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Maxey Celebration 11×14 (new)", status:"live", spend:119.94, ctr:3.62, cpp:19.99, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Merry Moments Cards (new)", status:"live", spend:89.80, ctr:5.33, cpp:22.45, sales:88.99, roas:1.0, tagText:"Black Friday ad, launched Nov 5" },
   ],
-  adTotals: { spend:10043.89, ctr:5.32, cpp:7.76, sales:83437.02, roas:8.8 },
+  adTotals: { spend:10043.89, ctr:5.32, cpp:7.76, sales:83765.02, roas:8.8 },
 
-  reconcile: { discountCodes: -327.62, companionRevenue: 4869.48, net: 87978.88 },
+  reconcile: { discountCodes: -327.62, companionRevenue: 4869.48, net: 88306.88 },
   metaReported: { value: 167819.32, purchases: 1295 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"2 orders counted this run, $328.00",
+      body:"6 new orders (#185986 to #185991). #185986 (2 Flyers Mystery Puck Drops, $50.00, Instagram paid click on the Black Friday Flyers Mystery Puck ad one minute before buying) is credited to that ad. #185987 (2 Eric Lindros tickets, $278.00) had a click on the same Black Friday Puck ad 3 days 7 hours before the order, inside the 7 day window, so it is credited to that ad too. Verified sales are now $88,306.88. Ad spend was not refreshed this run because Meta was unavailable, so spend and return on ad spend use the numbers from the last pull. Not counted: #185988 (Lindros $169.00, Google), #185989 (Sandlot Cast ticket $199.00 plus $5.00 certificate, Bing), #185990 (LeBron jersey $99.99, Shop app, not an advertised product). #185991 (Team USA gold medal collage $149.99) has no journey data yet and will be re-checked next run."},
     { level:"med", title:"2 more held orders counted at your direction, $179.97",
       body:"Rule updated: an ad click less than 7 days before the order counts. #185952 (Michkov photo $49.00, last click on the Black Friday Merry Moments ad 4 days 23 hours before) is credited to that ad. #185953 (Gagne puck $49.99, Ersson photo $12.00, 2 ornaments $19.98 and a Michkov photo $49.00, last click on the Black Friday Eagles Super Bowl print ad 4 days 13 hours before) is credited to that ad. Verified sales are now $87,978.88. Still held: #185869 (14 days) and #185785 (16 days), plus the Shop app orders #185797, #185775, #185957."},
     { level:"med", title:"5 held orders counted at your direction, $759.00",
@@ -456,8 +458,8 @@ const DATA = {
       body:"Zero inventory, zero sales against $15.28 of spend across the full period." },
   ],
 
-  storeWide: { orders: 6178, value: 669250.47, socialOrders: 645, socialValue: 83158.89 },
-  totalOrdersScanned: 6178,
+  storeWide: { orders: 6184, value: 670228.47, socialOrders: 646, socialValue: 83218.20 },
+  totalOrdersScanned: 6184,
 
   // Assisted sales: Meta ad touched the journey but a non-Meta channel closed it.
   // Shown on its own tile, never folded into kpis.verifiedSales or kpis.roas.
