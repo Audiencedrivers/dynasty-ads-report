@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         10496.16,
     spendFoot:     "30 campaigns, 16 delivering",
-    verifiedSales: 89441.85,
+    verifiedSales: 89516.85,
     roas:          8.5,
-    units:         1275,
+    units:         1278,
     companionUnits: 200,
-    orders:        733,
-    avgOrder:      122.02,
+    orders:        735,
+    avgOrder:      121.79,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 224, revenue: 5775.00, orders: 124 },
+    { name: "Flyers Autographed Mystery Puck",          units: 226, revenue: 5825.00, orders: 125 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 16,  revenue: 1629.86,  orders: 16 },
@@ -118,7 +118,7 @@ const DATA = {
     { name: "Build Your Own Custom Frame Kit",           units: 9,   revenue: 685.91,  orders: 7  },
     { name: "LeBron James 76ers 8×10",                   units: 4,   revenue: 319.96,  orders: 4  },
     { name: "Flyers Meet & Greet Tickets (Cam York / Dvorak / Konecny)", units: 141, revenue: 8739.00, orders: 75 },
-    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 163, revenue: 4075.00, orders: 116 },
+    { name: "Philadelphia Flyers Autographed Mystery Photograph Drop", units: 164, revenue: 4100.00, orders: 117 },
     { name: "Boston Bruins Autographed Mystery Puck Drop", units: 181, revenue: 4450.00, orders: 110 },
     { name: "Allen Iverson Philly Legend Experience Tickets", units: 61,  revenue: 10850.00, orders: 43 },
     { name: "John Cena Final Farewell 8×10 Framed Photo with Engraved Autograph", units: 2, revenue: 159.98, orders: 2 },
@@ -202,8 +202,8 @@ const DATA = {
     { name: "BF26 Tim Thomas Cup Puck (new)", status:"live", spend:81.49, ctr:4.66, cpp:27.16, sales:59.99, roas:0.7, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Barkley Reverse Hurdle Frame (new)", status:"live", spend:123.76, ctr:2.99, cpp:17.68, sales:79.99, roas:0.6, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Cena Engraved Frame (new)", status:"live", spend:80.89, ctr:4.37, cpp:11.56, sales:258.98, roas:3.2, tagText:"Black Friday ad, launched Nov 5" },
-    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:244.88, ctr:2.92, cpp:10.20, sales:1255.00, roas:5.1, tagText:"Black Friday ad, launched Nov 5" },
-    { name: "BF26 Flyers Mystery Photo (new)", status:"live", spend:247.39, ctr:2.36, cpp:13.02, sales:452.00, roas:1.8, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:244.88, ctr:2.91, cpp:10.20, sales:1305.00, roas:5.3, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Flyers Mystery Photo (new)", status:"live", spend:247.39, ctr:2.36, cpp:13.02, sales:477.00, roas:1.9, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Bergeron Panorama (new)", status:"live", spend:81.04, ctr:3.64, cpp:27.01, sales:668.99, roas:8.3, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Maxey Celebration 11×14 (new)", status:"live", spend:165.86, ctr:3.44, cpp:20.73, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Merry Moments Cards (new)", status:"live", spend:124.33, ctr:4.99, cpp:20.72, sales:186.99, roas:1.5, tagText:"Black Friday ad, launched Nov 5" },
@@ -213,13 +213,15 @@ const DATA = {
     { name: "BF26 Flyers Mystery Photo video (new)", status:"live", spend:0.51, ctr:4.76, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
     { name: "BF26 Flyers Mystery Puck video (new)", status:"live", spend:0.26, ctr:4.00, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
   ],
-  adTotals: { spend:10496.16, ctr:5.31, cpp:7.95, sales:84835.00, roas:8.5 },
+  adTotals: { spend:10496.16, ctr:5.31, cpp:7.95, sales:84910.00, roas:8.5 },
 
-  reconcile: { discountCodes: -327.62, companionRevenue: 4934.47, net: 89441.85 },
+  reconcile: { discountCodes: -327.62, companionRevenue: 4934.47, net: 89516.85 },
   metaReported: { value: 170899.20, purchases: 1320 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"2 held orders counted at your direction, $75.00",
+      body:"#186031 (2 Flyers Mystery Puck Drops, $50.00, direct visit) is credited to the Black Friday Flyers Mystery Puck ad. #186030 (Flyers Mystery Photograph Drop, $25.00, Google visits) is credited to the Black Friday Flyers Mystery Photo ad. Verified sales are now $89,516.85. Still waiting on your call: #186014 (2 Mystery Puck Drops and an ornament, link-in-bio visit only), plus the older holds #185869, #185785, #185797, #185775 and #185957."},
     { level:"med", title:"3 orders counted this run, $577.98",
       body:"51 new orders (#186048 to #186098). Counted: #186091 (Tyrese Maxey Drive framed 16x20, $419.99, Facebook paid click on the Black Friday Maxey ad one minute before buying; Meta's own purchase value on that ad rose by exactly this order's $445.19 total) to the Maxey Action ad; #186077 (Tim Thomas Stanley Cup Champions puck, $59.99, Facebook link with no ad tag one minute before buying, counted the way you ruled on #185717) to the Tim Thomas ad; #186051 (Riq Woolen and Darius Cooper Holiday Kickoff tickets, $49.00 each, last ad click on the Merry Moments ad 5 days 17 hours before, inside the 7 day window) to the Merry Moments ad. Verified sales are now $89,441.85. Five new Black Friday video ads started delivering on Nov 14 (combined spend $1.30, no orders yet). Not counted: Lindros orders without an ad click (#186067 Facebook link with no tag, #186090 Google), #186094 (Tippett puck, untagged Facebook, not an advertised product), #186095 (Voracek ticket, link-in-bio and Instagram, no ad click), #186096 (ornament), #186061 (frame, Google and ChatGPT), draft return shipping charges (#186065, #186069), an app test order (#186084, $0.00), marketplace orders (#186048, #186079, #186085, #186097), and Shop app and in-store orders of non-advertised products. #186098 (Bob Clarke photo $129.99) had no journey data yet and will be re-checked next run. Still waiting on your call: #186014, #186031 and #186030."},
     { level:"med", title:"5 orders counted this run, $556.99",
