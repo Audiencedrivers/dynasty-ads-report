@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         10904.61,
     spendFoot:     "30 campaigns, 16 delivering",
-    verifiedSales: 89928.84,
-    roas:          8.2,
-    units:         1287,
-    companionUnits: 200,
-    orders:        742,
-    avgOrder:      121.20,
+    verifiedSales: 89993.84,
+    roas:          8.3,
+    units:         1289,
+    companionUnits: 201,
+    orders:        743,
+    avgOrder:      121.12,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -108,7 +108,7 @@ const DATA = {
   products: [
     { name: "Saquon Barkley Pre-Sale",                  units: 32,  revenue: 9776.00, orders: 21 },
     { name: "Phillies Triple Event Autograph Tickets",  units: 118, revenue: 5159.00, orders: 64 },
-    { name: "Flyers Autographed Mystery Puck",          units: 230, revenue: 5940.00, orders: 127 },
+    { name: "Flyers Autographed Mystery Puck",          units: 232, revenue: 6000.00, orders: 128 },
     { name: "Brandon Marsh “Ring the Bell” jersey",     units: 1,   revenue: 379.99, orders: 1  },
     { name: "Brandon Marsh signed LE 16×20",            units: 6,   revenue: 1399.94, orders: 6  },
     { name: "Jalen Hurts Cigar & Trophy 16×20",         units: 17,  revenue: 1729.85,  orders: 17 },
@@ -202,7 +202,7 @@ const DATA = {
     { name: "BF26 Tim Thomas Cup Puck (new)", status:"live", spend:89.73, ctr:4.54, cpp:29.91, sales:59.99, roas:0.7, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Barkley Reverse Hurdle Frame (new)", status:"live", spend:136.69, ctr:2.99, cpp:19.53, sales:79.99, roas:0.6, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Cena Engraved Frame (new)", status:"live", spend:89.24, ctr:4.31, cpp:12.75, sales:338.97, roas:3.8, tagText:"Black Friday ad, launched Nov 5" },
-    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:272.25, ctr:2.86, cpp:10.47, sales:1395.00, roas:5.1, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:272.25, ctr:2.86, cpp:10.47, sales:1455.00, roas:5.3, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Flyers Mystery Photo (new)", status:"live", spend:271.43, ctr:2.35, cpp:11.31, sales:527.00, roas:1.9, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Bergeron Panorama (new)", status:"live", spend:94.18, ctr:3.64, cpp:23.55, sales:668.99, roas:7.1, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Maxey Celebration 11×14 (new)", status:"live", spend:180.47, ctr:3.38, cpp:22.56, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
@@ -218,13 +218,15 @@ const DATA = {
     { name: "BF26 Maxey Celebration 11×14 video (new)", status:"live", spend:28.95, ctr:2.91, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
     { name: "BF26 Tim Thomas Cup Puck video (new)", status:"live", spend:13.83, ctr:5.61, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
   ],
-  adTotals: { spend:10904.61, ctr:5.30, cpp:8.19, sales:85333.98, roas:8.2 },
+  adTotals: { spend:10904.61, ctr:5.30, cpp:8.19, sales:85393.98, roas:8.3 },
 
-  reconcile: { discountCodes: -339.61, companionRevenue: 4934.47, net: 89928.84 },
+  reconcile: { discountCodes: -339.61, companionRevenue: 4939.47, net: 89993.84 },
   metaReported: { value: 171751.82, purchases: 1331 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"1 held order counted at your direction, $65.00",
+      body:"#186014 (2 Flyers Mystery Puck Drops $60.00, plus a $5.00 Gritty ornament in the same cart, link-in-bio visit only) is credited to the Black Friday Flyers Mystery Puck ad. The buyer had bought a Mystery Puck Drop two days earlier (#185663). Verified sales are now $89,993.84. Still waiting on your call: #186110, plus the older holds #185869, #185785, #185797, #185775 and #185957."},
     { level:"med", title:"7 orders counted this run, $423.98",
       body:"53 new orders (#186099 to #186151). Counted: #186106 (John Cena framed 8x10 $79.99, paid clicks on the Black Friday Cena ad and a Nov 14 video ad before buying; discount code took $11.99 off) to the Cena ad; #186116 (Mystery Puck Drop $25.00) and #186143 (Mystery Photograph Drop $25.00), both with a paid click on the Black Friday Photo ad just before buying, to the Photo ad; #186134 (3 Mystery Puck Drops $90.00, paid clicks on the Black Friday Puck ad minutes before buying) to the Puck ad; #186137 (Penalty Box Party photo $99.00, paid click on the Nov 14 Penalty Box video ad that morning; Meta reports the same $111.90 order total on that ad) to the Penalty Box video ad; #186133 (Gritty ornament $5.00, last ad click on the Nov 14 Flyers Mystery Photo video ad 3 hours 47 minutes before, inside the 7 day window; Meta reports the same $11.67 order total on that ad) to that video ad; #186120 (Jalen Hurts Cigar and Trophy Champions framed 16x20 $99.99, in-store) to the Hurts Clot ad, the same way as #185207, #185493 and #185868. Verified sales are now $89,928.84. Meta spend is $10,904.61, up $408.45 since the last run, most of it from the 10 new video ads. Not counted: #186110 (2 logo pucks, Bonk and Knuble tickets and 2 certificates, $116.14: Meta credits it to the Maxey Action video ad, but our records show only an untagged Facebook visit and a Maxey and Iverson ad click from Oct 17, older than 7 days; tell me if you want it counted), #186135 and #186144 (Lindros tickets, link-in-bio and direct), #186112 (Flyers and Eagles autographs, link-in-bio and Instagram, no ad click), #186109, #186099, #186104, #186124, #186141, #186142, #186146, #186148 (no ad trace or different products), in-store orders of other products (#186105, #186111, #186118, #186119, #186127 with a $9.99 Reverse Hurdle photo), marketplace orders (#186101, #186102, #186121, #186138), Shop app and Collective orders of other products, and draft order return shipping #186145. #186151 (Eagles frame kit $99.99) had no journey data yet and will be re-checked next run. The video ad behind link tag 52544576593762 on #186106 is not confirmed."},
     { level:"med", title:"2 held orders counted at your direction, $75.00",
