@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         11012.15,
     spendFoot:     "30 campaigns, 16 delivering",
-    verifiedSales: 90122.80,
+    verifiedSales: 90512.85,
     roas:          8.2,
-    units:         1292,
+    units:         1293,
     companionUnits: 204,
-    orders:        744,
-    avgOrder:      121.13,
+    orders:        745,
+    avgOrder:      121.49,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -136,7 +136,7 @@ const DATA = {
     { name: "Samuel Ersson First Shutout Philadelphia Flyers Autographed 8×10 Blackout Hockey Photo (1 order counted)", units: 1, revenue: 12.00, orders: 1 },
     { name: "Gritty Flyers Christmas Holiday Ball Ornament (2 orders counted)", units: 3, revenue: 24.98, orders: 2 },
     { name: "2025 Merry Moments Dynasty Exclusive Trading Cards (2 orders counted)", units: 3, revenue: 69.97, orders: 2 },
-    { name: "Patrice Bergeron Career Highlights Framed Panorama (1 order counted)", units: 1, revenue: 499.99, orders: 1 },
+    { name: "Patrice Bergeron Career Highlights Framed Panorama (2 orders counted)", units: 2, revenue: 999.98, orders: 2 },
     { name: "A Raffle to Benefit The Mazzocchi Family (1 order counted)", units: 1, revenue: 40.00, orders: 1 },
     { name: "Tyrese Maxey Philly All-Star Experience Tickets", units: 88,  revenue: 19850.00, orders: 66 },
     { name: "2025 Haunted Moments Dynasty Exclusive Trading Cards", units: 16, revenue: 239.84, orders: 9 },
@@ -204,7 +204,7 @@ const DATA = {
     { name: "BF26 Cena Engraved Frame (new)", status:"live", spend:92.38, ctr:4.30, cpp:13.20, sales:338.97, roas:3.7, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Flyers Mystery Puck (new)", status:"live", spend:277.39, ctr:2.83, cpp:10.67, sales:1455.00, roas:5.2, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Flyers Mystery Photo (new)", status:"live", spend:279.41, ctr:2.34, cpp:11.64, sales:527.00, roas:1.9, tagText:"Black Friday ad, launched Nov 5" },
-    { name: "BF26 Bergeron Panorama (new)", status:"live", spend:97.97, ctr:3.68, cpp:24.49, sales:668.99, roas:6.8, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Bergeron Panorama (new)", status:"live", spend:97.97, ctr:3.68, cpp:24.49, sales:1168.98, roas:11.9, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Maxey Celebration 11×14 (new)", status:"live", spend:187.03, ctr:3.38, cpp:23.38, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Merry Moments Cards (new)", status:"live", spend:125.08, ctr:4.98, cpp:20.85, sales:186.99, roas:1.5, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Maxey Action 16×20 video (new)", status:"live", spend:27.24, ctr:3.06, cpp:27.24, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14. 1 Meta-reported purchase, unmatched" },
@@ -218,13 +218,15 @@ const DATA = {
     { name: "BF26 Maxey Celebration 11×14 video (new)", status:"live", spend:35.09, ctr:3.18, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
     { name: "BF26 Tim Thomas Cup Puck video (new)", status:"live", spend:18.31, ctr:5.44, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
   ],
-  adTotals: { spend:11012.15, ctr:5.29, cpp:8.26, sales:85438.95, roas:8.2 },
+  adTotals: { spend:11012.15, ctr:5.29, cpp:8.26, sales:85938.94, roas:8.2 },
 
-  reconcile: { discountCodes: -339.61, companionRevenue: 5023.46, net: 90122.80 },
+  reconcile: { discountCodes: -449.55, companionRevenue: 5023.46, net: 90512.85 },
   metaReported: { value: 172020.96, purchases: 1333 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"1 held order counted at your direction, $390.05",
+      body:"#186158 (Shop app, Patrice Bergeron framed panorama $499.99, less a $109.94 discount code) is credited to the Black Friday Bergeron ad. Verified sales are now $90,512.85. Still waiting on your call: #186110 (Meta credits it to the Maxey Action video ad, our records show no recent ad click), plus the older holds #185869, #185785, #185797, #185775 and #185957."},
     { level:"med", title:"1 order counted this run, $128.96",
       body:"12 new orders (#186155 to #186166). Counted: #186155 ($128.96 of items: 2 Merry Moments cards $29.98 and a Haunted Moments card $14.99 as products, plus 3 Eagles photos $83.99 bought in the same cart). The buyer clicked the Black Friday Merry Moments ad on Nov 14 and a Nov 14 video ad on Nov 15, 22 hours before buying; Meta credits the same $136.70 order total to the Merry Moments video ad. Credited to that video ad. The Haunted Moments card has its own live ads and I counted it as a product, tell me if you would rather treat it as a same-cart item. Verified sales are now $90,122.80. Meta spend is $11,012.15 (up $79.32 since the last run). New hold for your call: #186158 (Shop app, Bergeron panorama $499.99 with a $109.94 discount code, an advertised product but the Shop app records no visits). Not counted: #186163 (Rollins framed photo, direct visits), #186164 (Vladar photo, Google), #186154 (pint glasses, Google, re-checked), other Shop app orders of non-advertised products (#186156, #186159, #186160, #186161), marketplace orders (#186157, #186165), Collective #186162 and in-store #186166. Still waiting on your call: #186158, #186110, plus the older holds #185869, #185785, #185797, #185775 and #185957."},
     { level:"med", title:"0 orders counted this run",
