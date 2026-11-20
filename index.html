@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         12260.77,
     spendFoot:     "30 campaigns, 16 delivering",
-    verifiedSales: 92862.97,
+    verifiedSales: 93062.96,
     roas:          7.6,
-    units:         1327,
+    units:         1328,
     companionUnits: 214,
-    orders:        770,
-    avgOrder:      120.60,
+    orders:        771,
+    avgOrder:      120.70,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -135,6 +135,7 @@ const DATA = {
     { name: "Tim Thomas Boston Bruins Autographed 2011 Stanley Cup Champions Puck (1 order counted)", units: 1, revenue: 59.99, orders: 1 },
     { name: "Tyrese Maxey Philadelphia 76ers Drive Autographed 16×20 Framed Photograph (1 order counted)", units: 1, revenue: 419.99, orders: 1 },
     { name: "The Penalty Box Party Philadelphia Flyers Triple Signed 8×10 Photograph (4 orders counted)", units: 4, revenue: 396.00, orders: 4 },
+    { name: "The Penalty Box Party Philadelphia Flyers Triple Signed & Framed 16×20 Photograph (1 order counted)", units: 1, revenue: 199.99, orders: 1 },
     { name: "Matvei Michkov in Black Autographed 11×14 Hockey Photo (5 orders counted)", units: 5, revenue: 245.00, orders: 5 },
     { name: "Simon Gagne Philadelphia Flyers Autographed Hockey Logo Puck (1 order counted)", units: 1, revenue: 49.99, orders: 1 },
     { name: "Samuel Ersson First Shutout Philadelphia Flyers Autographed 8×10 Blackout Hockey Photo (1 order counted)", units: 1, revenue: 12.00, orders: 1 },
@@ -201,7 +202,7 @@ const DATA = {
     { name: "Ty Robinson (new, pending confirmation)", status:"paused", spend:28.59, ctr:5.03, cpp:5.72, sales:225.00, roas:7.9, tagText:"2 confirmed orders, more pending Zay's review" },
     { name: "Tyrese Maxey / Allen Iverson Flat Autograph (new)", status:"live", spend:1175.28, ctr:8.47, cpp:15.07, sales:30700.00, roas:26.1, tagText:"Launched Oct 3 to 4. 94 confirmed orders. Meta reports 78 purchases" },
     { name: "BF26 Maxey Action 16×20 (new)", status:"live", spend:199.68, ctr:6.22, cpp:18.15, sales:608.98, roas:3.0, tagText:"Black Friday ad, launched Nov 5" },
-    { name: "BF26 Penalty Box Party Photo (new)", status:"live", spend:151.67, ctr:4.10, cpp:21.67, sales:376.00, roas:2.5, tagText:"Black Friday ad, launched Nov 5" },
+    { name: "BF26 Penalty Box Party Photo (new)", status:"live", spend:151.67, ctr:4.10, cpp:21.67, sales:575.99, roas:3.8, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Eagles Super Bowl LII Team Print (new)", status:"live", spend:65.16, ctr:5.60, cpp:16.29, sales:130.97, roas:2.0, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Tim Thomas Cup Puck (new)", status:"live", spend:130.01, ctr:3.85, cpp:16.25, sales:59.99, roas:0.5, tagText:"Black Friday ad, launched Nov 5" },
     { name: "BF26 Barkley Reverse Hurdle Frame (new)", status:"live", spend:195.36, ctr:2.81, cpp:27.91, sales:92.98, roas:0.5, tagText:"Black Friday ad, launched Nov 5" },
@@ -222,13 +223,15 @@ const DATA = {
     { name: "BF26 Maxey Celebration 11×14 video (new)", status:"live", spend:104.98, ctr:3.19, cpp:52.49, sales:99.99, roas:1.0, tagText:"Black Friday video ad, launched Nov 14. 1 confirmed order" },
     { name: "BF26 Tim Thomas Cup Puck video (new)", status:"live", spend:50.70, ctr:4.18, cpp:null, sales:null, roas:null, tagText:"Black Friday video ad, launched Nov 14" },
   ],
-  adTotals: { spend:12260.77, ctr:5.23, cpp:8.94, sales:88276.86, roas:7.6 },
+  adTotals: { spend:12260.77, ctr:5.23, cpp:8.94, sales:88476.85, roas:7.6 },
 
-  reconcile: { discountCodes: -561.28, companionRevenue: 5147.39, net: 92862.97 },
+  reconcile: { discountCodes: -561.28, companionRevenue: 5147.39, net: 93062.96 },
   metaReported: { value: 176120.42, purchases: 1372 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"1 held order counted at your direction, $199.99",
+      body:"You asked for #186336 to be counted (Penalty Box Party framed 16x20, $199.99, Google visit only). It is credited to the Black Friday Penalty Box ad. Verified sales are now $93,062.96. Still waiting on your call: #186327, #186110, plus the older holds #185869, #185785, #185797 and #185775."},
     { level:"med", title:"3 orders counted this run, $154.00",
       body:"11 new orders (#186327 to #186337), plus #186326 now that its visit data is in. Counted, each with a paid click on a Black Friday ad shortly before buying: #186326 (Penalty Box Party photo, $99.00) to the Penalty Box ad, #186332 (Mystery Photograph Drop, $25.00) to the Photo ad and #186333 (Mystery Puck Drop, $30.00) to the Puck ad. Meta credits each of these three with the same order total. Verified sales are now $92,862.97. Meta spend is $12,260.77 (up $113.84 since the last run). Not counted: #186335 (2 puck add-ons, only older untagged Facebook visits), #186336 (Penalty Box framed 16x20 $199.99, Google visit and a different product from the advertised photo), #186337 (a $5.00 certificate, email visits) and #186327 (Lakers frame kit, $119.94, Yahoo and direct visits; Meta credits it to the Black Friday Bergeron ad, tell me if you want it counted), plus in-store, Shop app and Collective orders. Still waiting on your call: #186110, plus the older holds #185869, #185785, #185797 and #185775."},
     { level:"med", title:"10 orders counted this run, $1,162.93",
