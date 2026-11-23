@@ -93,12 +93,12 @@ const DATA = {
   kpis: {
     spend:         13012.64,
     spendFoot:     "50 campaigns, 22 delivering",
-    verifiedSales: 97385.89,
+    verifiedSales: 98185.88,
     roas:          7.5,
-    units:         1367,
+    units:         1368,
     companionUnits: 219,
-    orders:        797,
-    avgOrder:      122.19,
+    orders:        798,
+    avgOrder:      123.04,
     promoUses:     2,
     promoFoot:     "MARSH25 ran Aug 4 through Aug 11, now expired"
   },
@@ -137,7 +137,7 @@ const DATA = {
     { name: "The Penalty Box Party Philadelphia Flyers Triple Signed 8×10 Photograph (4 orders counted)", units: 4, revenue: 396.00, orders: 4 },
     { name: "The Penalty Box Party Philadelphia Flyers Triple Signed & Framed 16×20 Photograph (2 orders counted)", units: 2, revenue: 399.98, orders: 2 },
     { name: "The Penalty Box Party Philadelphia Flyers Triple Signed & Framed 11×14 Photograph (1 order counted)", units: 1, revenue: 179.99, orders: 1 },
-    { name: "Tyrese Maxey & Allen Iverson Philadelphia 76ers Autographed & Inscribed Wilson Basketball (2 orders counted)", units: 2, revenue: 1599.98, orders: 2 },
+    { name: "Tyrese Maxey & Allen Iverson Philadelphia 76ers Autographed & Inscribed Wilson Basketball (3 orders counted)", units: 3, revenue: 2399.97, orders: 3 },
     { name: "Owen Tippett Philadelphia Flyers Scream Spotlight 8×10 Photograph (1 order counted)", units: 1, revenue: 39.99, orders: 1 },
     { name: "Owen Tippett Philadelphia Flyers Scream Spotlight 8×10 Framed Photograph (1 order counted)", units: 1, revenue: 89.99, orders: 1 },
     { name: "Owen Tippett in Orange Philadelphia Flyers Autographed 8×10 Hockey Photo (1 order counted)", units: 1, revenue: 39.99, orders: 1 },
@@ -244,16 +244,18 @@ const DATA = {
     { name: "BF26 Quinyon Mitchell Kelly Green Frame (new)", status:"live", spend:30.51, ctr:4.01, cpp:null, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 22" },
     { name: "BF26 Penalty Box Party relaunch (new)", status:"live", spend:26.18, ctr:3.90, cpp:26.18, sales:null, roas:null, tagText:"Black Friday ad, launched Nov 22. 1 Meta-reported purchase, unmatched" },
     { name: "BF26 Flyers Mystery Puck relaunch (new)", status:"paused", spend:23.25, ctr:4.78, cpp:23.25, sales:30.00, roas:1.3, tagText:"Black Friday ad, launched Nov 22. 1 confirmed order" },
-    { name: "BF26 Iverson Maxey Signed Ball (new)", status:"paused", spend:46.48, ctr:13.05, cpp:15.49, sales:1959.94, roas:42.2, tagText:"Black Friday ad, launched Nov 22. 3 confirmed orders" },
+    { name: "BF26 Iverson Maxey Signed Ball (new)", status:"paused", spend:46.48, ctr:13.05, cpp:15.49, sales:2759.93, roas:59.4, tagText:"Black Friday ad, launched Nov 22. 4 confirmed orders" },
     { name: "Deleted Black Friday relaunch ads (new)", status:"paused", spend:30.92, ctr:2.03, cpp:30.92, sales:39.99, roas:1.3, tagText:"Nine relaunch ads made Nov 22 were deleted in Meta. Meta no longer itemizes their spend, so this is the account total minus the ads still listed. 1 confirmed order" },
   ],
-  adTotals: { spend:13012.64, ctr:5.19, cpp:9.24, sales:93028.69, roas:7.5 },
+  adTotals: { spend:13012.64, ctr:5.19, cpp:9.24, sales:93828.68, roas:7.5 },
 
-  reconcile: { discountCodes: -858.18, companionRevenue: 5215.38, net: 97385.89 },
+  reconcile: { discountCodes: -858.18, companionRevenue: 5215.38, net: 98185.88 },
   metaReported: { value: 181558.18, purchases: 1409 },
 
   // level: "high" | "med" | "" (plain).  Body may contain <code> and <strong>.
   flags: [
+    { level:"med", title:"1 order counted at your direction, $799.99",
+      body:"You asked for #186526 (Maxey and Iverson signed Wilson basketball, $799.99, placed Nov 23, Google shopping listing only, no ad click, no discount code) to be counted. It is credited to the Iverson Maxey Signed Ball ad, matching the product, the same way as #186480. Verified sales are now $98,185.88 on 798 orders. Meta spend is unchanged at $13,012.64. Still waiting on your call: #186110, #185869, #185785, #186427, #186430 and #186450."},
     { level:"med", title:"6 orders counted this run, $722.95",
       body:"46 orders scanned (#186498 to #186543), including #186498, #186499 and #186500 pulled again now that their visit data is in. Counted: #186498 (Owen Tippett Scream Spotlight framed 8x10, $89.99, paid click on the new Tippett ad 10 minutes before buying; SANTA25 took $22.49 off) to that ad. #186500 (Mystery Puck Drop, $25.00, paid click on the Black Friday Mystery Puck ad 3 minutes before buying) and #186529 (2 Mystery Puck Drops, $60.00, paid click on the same ad 3 minutes before buying) to the Black Friday Mystery Puck ad. #186503 (Mystery Puck Drop, $30.00, paid click on the new Mystery Puck ad 4 minutes before buying) to that ad. #186501 (Riq Woolen and Darius Cooper tickets, $158.00, plus 2 certificates, $10.00, as extra items; paid click on the new Eagles helmet ad 2 hours 30 minutes before buying) to that ad. #186521 (two 76ers Starting Five 8x10 photos $239.98, Tippett in Orange photo $39.99, LeBron framed 8x10 $79.99; paid click on the new Iverson Maxey Signed Ball ad 20 hours 37 minutes before buying; SANTA25 took $79.97 off) to that ad. Verified sales are now $97,385.89. Meta spend is $13,012.64 (up $220.99 since the last run). Meta credits two orders we did not count to new ads: #186512 (Penalty Box 11x14, $179.99, Google only) to the SANTA25 retargeting ad, and #186524 (Penalty Box 8x10, $99.00, Google only) to the new Penalty Box ad. Not counted, no ad click anywhere in the visit history: #186499 (Kelce 8x10, $239.99), #186504 (4 Lindros tickets, $396.00, Yahoo), #186525 (Lindros ticket, $169.00, direct), #186539 (Lindros ticket, $109.00, direct), #186526 (Maxey and Iverson Wilson basketball, $799.99, Google shopping listing only), #186527 (Caan and Shatner 16x20 photos, $659.98, email and Google), #186513 (Sandlot ticket, $90.00, Google and email), plus #186506, #186507, #186509, #186514, #186517, #186520 and #186540 (Google, direct or search only). Not counted, one Facebook visit with no ad tag: #186508 (Sandlot ticket $199.00 plus certificate, same pattern as #186348; tell me if you want it counted). Not counted, no visit data: #186495 (app order, 2 Sandlot tickets, $289.00). Excluded: #186541 (ChatGPT only), #186519 (eBay), #186523 (draft order), in-store orders #186518, #186522, #186531, #186534, #186535, #186538, #186542 and #186543, Shop app orders #186510, #186516, #186528, #186530, #186532 and #186536 (none of these are advertised products), and Collective orders #186497, #186502, #186505, #186511, #186515, #186533 and #186537. Still waiting on your call: #186110, #185869, #185785, #186427, #186430 and #186450."},
     { level:"med", title:"2 orders counted at your direction, $998.99",
